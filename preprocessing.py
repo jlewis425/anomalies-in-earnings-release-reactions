@@ -22,7 +22,7 @@ with open('data/vol_col_names.json') as json_data:
 surp_data = pd.read_csv('data/surp_1q14.csv')
 
 # create list of files to concatenate to base file (surp_1q14.csv)
-additional_files =   (['surp_2q14.csv',
+additional_files = (['surp_2q14.csv',
                      'surp_3q14.csv',
                      'surp_4q14.csv',
                      'surp_1q15.csv',
@@ -34,7 +34,12 @@ additional_files =   (['surp_2q14.csv',
                      'surp_3q16.csv',
                      'surp_4q16.csv',
                      'surp_1q17.csv',
-                     'surp_2q17.csv'])
+                     'surp_2q17.csv',
+                     'surp_3q17.csv',
+                     'surp_4q17.csv',
+                     'surp_1q18.csv',
+                     'surp_2q18.csv'])
+
 
 # loop through list and concatenate additional files to surp_data
 for file in additional_files:
