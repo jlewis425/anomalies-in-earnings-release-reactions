@@ -1,6 +1,67 @@
 # function categories:
-# 1) quandl/quantcha
-# 2) 
+# 1) pre-processing
+# 2) quandl/quantcha
+
+def create_feature_df_index(df):
+    """Creates a new Index for extracting Features coded with a trailing 'F' from a dataframe"""
+    old_columns = list(df.columns)
+    new_columns = []
+    
+    for col in columns:
+        if col[-1] == 'F':
+            new_columns.append(col)
+        
+    new_columns.insert(0, 'unique_earnings_code')
+    ind_obj = pd.Index(new_columns)
+    return ind_obj
+
+
+def clean_feature_bind(surp_df, feature_df, retained_columns):
+    """Creates a tidied up df from a surp_df and feature_df, based on an Index object of cols to retain."""
+    bound_df = pd.merge(surp_df, feature_df[retained_columns], on='unique_earnings_code')
+    return bound_df
+
+
+def write_merged_frames(surp_lst, features_lst):
+    """Create combined dataframes from two lists of dataframe names: surp & features; and write them to the
+    data folder as csv"""
+    combined_df_lst = []
+    for s_df, f_df in zip(surp_lst, features_lst):
+        #create quarter tag
+        tag = s_df[-8:]
+
+        # read surp df
+        surp_df = pd.read_csv('data/'+s_df)
+        # read feature df
+        feature_df = pd.read_csv('data/'+f_df)
+
+        # create list of columns to retain
+        retained_cols = create_feature_df_index(feature_df)
+
+        # create combined df
+        combined_df = clean_feature_bind(surp_df, feature_df, retained_cols)
+
+        # write combined_df to a csv file and store in data folder
+        combined_df.to_csv('data/combined_'+tag)
+        
+        # record df written to a list
+        combined_df_lst.append('combined_'+tag)
+    
+    return combined_df_lst
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
