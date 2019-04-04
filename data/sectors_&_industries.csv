@@ -1,0 +1,1443 @@
+ticker_symbol,co_name,factset_sector_num,FactSet Econ Sector,factset_ind_num,FactSet Ind
+IRDM,Iridium Communications Inc.,4900,Communications,4915,Wireless Telecommunications
+S,Sprint Corp.,4900,Communications,4915,Wireless Telecommunications
+TMUS,"T-Mobile US, Inc.",4900,Communications,4915,Wireless Telecommunications
+TDS,"Telephone and Data Systems, Inc.",4900,Communications,4915,Wireless Telecommunications
+CTL,"CenturyLink, Inc.",4900,Communications,4910,Specialty Telecommunications
+CCOI,Cogent Communications Holdings Inc,4900,Communications,4910,Specialty Telecommunications
+DGI,"DigitalGlobe, Inc.",4900,Communications,4910,Specialty Telecommunications
+FTR,Frontier Communications Corporation Class B,4900,Communications,4910,Specialty Telecommunications
+PLCM,"Polycom, Inc.",4900,Communications,4910,Specialty Telecommunications
+TWTC,tw telecom inc. Class A,4900,Communications,4910,Specialty Telecommunications
+T,AT&T Inc.,4900,Communications,4905,Major Telecommunications
+LVLT,"Level 3 Communications, Inc.",4900,Communications,4905,Major Telecommunications
+VZ,Verizon Communications Inc.,4900,Communications,4905,Major Telecommunications
+AGNC,AGNC Investment Corp.,4800,Finance,4890,Real Estate Investment Trusts
+ACC,"American Campus Communities, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+AMH,American Homes 4 Rent Class A,4800,Finance,4890,Real Estate Investment Trusts
+AMT,American Tower Corporation,4800,Finance,4890,Real Estate Investment Trusts
+NLY,"Annaly Capital Management, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+AIV,Apartment Investment and Management Company Class A,4800,Finance,4890,Real Estate Investment Trusts
+ARR,"ARMOUR Residential REIT, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+AVB,"AvalonBay Communities, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+BXP,"Boston Properties, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+BRE,"BRE Properties, Inc. Class A",4800,Finance,4890,Real Estate Investment Trusts
+CPT,Camden Property Trust,4800,Finance,4890,Real Estate Investment Trusts
+CMO,Capstead Mortgage Corporation,4800,Finance,4890,Real Estate Investment Trusts
+COR,CoreSite Realty Corporation,4800,Finance,4890,Real Estate Investment Trusts
+CCI,Crown Castle International Corp,4800,Finance,4890,Real Estate Investment Trusts
+CUBE,CubeSmart,4800,Finance,4890,Real Estate Investment Trusts
+CYS,"CYS Investments, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+DLR,"Digital Realty Trust, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+DFT,"DuPont Fabros Technology, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+EQIX,"Equinix, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+EQR,Equity Residential,4800,Finance,4890,Real Estate Investment Trusts
+ESS,"Essex Property Trust, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+EXR,Extra Space Storage Inc.,4800,Finance,4890,Real Estate Investment Trusts
+FRT,Federal Realty Investment Trust,4800,Finance,4890,Real Estate Investment Trusts
+GLPI,"Gaming and Leisure Properties, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+GEO,GEO Group Inc,4800,Finance,4890,Real Estate Investment Trusts
+GGP,"GGP, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+HCP,"HCP, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+HR,Healthcare Realty Trust Incorporated,4800,Finance,4890,Real Estate Investment Trusts
+HME,"Home Properties, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+HST,"Host Hotels & Resorts, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+IVR,Invesco Mortgage Capital Inc.,4800,Finance,4890,Real Estate Investment Trusts
+IRM,"Iron Mountain, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+KIM,Kimco Realty Corporation,4800,Finance,4890,Real Estate Investment Trusts
+LAMR,Lamar Advertising Company Class A,4800,Finance,4890,Real Estate Investment Trusts
+LHO,LaSalle Hotel Properties,4800,Finance,4890,Real Estate Investment Trusts
+LPT,Liberty Property Trust,4800,Finance,4890,Real Estate Investment Trusts
+LSI,"Life Storage, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+MAC,Macerich Company,4800,Finance,4890,Real Estate Investment Trusts
+MFA,"MFA Financial, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+MTGE,MTGE Investment Corp.,4800,Finance,4890,Real Estate Investment Trusts
+NHI,"National Health Investors, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+OHI,"Omega Healthcare Investors, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+PMT,PennyMac Mortgage Investment Trust,4800,Finance,4890,Real Estate Investment Trusts
+PLD,"Prologis, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+PSA,Public Storage,4800,Finance,4890,Real Estate Investment Trusts
+RYN,Rayonier Inc.,4800,Finance,4890,Real Estate Investment Trusts
+REG,Regency Centers Corporation,4800,Finance,4890,Real Estate Investment Trusts
+SBAC,SBA Communications Corp. Class A,4800,Finance,4890,Real Estate Investment Trusts
+SPG,"Simon Property Group, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+SLG,SL Green Realty Corp.,4800,Finance,4890,Real Estate Investment Trusts
+SRC,"Spirit Realty Capital, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+STWD,"Starwood Property Trust, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+SHO,"Sunstone Hotel Investors, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+TCO,"Taubman Centers, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+TWO,Two Harbors Investment Corp.,4800,Finance,4890,Real Estate Investment Trusts
+VNO,Vornado Realty Trust,4800,Finance,4890,Real Estate Investment Trusts
+WELL,"Welltower, Inc.",4800,Finance,4890,Real Estate Investment Trusts
+WY,Weyerhaeuser Company,4800,Finance,4890,Real Estate Investment Trusts
+CBRE,"CBRE Group, Inc. Class A",4800,Finance,4885,Real Estate Development
+JLL,Jones Lang LaSalle Incorporated,4800,Finance,4885,Real Estate Development
+KW,"Kennedy-Wilson Holdings, Inc.",4800,Finance,4885,Real Estate Development
+RLGY,Realogy Holdings Corp.,4800,Finance,4885,Real Estate Development
+AON,Aon plc,4800,Finance,4880,Insurance Brokers/Services
+AJG,Arthur J. Gallagher & Co.,4800,Finance,4880,Insurance Brokers/Services
+BRO,"Brown & Brown, Inc.",4800,Finance,4880,Insurance Brokers/Services
+MMC,"Marsh & McLennan Companies, Inc.",4800,Finance,4880,Insurance Brokers/Services
+VRSK,Verisk Analytics Inc,4800,Finance,4880,Insurance Brokers/Services
+WLTW,Willis Towers Watson Public Limited Company,4800,Finance,4880,Insurance Brokers/Services
+AIZ,"Assurant, Inc.",4800,Finance,4875,Specialty Insurance
+FAF,First American Financial Corporation,4800,Finance,4875,Specialty Insurance
+MKL,Markel Corporation,4800,Finance,4875,Specialty Insurance
+MTG,MGIC Investment Corporation,4800,Finance,4875,Specialty Insurance
+PRA,ProAssurance Corporation,4800,Finance,4875,Specialty Insurance
+RDN,Radian Group Inc.,4800,Finance,4875,Specialty Insurance
+AFL,Aflac Incorporated,4800,Finance,4865,Life/Health Insurance
+AEL,American Equity Investment Life Holding Company,4800,Finance,4865,Life/Health Insurance
+CNO,"CNO Financial Group, Inc.",4800,Finance,4865,Life/Health Insurance
+GNW,"Genworth Financial, Inc. Class A",4800,Finance,4865,Life/Health Insurance
+LNC,Lincoln National Corporation,4800,Finance,4865,Life/Health Insurance
+MET,"MetLife, Inc.",4800,Finance,4865,Life/Health Insurance
+PRI,"Primerica, Inc.",4800,Finance,4865,Life/Health Insurance
+PFG,"Principal Financial Group, Inc.",4800,Finance,4865,Life/Health Insurance
+PL,Protective Life Corporation,4800,Finance,4865,Life/Health Insurance
+RGA,"Reinsurance Group of America, Incorporated",4800,Finance,4865,Life/Health Insurance
+SFG,"StanCorp Financial Group, Inc.",4800,Finance,4865,Life/Health Insurance
+SYA,Symetra Financial Corporation,4800,Finance,4865,Life/Health Insurance
+TMK,Torchmark Corporation,4800,Finance,4865,Life/Health Insurance
+UNM,Unum Group,4800,Finance,4865,Life/Health Insurance
+VOYA,"Voya Financial, Inc.",4800,Finance,4865,Life/Health Insurance
+AWHHF,"Allied World Assurance Company Holdings, AG",4800,Finance,4860,Multi-Line Insurance
+AIG,"American International Group, Inc.",4800,Finance,4860,Multi-Line Insurance
+BRK.B,Berkshire Hathaway Inc. Class B,4800,Finance,4860,Multi-Line Insurance
+HIG,"Hartford Financial Services Group, Inc.",4800,Finance,4860,Multi-Line Insurance
+HCC.1,"HCC Insurance Holdings, Inc.",4800,Finance,4860,Multi-Line Insurance
+PRE,PartnerRe Ltd.,4800,Finance,4860,Multi-Line Insurance
+XL,XL Group Ltd,4800,Finance,4860,Multi-Line Insurance
+ALL,Allstate Corporation,4800,Finance,4855,Property/Casualty Insurance
+AFG,"American Financial Group, Inc.",4800,Finance,4855,Property/Casualty Insurance
+AFSI,"AmTrust Financial Services, Inc.",4800,Finance,4855,Property/Casualty Insurance
+ACGL,Arch Capital Group Ltd.,4800,Finance,4855,Property/Casualty Insurance
+AHL,Aspen Insurance Holdings Limited,4800,Finance,4855,Property/Casualty Insurance
+AXS,Axis Capital Holdings Limited,4800,Finance,4855,Property/Casualty Insurance
+CB.1,Chubb Corporation,4800,Finance,4855,Property/Casualty Insurance
+CB,Chubb Limited,4800,Finance,4855,Property/Casualty Insurance
+CINF,Cincinnati Financial Corporation,4800,Finance,4855,Property/Casualty Insurance
+ENH,Endurance Specialty Holdings Ltd.,4800,Finance,4855,Property/Casualty Insurance
+RE,"Everest Re Group, Ltd.",4800,Finance,4855,Property/Casualty Insurance
+THG,"Hanover Insurance Group, Inc.",4800,Finance,4855,Property/Casualty Insurance
+MRH,Montpelier Re Holdings Ltd.,4800,Finance,4855,Property/Casualty Insurance
+PTP,"Platinum Underwriters Holdings, Ltd.",4800,Finance,4855,Property/Casualty Insurance
+PGR,Progressive Corporation,4800,Finance,4855,Property/Casualty Insurance
+RNR,RenaissanceRe Holdings Ltd.,4800,Finance,4855,Property/Casualty Insurance
+TRV,"Travelers Companies, Inc.",4800,Finance,4855,Property/Casualty Insurance
+VR,"Validus Holdings, Ltd.",4800,Finance,4855,Property/Casualty Insurance
+WRB,W. R. Berkley Corporation,4800,Finance,4855,Property/Casualty Insurance
+AXP,American Express Company,4800,Finance,4850,Financial Conglomerates
+C,Citigroup Inc.,4800,Finance,4850,Financial Conglomerates
+PRU,"Prudential Financial, Inc.",4800,Finance,4850,Financial Conglomerates
+AMG,"Affiliated Managers Group, Inc.",4800,Finance,4845,Investment Managers
+AB,AllianceBernstein Holding L.P.,4800,Finance,4845,Investment Managers
+ACAS,"American Capital, Ltd.",4800,Finance,4845,Investment Managers
+APO,"Apollo Global Management, LLC Class A",4800,Finance,4845,Investment Managers
+ARCC,Ares Capital Corporation,4800,Finance,4845,Investment Managers
+APAM,"Artisan Partners Asset Management, Inc. Class A",4800,Finance,4845,Investment Managers
+BLK,"BlackRock, Inc.",4800,Finance,4845,Investment Managers
+BX,Blackstone Group L.P.,4800,Finance,4845,Investment Managers
+CG,Carlyle Group L.P.,4800,Finance,4845,Investment Managers
+EV,Eaton Vance Corp.,4800,Finance,4845,Investment Managers
+FII,"Federated Investors, Inc. Class B",4800,Finance,4845,Investment Managers
+FNGN,"Financial Engines, Inc.",4800,Finance,4845,Investment Managers
+FIG,Fortress Investment Group LLC Class A,4800,Finance,4845,Investment Managers
+BEN,"Franklin Resources, Inc.",4800,Finance,4845,Investment Managers
+IVZ,Invesco Ltd.,4800,Finance,4845,Investment Managers
+JNS,Janus Capital Group Inc.,4800,Finance,4845,Investment Managers
+KKR,KKR & Co. Inc. Class A,4800,Finance,4845,Investment Managers
+LM,"Legg Mason, Inc.",4800,Finance,4845,Investment Managers
+MAIN,Main Street Capital Corporation,4800,Finance,4845,Investment Managers
+OAK,"Oaktree Capital Group, LLC Class A",4800,Finance,4845,Investment Managers
+PSEC,Prospect Capital Corporation,4800,Finance,4845,Investment Managers
+SEIC,SEI Investments Company,4800,Finance,4845,Investment Managers
+TROW,T. Rowe Price Group,4800,Finance,4845,Investment Managers
+WDR,"Waddell & Reed Financial, Inc. Class A",4800,Finance,4845,Investment Managers
+WETF,"WisdomTree Investments, Inc.",4800,Finance,4845,Investment Managers
+AMP,"Ameriprise Financial, Inc.",4800,Finance,4840,Investment Banks/Brokers
+CBOE,Cboe Global Markets Inc,4800,Finance,4840,Investment Banks/Brokers
+SCHW,Charles Schwab Corporation,4800,Finance,4840,Investment Banks/Brokers
+CME,CME Group Inc. Class A,4800,Finance,4840,Investment Banks/Brokers
+ETFC,E*TRADE Financial Corporation,4800,Finance,4840,Investment Banks/Brokers
+EVR,Evercore Inc Class A,4800,Finance,4840,Investment Banks/Brokers
+GS,"Goldman Sachs Group, Inc.",4800,Finance,4840,Investment Banks/Brokers
+GHL,"Greenhill & Co., Inc.",4800,Finance,4840,Investment Banks/Brokers
+IBKR,"Interactive Brokers Group, Inc. Class A",4800,Finance,4840,Investment Banks/Brokers
+ICE,"Intercontinental Exchange, Inc.",4800,Finance,4840,Investment Banks/Brokers
+LAZ,Lazard Ltd Class A,4800,Finance,4840,Investment Banks/Brokers
+LPLA,LPL Financial Holdings Inc.,4800,Finance,4840,Investment Banks/Brokers
+MKTX,MarketAxess Holdings Inc.,4800,Finance,4840,Investment Banks/Brokers
+MS,Morgan Stanley,4800,Finance,4840,Investment Banks/Brokers
+NDAQ,"Nasdaq, Inc.",4800,Finance,4840,Investment Banks/Brokers
+RJF,"Raymond James Financial, Inc.",4800,Finance,4840,Investment Banks/Brokers
+SF,Stifel Financial Corp.,4800,Finance,4840,Investment Banks/Brokers
+AMTD,TD Ameritrade Holding Corporation,4800,Finance,4840,Investment Banks/Brokers
+AAN,"Aaron's, Inc.",4800,Finance,4830,Finance/Rental/Leasing
+AER,AerCap Holdings NV,4800,Finance,4830,Finance/Rental/Leasing
+AL,Air Lease Corporation Class A,4800,Finance,4830,Finance/Rental/Leasing
+AGO,Assured Guaranty Ltd.,4800,Finance,4830,Finance/Rental/Leasing
+CAR,"Avis Budget Group, Inc.",4800,Finance,4830,Finance/Rental/Leasing
+DHCPQ,Ditech Holding Corporation,4800,Finance,4830,Finance/Rental/Leasing
+ECPG,"Encore Capital Group, Inc.",4800,Finance,4830,Finance/Rental/Leasing
+FCFS,"FirstCash, Inc.",4800,Finance,4830,Finance/Rental/Leasing
+GATX,GATX Corporation,4800,Finance,4830,Finance/Rental/Leasing
+GDOT,Green Dot Corporation Class A,4800,Finance,4830,Finance/Rental/Leasing
+HTZ,"Hertz Global Holdings, Inc.",4800,Finance,4830,Finance/Rental/Leasing
+HLSSF,"Home Loan Servicing Solutions, Ltd.",4800,Finance,4830,Finance/Rental/Leasing
+MA,Mastercard Incorporated Class A,4800,Finance,4830,Finance/Rental/Leasing
+NSM,Nationstar Mortgage Holdings Inc.,4800,Finance,4830,Finance/Rental/Leasing
+OCN,Ocwen Financial Corporation,4800,Finance,4830,Finance/Rental/Leasing
+PHH,PHH Corporation,4800,Finance,4830,Finance/Rental/Leasing
+RCII,Rent-A-Center Inc,4800,Finance,4830,Finance/Rental/Leasing
+R,"Ryder System, Inc.",4800,Finance,4830,Finance/Rental/Leasing
+SLM,SLM Corp,4800,Finance,4830,Finance/Rental/Leasing
+TRTN,Triton International Ltd. Class A,4800,Finance,4830,Finance/Rental/Leasing
+URI,"United Rentals, Inc.",4800,Finance,4830,Finance/Rental/Leasing
+V,Visa Inc. Class A,4800,Finance,4830,Finance/Rental/Leasing
+WU,Western Union Company,4800,Finance,4830,Finance/Rental/Leasing
+WRLD,World Acceptance Corporation,4800,Finance,4830,Finance/Rental/Leasing
+AX,"Axos Financial, Inc.",4800,Finance,4825,Savings Banks
+CFFN,"Capitol Federal Financial, Inc.",4800,Finance,4825,Savings Banks
+IBKC,IBERIABANK Corporation,4800,Finance,4825,Savings Banks
+MBFI,"MB Financial, Inc.",4800,Finance,4825,Savings Banks
+NYCB,"New York Community Bancorp, Inc.",4800,Finance,4825,Savings Banks
+WBS,Webster Financial Corporation,4800,Finance,4825,Savings Banks
+ASB,Associated Banc-Corp,4800,Finance,4810,Regional Banks
+BXS,BancorpSouth Bank,4800,Finance,4810,Regional Banks
+BOH,Bank of Hawaii Corporation,4800,Finance,4810,Regional Banks
+OZK,Bank OZK,4800,Finance,4810,Regional Banks
+BKU,"BankUnited, Inc.",4800,Finance,4810,Regional Banks
+HAWK,Blackhawk Network Holdings Inc Class A,4800,Finance,4810,Regional Banks
+CATY,Cathay General Bancorp,4800,Finance,4810,Regional Banks
+CBSH,"Commerce Bancshares, Inc.",4800,Finance,4810,Regional Banks
+BAP,Credicorp Ltd.,4800,Finance,4810,Regional Banks
+CFR,"Cullen/Frost Bankers, Inc.",4800,Finance,4810,Regional Banks
+DFS,Discover Financial Services,4800,Finance,4810,Regional Banks
+EWBC,"East West Bancorp, Inc.",4800,Finance,4810,Regional Banks
+FNB,F.N.B. Corporation,4800,Finance,4810,Regional Banks
+FITB,Fifth Third Bancorp,4800,Finance,4810,Regional Banks
+FFIN,First Financial Bankshares Inc,4800,Finance,4810,Regional Banks
+FHN,First Horizon National Corporation,4800,Finance,4810,Regional Banks
+FRC,First Republic Bank,4800,Finance,4810,Regional Banks
+FMER,FirstMerit Corporation,4800,Finance,4810,Regional Banks
+FULT,Fulton Financial Corporation,4800,Finance,4810,Regional Banks
+GBCI,"Glacier Bancorp, Inc.",4800,Finance,4810,Regional Banks
+HWC,Hancock Whitney Corporation,4800,Finance,4810,Regional Banks
+HOMB,"Home BancShares, Inc.",4800,Finance,4810,Regional Banks
+HBAN,Huntington Bancshares Incorporated,4800,Finance,4810,Regional Banks
+MTB,M&T Bank Corporation,4800,Finance,4810,Regional Banks
+NTRS,Northern Trust Corporation,4800,Finance,4810,Regional Banks
+PACW,PacWest Bancorp,4800,Finance,4810,Regional Banks
+BPOP,"Popular, Inc.",4800,Finance,4810,Regional Banks
+PVTB,"PrivateBancorp, Inc.",4800,Finance,4810,Regional Banks
+PB,"Prosperity Bancshares, Inc.(R)",4800,Finance,4810,Regional Banks
+SBNY,Signature Bank,4800,Finance,4810,Regional Banks
+STT,State Street Corporation,4800,Finance,4810,Regional Banks
+STI,"SunTrust Banks, Inc.",4800,Finance,4810,Regional Banks
+SUSQ,"Susquehanna Bancshares, Inc.",4800,Finance,4810,Regional Banks
+SIVB,SVB Financial Group,4800,Finance,4810,Regional Banks
+SNV,Synovus Financial Corp.,4800,Finance,4810,Regional Banks
+TCBI,"Texas Capital Bancshares, Inc.",4800,Finance,4810,Regional Banks
+TRMK,Trustmark Corporation,4800,Finance,4810,Regional Banks
+UMBF,UMB Financial Corporation,4800,Finance,4810,Regional Banks
+UMPQ,Umpqua Holdings Corporation,4800,Finance,4810,Regional Banks
+UBSI,"United Bankshares, Inc.",4800,Finance,4810,Regional Banks
+UCBI,"United Community Banks, Inc.",4800,Finance,4810,Regional Banks
+VLY,Valley National Bancorp,4800,Finance,4810,Regional Banks
+WABC,Westamerica Bancorporation,4800,Finance,4810,Regional Banks
+WAL,Western Alliance Bancorp,4800,Finance,4810,Regional Banks
+WTFC,Wintrust Financial Corporation,4800,Finance,4810,Regional Banks
+ZION,"Zions Bancorporation, N.A.",4800,Finance,4810,Regional Banks
+BAC,Bank of America Corp,4800,Finance,4805,Major Banks
+BK,Bank of New York Mellon Corporation,4800,Finance,4805,Major Banks
+BBT,BB&T Corporation,4800,Finance,4805,Major Banks
+COF,Capital One Financial Corporation,4800,Finance,4805,Major Banks
+CIT,CIT Group Inc.,4800,Finance,4805,Major Banks
+CYN,City National Corporation,4800,Finance,4805,Major Banks
+CMA,Comerica Incorporated,4800,Finance,4805,Major Banks
+FNFG,"First Niagara Financial Group, Inc.",4800,Finance,4805,Major Banks
+HCBK,"Hudson City Bancorp, Inc.",4800,Finance,4805,Major Banks
+JPM,JPMorgan Chase & Co.,4800,Finance,4805,Major Banks
+KEY,KeyCorp,4800,Finance,4805,Major Banks
+PBCT,"People's United Financial, Inc.",4800,Finance,4805,Major Banks
+PNC,"PNC Financial Services Group, Inc.",4800,Finance,4805,Major Banks
+RF,Regions Financial Corporation,4800,Finance,4805,Major Banks
+TCF,TCF Financial Corporation,4800,Finance,4805,Major Banks
+USB,U.S. Bancorp,4800,Finance,4805,Major Banks
+WFC,Wells Fargo & Company,4800,Finance,4805,Major Banks
+AWK,"American Water Works Company, Inc.",4700,Utilities,4755,Water Utilities
+WTR,"Aqua America, Inc.",4700,Utilities,4755,Water Utilities
+MDU,MDU Resources Group Inc,4700,Utilities,4735,Gas Distributors
+NJR,New Jersey Resources Corporation,4700,Utilities,4735,Gas Distributors
+NI,NiSource Inc,4700,Utilities,4735,Gas Distributors
+STR,Questar Corporation,4700,Utilities,4735,Gas Distributors
+SRE,Sempra Energy,4700,Utilities,4735,Gas Distributors
+SUSS,Susser Holdings Corporation,4700,Utilities,4735,Gas Distributors
+VVC,Vectren Corporation,4700,Utilities,4735,Gas Distributors
+WGL,"WGL Holdings, Inc.",4700,Utilities,4735,Gas Distributors
+AES,AES Corporation,4700,Utilities,4705,Electric Utilities
+AEE,Ameren Corporation,4700,Utilities,4705,Electric Utilities
+AEP,"American Electric Power Company, Inc.",4700,Utilities,4705,Electric Utilities
+AGR,"Avangrid, Inc.",4700,Utilities,4705,Electric Utilities
+CPN,Calpine Corporation,4700,Utilities,4705,Electric Utilities
+CNP,"CenterPoint Energy, Inc.",4700,Utilities,4705,Electric Utilities
+CMS,CMS Energy Corporation,4700,Utilities,4705,Electric Utilities
+ED,"Consolidated Edison, Inc.",4700,Utilities,4705,Electric Utilities
+D,Dominion Energy Inc,4700,Utilities,4705,Electric Utilities
+DTE,DTE Energy Company,4700,Utilities,4705,Electric Utilities
+DUK,Duke Energy Corporation,4700,Utilities,4705,Electric Utilities
+EIX,Edison International,4700,Utilities,4705,Electric Utilities
+ETR,Entergy Corporation,4700,Utilities,4705,Electric Utilities
+ES,Eversource Energy,4700,Utilities,4705,Electric Utilities
+EXC,Exelon Corporation,4700,Utilities,4705,Electric Utilities
+FE,FirstEnergy Corp.,4700,Utilities,4705,Electric Utilities
+NEE,"NextEra Energy, Inc.",4700,Utilities,4705,Electric Utilities
+POM,"Pepco Holdings, Inc.",4700,Utilities,4705,Electric Utilities
+PCG,PG&E Corporation,4700,Utilities,4705,Electric Utilities
+PNW,Pinnacle West Capital Corporation,4700,Utilities,4705,Electric Utilities
+POR,Portland General Electric Company,4700,Utilities,4705,Electric Utilities
+PPL,PPL Corporation,4700,Utilities,4705,Electric Utilities
+PEG,Public Service Enterprise Group Inc,4700,Utilities,4705,Electric Utilities
+SCG,SCANA Corporation,4700,Utilities,4705,Electric Utilities
+SO,Southern Company,4700,Utilities,4705,Electric Utilities
+TE,"TECO Energy, Inc.",4700,Utilities,4705,Electric Utilities
+WEC,WEC Energy Group Inc,4700,Utilities,4705,Electric Utilities
+XEL,Xcel Energy Inc.,4700,Utilities,4705,Electric Utilities
+MATX,"Matson, Inc.",4600,Transportation,4630,Other Transportation
+GLOG,GasLog Ltd.,4600,Transportation,4625,Marine Shipping
+KEX,Kirby Corporation,4600,Transportation,4625,Marine Shipping
+TK,Teekay Corporation,4600,Transportation,4625,Marine Shipping
+ARII,"American Railcar Industries, Inc.",4600,Transportation,4620,Railroads
+CSX,CSX Corporation,4600,Transportation,4620,Railroads
+GWR,"Genesee & Wyoming, Inc. Class A",4600,Transportation,4620,Railroads
+KSU,Kansas City Southern,4600,Transportation,4620,Railroads
+NSC,Norfolk Southern Corporation,4600,Transportation,4620,Railroads
+UNP,Union Pacific Corporation,4600,Transportation,4620,Railroads
+ARCB,ArcBest Corporation,4600,Transportation,4615,Trucking
+HTLD,"Heartland Express, Inc.",4600,Transportation,4615,Trucking
+JBHT,"J.B. Hunt Transport Services, Inc.",4600,Transportation,4615,Trucking
+KNX,Knight-Swift Transportation Holdings Inc. Class A,4600,Transportation,4615,Trucking
+LSTR,"Landstar System, Inc.",4600,Transportation,4615,Trucking
+ODFL,"Old Dominion Freight Line, Inc.",4600,Transportation,4615,Trucking
+SAIA,"Saia, Inc.",4600,Transportation,4615,Trucking
+SWFT,Swift Transportation Company Class A,4600,Transportation,4615,Trucking
+WERN,"Werner Enterprises, Inc.",4600,Transportation,4615,Trucking
+XPO,"XPO Logistics, Inc.",4600,Transportation,4615,Trucking
+YRCW,YRC Worldwide Inc.,4600,Transportation,4615,Trucking
+AIRM,Air Methods Corporation,4600,Transportation,4610,Airlines
+ALK,"Alaska Air Group, Inc.",4600,Transportation,4610,Airlines
+ALGT,Allegiant Travel Company,4600,Transportation,4610,Airlines
+AAL,"American Airlines Group, Inc.",4600,Transportation,4610,Airlines
+CPA,"Copa Holdings, S.A. Class A",4600,Transportation,4610,Airlines
+DAL,"Delta Air Lines, Inc.",4600,Transportation,4610,Airlines
+HA,"Hawaiian Holdings, Inc.",4600,Transportation,4610,Airlines
+JBLU,JetBlue Airways Corporation,4600,Transportation,4610,Airlines
+SKYW,"SkyWest, Inc",4600,Transportation,4610,Airlines
+LUV,Southwest Airlines Co.,4600,Transportation,4610,Airlines
+SAVE,"Spirit Airlines, Inc.",4600,Transportation,4610,Airlines
+UAL,"United Continental Holdings, Inc.",4600,Transportation,4610,Airlines
+AAWW,"Atlas Air Worldwide Holdings, Inc.",4600,Transportation,4605,Air Freight/Couriers
+CHRW,"C.H. Robinson Worldwide, Inc.",4600,Transportation,4605,Air Freight/Couriers
+CNW,Con-way Inc.,4600,Transportation,4605,Air Freight/Couriers
+EXPD,"Expeditors International of Washington, Inc.",4600,Transportation,4605,Air Freight/Couriers
+FDX,FedEx Corporation,4600,Transportation,4605,Air Freight/Couriers
+HUBG,"Hub Group, Inc. Class A",4600,Transportation,4605,Air Freight/Couriers
+UPS,"United Parcel Service, Inc. Class B",4600,Transportation,4605,Air Freight/Couriers
+UTIW,UTi Worldwide Inc.,4600,Transportation,4605,Air Freight/Couriers
+AMZN,"Amazon.com, Inc.",3500,Retail Trade,3550,Internet Retail
+HSNI,"HSN, Inc.",3500,Retail Trade,3545,Catalog/Specialty Distribution
+QRTEA,"Qurate Retail, Inc. Class A",3500,Retail Trade,3545,Catalog/Specialty Distribution
+AAP,"Advance Auto Parts, Inc.",3500,Retail Trade,3540,Specialty Stores
+ABG,"Asbury Automotive Group, Inc.",3500,Retail Trade,3540,Specialty Stores
+AN,"AutoNation, Inc.",3500,Retail Trade,3540,Specialty Stores
+AZO,"AutoZone, Inc.",3500,Retail Trade,3540,Specialty Stores
+BKS,"Barnes & Noble, Inc.",3500,Retail Trade,3540,Specialty Stores
+BBBY,Bed Bath & Beyond Inc.,3500,Retail Trade,3540,Specialty Stores
+CAB,Cabela's Incorporated,3500,Retail Trade,3540,Specialty Stores
+KMX,"CarMax, Inc.",3500,Retail Trade,3540,Specialty Stores
+COST,Costco Wholesale Corporation,3500,Retail Trade,3540,Specialty Stores
+CST,"CST Brands, Inc.",3500,Retail Trade,3540,Specialty Stores
+DKS,"Dick's Sporting Goods, Inc.",3500,Retail Trade,3540,Specialty Stores
+GME,GameStop Corp. Class A,3500,Retail Trade,3540,Specialty Stores
+GNC,"GNC Holdings, Inc. Class A",3500,Retail Trade,3540,Specialty Stores
+GPI,"Group 1 Automotive, Inc.",3500,Retail Trade,3540,Specialty Stores
+HIBB,"Hibbett Sports, Inc.",3500,Retail Trade,3540,Specialty Stores
+LAD,"Lithia Motors, Inc. Class A",3500,Retail Trade,3540,Specialty Stores
+LL,"Lumber Liquidators Holdings, Inc.",3500,Retail Trade,3540,Specialty Stores
+MFRM,Mattress Firm Holding Corp.,3500,Retail Trade,3540,Specialty Stores
+MNRO,Monro Inc,3500,Retail Trade,3540,Specialty Stores
+ORLY,"O'Reilly Automotive, Inc.",3500,Retail Trade,3540,Specialty Stores
+ODP,"Office Depot, Inc.",3500,Retail Trade,3540,Specialty Stores
+OUTR,Outerwall Inc.,3500,Retail Trade,3540,Specialty Stores
+PAG,"Penske Automotive Group, Inc.",3500,Retail Trade,3540,Specialty Stores
+PETM,"PetSmart, Inc.",3500,Retail Trade,3540,Specialty Stores
+PIR,"Pier 1 Imports, Inc.",3500,Retail Trade,3540,Specialty Stores
+RH,RH,3500,Retail Trade,3540,Specialty Stores
+SBH,"Sally Beauty Holdings, Inc.",3500,Retail Trade,3540,Specialty Stores
+SIG,Signet Jewelers Limited,3500,Retail Trade,3540,Specialty Stores
+TGT,Target Corporation,3500,Retail Trade,3540,Specialty Stores
+TIF,Tiffany & Co.,3500,Retail Trade,3540,Specialty Stores
+TSCO,Tractor Supply Company,3500,Retail Trade,3540,Specialty Stores
+ULTA,Ulta Beauty Inc,3500,Retail Trade,3540,Specialty Stores
+WMT,Walmart Inc.,3500,Retail Trade,3540,Specialty Stores
+WSM,"Williams-Sonoma, Inc.",3500,Retail Trade,3540,Specialty Stores
+ZLC,Zale Corporation,3500,Retail Trade,3540,Specialty Stores
+BBY,"Best Buy Co., Inc.",3500,Retail Trade,3535,Electronics/Appliance Stores
+CONN,"Conn's, Inc.",3500,Retail Trade,3535,Electronics/Appliance Stores
+HD,"Home Depot, Inc.",3500,Retail Trade,3530,Home Improvement Chains
+LOW,"Lowe's Companies, Inc.",3500,Retail Trade,3530,Home Improvement Chains
+ANF,Abercrombie & Fitch Co. Class A,3500,Retail Trade,3525,Apparel/Footwear Retail
+AEO,"American Eagle Outfitters, Inc.",3500,Retail Trade,3525,Apparel/Footwear Retail
+ANN,ANN INC.,3500,Retail Trade,3525,Apparel/Footwear Retail
+ASNA,"Ascena Retail Group, Inc.",3500,Retail Trade,3525,Apparel/Footwear Retail
+BURL,"Burlington Stores, Inc.",3500,Retail Trade,3525,Apparel/Footwear Retail
+CPRI,Capri Holdings Limited,3500,Retail Trade,3525,Apparel/Footwear Retail
+CRI,"Carter's, Inc.",3500,Retail Trade,3525,Apparel/Footwear Retail
+CHS,"Chico's FAS, Inc.",3500,Retail Trade,3525,Apparel/Footwear Retail
+PLCE,"Children's Place, Inc.",3500,Retail Trade,3525,Apparel/Footwear Retail
+DBI,Designer Brands Inc. Class A,3500,Retail Trade,3525,Apparel/Footwear Retail
+EXPR,"Express, Inc.",3500,Retail Trade,3525,Apparel/Footwear Retail
+FINL,"Finish Line, Inc. Class A",3500,Retail Trade,3525,Apparel/Footwear Retail
+FL,"Foot Locker, Inc.",3500,Retail Trade,3525,Apparel/Footwear Retail
+FRAN,Francesca's Holdings Corporation,3500,Retail Trade,3525,Apparel/Footwear Retail
+GPS,"Gap, Inc.",3500,Retail Trade,3525,Apparel/Footwear Retail
+GCO,Genesco Inc.,3500,Retail Trade,3525,Apparel/Footwear Retail
+KATE,Kate Spade & Co,3500,Retail Trade,3525,Apparel/Footwear Retail
+LB,"L Brands, Inc.",3500,Retail Trade,3525,Apparel/Footwear Retail
+LULU,Lululemon Athletica Inc,3500,Retail Trade,3525,Apparel/Footwear Retail
+JWN,"Nordstrom, Inc.",3500,Retail Trade,3525,Apparel/Footwear Retail
+RL,Ralph Lauren Corporation Class A,3500,Retail Trade,3525,Apparel/Footwear Retail
+ROST,"Ross Stores, Inc.",3500,Retail Trade,3525,Apparel/Footwear Retail
+TPR,"Tapestry, Inc.",3500,Retail Trade,3525,Apparel/Footwear Retail
+TJX,TJX Companies Inc,3500,Retail Trade,3525,Apparel/Footwear Retail
+URBN,"Urban Outfitters, Inc.",3500,Retail Trade,3525,Apparel/Footwear Retail
+BIG,"Big Lots, Inc.",3500,Retail Trade,3520,Discount Stores
+DG,Dollar General Corporation,3500,Retail Trade,3520,Discount Stores
+DLTR,"Dollar Tree, Inc.",3500,Retail Trade,3520,Discount Stores
+FDO,"Family Dollar Stores, Inc.",3500,Retail Trade,3520,Discount Stores
+FIVE,"Five Below, Inc.",3500,Retail Trade,3520,Discount Stores
+PSMT,"PriceSmart, Inc.",3500,Retail Trade,3520,Discount Stores
+DDS,"Dillard's, Inc. Class A",3500,Retail Trade,3515,Department Stores
+JCP,"J. C. Penney Company, Inc.",3500,Retail Trade,3515,Department Stores
+KSS,Kohl's Corporation,3500,Retail Trade,3515,Department Stores
+M,Macy's Inc,3500,Retail Trade,3515,Department Stores
+CVS,CVS Health Corporation,3500,Retail Trade,3510,Drugstore Chains
+RAD,Rite Aid Corporation,3500,Retail Trade,3510,Drugstore Chains
+VSI,"Vitamin Shoppe, Inc.",3500,Retail Trade,3510,Drugstore Chains
+WBA,Walgreens Boots Alliance Inc,3500,Retail Trade,3510,Drugstore Chains
+CASY,"Casey's General Stores, Inc.",3500,Retail Trade,3505,Food Retail
+TFM,"Fresh Market, Inc.",3500,Retail Trade,3505,Food Retail
+KR,Kroger Co.,3500,Retail Trade,3505,Food Retail
+PNRA,Panera Bread Company Class A,3500,Retail Trade,3505,Food Retail
+SWY,Safeway Inc.,3500,Retail Trade,3505,Food Retail
+SFM,"Sprouts Farmers Markets, Inc.",3500,Retail Trade,3505,Food Retail
+SVU,SUPERVALU INC.,3500,Retail Trade,3505,Food Retail
+WFM,"Whole Foods Market, Inc.",3500,Retail Trade,3505,Food Retail
+ATGE,Adtalem Global Education Inc.,3400,Consumer Services,3450,Other Consumer Services
+BKNG,Booking Holdings Inc.,3400,Consumer Services,3450,Other Consumer Services
+CTAS,Cintas Corporation,3400,Consumer Services,3450,Other Consumer Services
+EBAY,eBay Inc.,3400,Consumer Services,3450,Other Consumer Services
+EXPE,"Expedia Group, Inc.",3400,Consumer Services,3450,Other Consumer Services
+HRB,"H&R Block, Inc.",3400,Consumer Services,3450,Other Consumer Services
+LTM.2,"Life Time Fitness, Inc.",3400,Consumer Services,3450,Other Consumer Services
+VAC,Marriott Vacations Worldwide Corporation,3400,Consumer Services,3450,Other Consumer Services
+NTRI,"Nutrisystem, Inc.",3400,Consumer Services,3450,Other Consumer Services
+ROL,"Rollins, Inc.",3400,Consumer Services,3450,Other Consumer Services
+SCI,Service Corporation International,3400,Consumer Services,3450,Other Consumer Services
+BID,Sotheby's,3400,Consumer Services,3450,Other Consumer Services
+STRA,"Strategic Education, Inc.",3400,Consumer Services,3450,Other Consumer Services
+TRIP,"TripAdvisor, Inc.",3400,Consumer Services,3450,Other Consumer Services
+WTW,"Weight Watchers International, Inc.",3400,Consumer Services,3450,Other Consumer Services
+BYD,Boyd Gaming Corporation,3400,Consumer Services,3445,Casinos/Gaming
+IGT.1,International Game Technology,3400,Consumer Services,3445,Casinos/Gaming
+LVS,Las Vegas Sands Corp.,3400,Consumer Services,3445,Casinos/Gaming
+MGM,MGM Resorts International,3400,Consumer Services,3445,Casinos/Gaming
+PENN,"Penn National Gaming, Inc.",3400,Consumer Services,3445,Casinos/Gaming
+HPK,"Pinnacle Entertainment, Inc.",3400,Consumer Services,3445,Casinos/Gaming
+WYNN,"Wynn Resorts, Limited",3400,Consumer Services,3445,Casinos/Gaming
+CCL.U,Carnival Corporation,3400,Consumer Services,3440,Hotels/Resorts/Cruiselines
+CHH,"Choice Hotels International, Inc.",3400,Consumer Services,3440,Hotels/Resorts/Cruiselines
+AWAY,"Homeaway, Inc.",3400,Consumer Services,3440,Hotels/Resorts/Cruiselines
+H,Hyatt Hotels Corporation Class A,3400,Consumer Services,3440,Hotels/Resorts/Cruiselines
+MAR,"Marriott International, Inc. Class A",3400,Consumer Services,3440,Hotels/Resorts/Cruiselines
+NCLH,Norwegian Cruise Line Holdings Ltd.,3400,Consumer Services,3440,Hotels/Resorts/Cruiselines
+RCL,Royal Caribbean Cruises Ltd.,3400,Consumer Services,3440,Hotels/Resorts/Cruiselines
+HOT,"Starwood Hotels & Resorts Worldwide, Inc.",3400,Consumer Services,3440,Hotels/Resorts/Cruiselines
+MTN,"Vail Resorts, Inc.",3400,Consumer Services,3440,Hotels/Resorts/Cruiselines
+WYND,"Wyndham Destinations, Inc.",3400,Consumer Services,3440,Hotels/Resorts/Cruiselines
+BJRI,"BJ's Restaurants, Inc.",3400,Consumer Services,3435,Restaurants
+BLMN,"Bloomin' Brands, Inc.",3400,Consumer Services,3435,Restaurants
+EAT,"Brinker International, Inc.",3400,Consumer Services,3435,Restaurants
+BWLD,"Buffalo Wild Wings, Inc.",3400,Consumer Services,3435,Restaurants
+BKW,"Burger King Worldwide, Inc.",3400,Consumer Services,3435,Restaurants
+CAKE,Cheesecake Factory Incorporated,3400,Consumer Services,3435,Restaurants
+CMG,"Chipotle Mexican Grill, Inc.",3400,Consumer Services,3435,Restaurants
+CBRL,"Cracker Barrel Old Country Store, Inc.",3400,Consumer Services,3435,Restaurants
+DRI,"Darden Restaurants, Inc.",3400,Consumer Services,3435,Restaurants
+DIN,"Dine Brands Global, Inc.",3400,Consumer Services,3435,Restaurants
+DPZ,"Domino's Pizza, Inc.",3400,Consumer Services,3435,Restaurants
+DNKN,"Dunkin' Brands Group, Inc.",3400,Consumer Services,3435,Restaurants
+FRGI,"Fiesta Restaurant Group, Inc.",3400,Consumer Services,3435,Restaurants
+JACK,Jack in the Box Inc.,3400,Consumer Services,3435,Restaurants
+MCD,McDonald's Corporation,3400,Consumer Services,3435,Restaurants
+PZZA,"Papa John's International, Inc.",3400,Consumer Services,3435,Restaurants
+RRGB,"Red Robin Gourmet Burgers, Inc.",3400,Consumer Services,3435,Restaurants
+SONC,Sonic Corp.,3400,Consumer Services,3435,Restaurants
+SBUX,Starbucks Corporation,3400,Consumer Services,3435,Restaurants
+TXRH,"Texas Roadhouse, Inc.",3400,Consumer Services,3435,Restaurants
+WEN,Wendy's Company,3400,Consumer Services,3435,Restaurants
+YUM,"Yum! Brands, Inc.",3400,Consumer Services,3435,Restaurants
+FUN,"Cedar Fair, L.P.",3400,Consumer Services,3430,Movies/Entertainment
+CNK,"Cinemark Holdings, Inc.",3400,Consumer Services,3430,Movies/Entertainment
+DWA,"DreamWorks Animation SKG, Inc. Class A",3400,Consumer Services,3430,Movies/Entertainment
+IMAX,IMAX Corporation,3400,Consumer Services,3430,Movies/Entertainment
+LGF.A,Lions Gate Entertainment Corp Class A,3400,Consumer Services,3430,Movies/Entertainment
+LYV,"Live Nation Entertainment, Inc.",3400,Consumer Services,3430,Movies/Entertainment
+MSGN,MSG Networks Inc. Class A,3400,Consumer Services,3430,Movies/Entertainment
+RGC,Regal Entertainment Group Class A,3400,Consumer Services,3430,Movies/Entertainment
+SNI,"Scripps Networks Interactive, Inc. Class A",3400,Consumer Services,3430,Movies/Entertainment
+SEAS,"SeaWorld Entertainment, Inc.",3400,Consumer Services,3430,Movies/Entertainment
+SIX,Six Flags Entertainment Corporation,3400,Consumer Services,3430,Movies/Entertainment
+STRZA,Starz Class A,3400,Consumer Services,3430,Movies/Entertainment
+TWX,Time Warner Inc.,3400,Consumer Services,3430,Movies/Entertainment
+TFCFA,"Twenty-First Century Fox, Inc. Class A",3400,Consumer Services,3430,Movies/Entertainment
+VIAB,Viacom Inc. Class B,3400,Consumer Services,3430,Movies/Entertainment
+MDP,Meredith Corporation,3400,Consumer Services,3425,Publishing: Books/Magazines
+NYT,New York Times Company Class A,3400,Consumer Services,3420,Publishing: Newspapers
+NWSA,News Corporation Class A,3400,Consumer Services,3420,Publishing: Newspapers
+AMCX,AMC Networks Inc. Class A,3400,Consumer Services,3415,Cable/Satellite TV
+CVC,Cablevision Systems Corporation Class A,3400,Consumer Services,3415,Cable/Satellite TV
+CHTR,"Charter Communications, Inc. Class A",3400,Consumer Services,3415,Cable/Satellite TV
+CMCSA,Comcast Corporation Class A,3400,Consumer Services,3415,Cable/Satellite TV
+GMH,DIRECTV,3400,Consumer Services,3415,Cable/Satellite TV
+DISCA,"Discovery, Inc. Class A",3400,Consumer Services,3415,Cable/Satellite TV
+DISH,DISH Network Corporation Class A,3400,Consumer Services,3415,Cable/Satellite TV
+LBTYA,Liberty Global Plc Class A,3400,Consumer Services,3415,Cable/Satellite TV
+NFLX,"Netflix, Inc.",3400,Consumer Services,3415,Cable/Satellite TV
+TWC,Time Warner Cable Inc.,3400,Consumer Services,3415,Cable/Satellite TV
+TIVO.1,TiVo Inc.,3400,Consumer Services,3415,Cable/Satellite TV
+CBS,CBS Corporation Class B,3400,Consumer Services,3410,Broadcasting
+TVL,LIN Media LLC Class A,3400,Consumer Services,3410,Broadcasting
+NXST,"Nexstar Media Group, Inc. Class A",3400,Consumer Services,3410,Broadcasting
+SBGI,"Sinclair Broadcast Group, Inc. Class A",3400,Consumer Services,3410,Broadcasting
+SIRI,"Sirius XM Holdings, Inc.",3400,Consumer Services,3410,Broadcasting
+TGNA,"TEGNA, Inc.",3400,Consumer Services,3410,Broadcasting
+DIS,Walt Disney Company,3400,Consumer Services,3405,Media Conglomerates
+BRLI,"Bio-Reference Laboratories, Inc.",3350,Health Services,3370,Services to the Health Industry
+CTRX,Catamaran Corporation,3350,Health Services,3370,Services to the Health Industry
+ESRX,Express Scripts Holding Company,3350,Health Services,3370,Services to the Health Industry
+HCSG,"Healthcare Services Group, Inc.",3350,Health Services,3370,Services to the Health Industry
+IQV,IQVIA Holdings Inc,3350,Health Services,3370,Services to the Health Industry
+LH,Laboratory Corporation of America Holdings,3350,Health Services,3370,Services to the Health Industry
+OCR,"Omnicare, Inc.",3350,Health Services,3370,Services to the Health Industry
+DGX,Quest Diagnostics Incorporated,3350,Health Services,3370,Services to the Health Industry
+SRCL,"Stericycle, Inc.",3350,Health Services,3370,Services to the Health Industry
+ACHC,"Acadia Healthcare Company, Inc.",3350,Health Services,3365,Medical/Nursing Services
+AMED,"Amedisys, Inc.",3350,Health Services,3365,Medical/Nursing Services
+CHE,Chemed Corporation,3350,Health Services,3365,Medical/Nursing Services
+DVA,DaVita Inc.,3350,Health Services,3365,Medical/Nursing Services
+ESC,Emeritus Corporation,3350,Health Services,3365,Medical/Nursing Services
+MD,"MEDNAX, Inc.",3350,Health Services,3365,Medical/Nursing Services
+TVTY,"Tivity Health, Inc.",3350,Health Services,3365,Medical/Nursing Services
+BKD,Brookdale Senior Living Inc.,3350,Health Services,3360,Hospital/Nursing Management
+CYH,"Community Health Systems, Inc.",3350,Health Services,3360,Hospital/Nursing Management
+EHC,Encompass Health Corporation,3350,Health Services,3360,Hospital/Nursing Management
+HCA,HCA Healthcare Inc,3350,Health Services,3360,Hospital/Nursing Management
+LPNT,"LifePoint Health, Inc.",3350,Health Services,3360,Hospital/Nursing Management
+SEM,Select Medical Holdings Corporation,3350,Health Services,3360,Hospital/Nursing Management
+THC,Tenet Healthcare Corporation,3350,Health Services,3360,Hospital/Nursing Management
+UHS,"Universal Health Services, Inc. Class B",3350,Health Services,3360,Hospital/Nursing Management
+AET,Aetna Inc.,3350,Health Services,3355,Managed Health Care
+ANTM,"Anthem, Inc.",3350,Health Services,3355,Managed Health Care
+CNC,Centene Corporation,3350,Health Services,3355,Managed Health Care
+CI,Cigna Corporation,3350,Health Services,3355,Managed Health Care
+HNT,"Health Net, Inc.",3350,Health Services,3355,Managed Health Care
+HUM,Humana Inc.,3350,Health Services,3355,Managed Health Care
+MGLN,"Magellan Health, Inc.",3350,Health Services,3355,Managed Health Care
+MOH,"Molina Healthcare, Inc.",3350,Health Services,3355,Managed Health Care
+UNH,UnitedHealth Group Incorporated,3350,Health Services,3355,Managed Health Care
+WCG,"WellCare Health Plans, Inc.",3350,Health Services,3355,Managed Health Care
+AKAM,"Akamai Technologies, Inc.",3300,Technology Services,3320,Internet Software/Services
+GOOGL,Alphabet Inc. Class A,3300,Technology Services,3320,Internet Software/Services
+ANGI,ANGI Homeservices Inc Class A,3300,Technology Services,3320,Internet Software/Services
+BCOR,"Blucora, Inc.",3300,Technology Services,3320,Internet Software/Services
+CHKP,Check Point Software Technologies Ltd.,3300,Technology Services,3320,Internet Software/Services
+CSGP,"CoStar Group, Inc.",3300,Technology Services,3320,Internet Software/Services
+TRAK,"Dealertrack Technologies, Inc.",3300,Technology Services,3320,Internet Software/Services
+FB,"Facebook, Inc. Class A",3300,Technology Services,3320,Internet Software/Services
+GLUU,Glu Mobile Inc.,3300,Technology Services,3320,Internet Software/Services
+IAC,IAC/InterActiveCorp.,3300,Technology Services,3320,Internet Software/Services
+JCOM,"j2 Global, Inc.",3300,Technology Services,3320,Internet Software/Services
+LNKD,LinkedIn Corporation Class A,3300,Technology Services,3320,Internet Software/Services
+LOGM,"LogMeIn, Inc.",3300,Technology Services,3320,Internet Software/Services
+MELI,"MercadoLibre, Inc.",3300,Technology Services,3320,Internet Software/Services
+P,"Pandora Media, Inc.",3300,Technology Services,3320,Internet Software/Services
+SSTK,"Shutterstock, Inc.",3300,Technology Services,3320,Internet Software/Services
+SINA,SINA Corp.,3300,Technology Services,3320,Internet Software/Services
+STMP,Stamps.com Inc.,3300,Technology Services,3320,Internet Software/Services
+SNCR,"Synchronoss Technologies, Inc.",3300,Technology Services,3320,Internet Software/Services
+TWTR,"Twitter, Inc.",3300,Technology Services,3320,Internet Software/Services
+VRSN,"VeriSign, Inc.",3300,Technology Services,3320,Internet Software/Services
+WBMD,WebMD Health Corp.,3300,Technology Services,3320,Internet Software/Services
+YNDX,Yandex NV Class A,3300,Technology Services,3320,Internet Software/Services
+YELP,Yelp Inc,3300,Technology Services,3320,Internet Software/Services
+ZNGA,Zynga Inc. Class A,3300,Technology Services,3320,Internet Software/Services
+EGHT,"8x8, Inc.",3300,Technology Services,3310,Packaged Software
+ADBE,Adobe Inc.,3300,Technology Services,3310,Packaged Software
+ANSS,"ANSYS, Inc.",3300,Technology Services,3310,Packaged Software
+AZPN,"Aspen Technology, Inc.",3300,Technology Services,3310,Packaged Software
+ATHN,"athenahealth, Inc.",3300,Technology Services,3310,Packaged Software
+ADSK,"Autodesk, Inc.",3300,Technology Services,3310,Packaged Software
+BYI,"Bally Technologies, Inc.",3300,Technology Services,3310,Packaged Software
+CA,"CA, Inc.",3300,Technology Services,3310,Packaged Software
+CALD,Callidus Software Inc.,3300,Technology Services,3310,Packaged Software
+CTXS,"Citrix Systems, Inc.",3300,Technology Services,3310,Packaged Software
+CVLT,"CommVault Systems, Inc.",3300,Technology Services,3310,Packaged Software
+CPWR.1,Compuware Corporation,3300,Technology Services,3310,Packaged Software
+CNQR,"Concur Technologies, Inc.",3300,Technology Services,3310,Packaged Software
+CSOD,"Cornerstone Ondemand, Inc.",3300,Technology Services,3310,Packaged Software
+DWRE,"Demandware, Inc.",3300,Technology Services,3310,Packaged Software
+ELLI,"Ellie Mae, Inc.",3300,Technology Services,3310,Packaged Software
+INFA,Informatica Corporation,3300,Technology Services,3310,Packaged Software
+INTU,Intuit Inc.,3300,Technology Services,3310,Packaged Software
+MDSO,"Medidata Solutions, Inc.",3300,Technology Services,3310,Packaged Software
+MCRS,"MICROS Systems, Inc.",3300,Technology Services,3310,Packaged Software
+MSFT,Microsoft Corporation,3300,Technology Services,3310,Packaged Software
+NATI,National Instruments Corporation,3300,Technology Services,3310,Packaged Software
+N,NetSuite Inc.,3300,Technology Services,3310,Packaged Software
+NUAN,"Nuance Communications, Inc.",3300,Technology Services,3310,Packaged Software
+OPEN,"OpenTable, Inc.",3300,Technology Services,3310,Packaged Software
+ORCL,Oracle Corporation,3300,Technology Services,3310,Packaged Software
+PTC,PTC Inc.,3300,Technology Services,3310,Packaged Software
+QLIK,Qlik Technologies Inc.,3300,Technology Services,3310,Packaged Software
+QLYS,"Qualys, Inc.",3300,Technology Services,3310,Packaged Software
+RHT,"Red Hat, Inc.",3300,Technology Services,3310,Packaged Software
+CRM,"salesforce.com, inc.",3300,Technology Services,3310,Packaged Software
+SWI.3,"SolarWinds, Inc.",3300,Technology Services,3310,Packaged Software
+SLH,"Solera Holdings, Inc.",3300,Technology Services,3310,Packaged Software
+SYMC,Symantec Corporation,3300,Technology Services,3310,Packaged Software
+SNPS,"Synopsys, Inc.",3300,Technology Services,3310,Packaged Software
+TIBX,TIBCO Software Inc.,3300,Technology Services,3310,Packaged Software
+TIVO,TiVo Corp.,3300,Technology Services,3310,Packaged Software
+TRLA.2,"Trulia, Inc.",3300,Technology Services,3310,Packaged Software
+ULTI,"Ultimate Software Group, Inc.",3300,Technology Services,3310,Packaged Software
+VEEV,Veeva Systems Inc Class A,3300,Technology Services,3310,Packaged Software
+WEB,"Web.com Group, Inc.",3300,Technology Services,3310,Packaged Software
+ACN,Accenture Plc Class A,3300,Technology Services,3308,Information Technology Services
+MDRX,"Allscripts Healthcare Solutions, Inc.",3300,Technology Services,3308,Information Technology Services
+DOX,Amdocs Limited,3300,Technology Services,3308,Information Technology Services
+BSFT,"BroadSoft, Inc.",3300,Technology Services,3308,Information Technology Services
+CACI,CACI International Inc Class A,3300,Technology Services,3308,Information Technology Services
+CDW,CDW Corp.,3300,Technology Services,3308,Information Technology Services
+CERN,Cerner Corporation,3300,Technology Services,3308,Information Technology Services
+CTSH,Cognizant Technology Solutions Corporation Class A,3300,Technology Services,3308,Information Technology Services
+EPAM,"EPAM Systems, Inc.",3300,Technology Services,3308,Information Technology Services
+FEYE,"FireEye, Inc.",3300,Technology Services,3308,Information Technology Services
+GWRE,"Guidewire Software, Inc.",3300,Technology Services,3308,Information Technology Services
+IGTE,IGATE Corp,3300,Technology Services,3308,Information Technology Services
+IMPV,"Imperva, Inc.",3300,Technology Services,3308,Information Technology Services
+BLOX,Infoblox Inc.,3300,Technology Services,3308,Information Technology Services
+IBM,International Business Machines Corporation,3300,Technology Services,3308,Information Technology Services
+JKHY,"Jack Henry & Associates, Inc.",3300,Technology Services,3308,Information Technology Services
+LDOS,"Leidos Holdings, Inc.",3300,Technology Services,3308,Information Technology Services
+OMCL,"Omnicell, Inc.",3300,Technology Services,3308,Information Technology Services
+PFPT,"Proofpoint, Inc.",3300,Technology Services,3308,Information Technology Services
+RAX,"Rackspace Hosting, Inc.",3300,Technology Services,3308,Information Technology Services
+RP,"RealPage, Inc.",3300,Technology Services,3308,Information Technology Services
+RVBD,"Riverbed Technology, Inc.",3300,Technology Services,3308,Information Technology Services
+SAPE,Sapient Corporation,3300,Technology Services,3308,Information Technology Services
+SAIC,Science Applications International Corp.,3300,Technology Services,3308,Information Technology Services
+NOW,"ServiceNow, Inc.",3300,Technology Services,3308,Information Technology Services
+SPLK,Splunk Inc.,3300,Technology Services,3308,Information Technology Services
+SSNC,"SS&C Technologies Holdings, Inc.",3300,Technology Services,3308,Information Technology Services
+DATA,"Tableau Software, Inc. Class A",3300,Technology Services,3308,Information Technology Services
+UIS,Unisys Corporation,3300,Technology Services,3308,Information Technology Services
+PAY,"VeriFone Systems, Inc.",3300,Technology Services,3308,Information Technology Services
+VRNT,Verint Systems Inc.,3300,Technology Services,3308,Information Technology Services
+VMW,"VMware, Inc. Class A",3300,Technology Services,3308,Information Technology Services
+WAGE,"WageWorks, Inc.",3300,Technology Services,3308,Information Technology Services
+WDAY,"Workday, Inc. Class A",3300,Technology Services,3308,Information Technology Services
+ADS,Alliance Data Systems Corporation,3300,Technology Services,3305,Data Processing Services
+ADP,"Automatic Data Processing, Inc.",3300,Technology Services,3305,Data Processing Services
+CVG,Convergys Corporation,3300,Technology Services,3305,Data Processing Services
+CLGX,"CoreLogic, Inc.",3300,Technology Services,3305,Data Processing Services
+DXC,DXC Technology Co.,3300,Technology Services,3305,Data Processing Services
+EEFT,"Euronet Worldwide, Inc.",3300,Technology Services,3305,Data Processing Services
+EXLS,"ExlService Holdings, Inc.",3300,Technology Services,3305,Data Processing Services
+FIS,"Fidelity National Information Services, Inc.",3300,Technology Services,3305,Data Processing Services
+FISV,"Fiserv, Inc.",3300,Technology Services,3305,Data Processing Services
+GPN,Global Payments Inc.,3300,Technology Services,3305,Data Processing Services
+IHS,IHS Inc. Class A,3300,Technology Services,3305,Data Processing Services
+RAMP,"LiveRamp Holdings, Inc.",3300,Technology Services,3305,Data Processing Services
+MDAS,"MedAssets, Inc.",3300,Technology Services,3305,Data Processing Services
+PAYX,"Paychex, Inc.",3300,Technology Services,3305,Data Processing Services
+TSS,"Total System Services, Inc.",3300,Technology Services,3305,Data Processing Services
+TYL,"Tyler Technologies, Inc.",3300,Technology Services,3305,Data Processing Services
+WEX,WEX Inc.,3300,Technology Services,3305,Data Processing Services
+XOOM,Xoom Corporation,3300,Technology Services,3305,Data Processing Services
+ABC,AmerisourceBergen Corporation,3250,Distribution Services,3270,Medical Distributors
+CAH,"Cardinal Health, Inc.",3250,Distribution Services,3270,Medical Distributors
+HSIC,"Henry Schein, Inc.",3250,Distribution Services,3270,Medical Distributors
+MCK,McKesson Corporation,3250,Distribution Services,3270,Medical Distributors
+MWIV,"MWI Veterinary Supply, Inc.",3250,Distribution Services,3270,Medical Distributors
+OMI,"Owens & Minor, Inc.",3250,Distribution Services,3270,Medical Distributors
+PDCO,"Patterson Companies, Inc.",3250,Distribution Services,3270,Medical Distributors
+ARW,"Arrow Electronics, Inc.",3250,Distribution Services,3265,Electronics Distributors
+AVT,"Avnet, Inc.",3250,Distribution Services,3265,Electronics Distributors
+IM,Ingram Micro Inc. Class A,3250,Distribution Services,3265,Electronics Distributors
+SNX,SYNNEX Corporation,3250,Distribution Services,3265,Electronics Distributors
+TECD,Tech Data Corporation,3250,Distribution Services,3265,Electronics Distributors
+SYY,Sysco Corporation,3250,Distribution Services,3260,Food Distributors
+UNFI,"United Natural Foods, Inc.",3250,Distribution Services,3260,Food Distributors
+ARG,"Airgas, Inc.",3250,Distribution Services,3255,Wholesale Distributors
+APU,"AmeriGas Partners, L.P.",3250,Distribution Services,3255,Wholesale Distributors
+AXE,Anixter International Inc.,3250,Distribution Services,3255,Wholesale Distributors
+BECN,"Beacon Roofing Supply, Inc.",3250,Distribution Services,3255,Wholesale Distributors
+FAST,Fastenal Company,3250,Distribution Services,3255,Wholesale Distributors
+GPC,Genuine Parts Company,3250,Distribution Services,3255,Wholesale Distributors
+HDS,"HD Supply Holdings, Inc.",3250,Distribution Services,3255,Wholesale Distributors
+HW,Headwaters Incorporated,3250,Distribution Services,3255,Wholesale Distributors
+MRC,MRC Global Inc.,3250,Distribution Services,3255,Wholesale Distributors
+MSM,"MSC Industrial Direct Co., Inc. Class A",3250,Distribution Services,3255,Wholesale Distributors
+POOL,Pool Corporation,3250,Distribution Services,3255,Wholesale Distributors
+SPLS,"Staples, Inc.",3250,Distribution Services,3255,Wholesale Distributors
+GWW,"W.W. Grainger, Inc.",3250,Distribution Services,3255,Wholesale Distributors
+WCC,"WESCO International, Inc.",3250,Distribution Services,3255,Wholesale Distributors
+INT,World Fuel Services Corporation,3250,Distribution Services,3255,Wholesale Distributors
+AMN,"AMN Healthcare Services, Inc.",3200,Commercial Services,3235,Personnel Services
+ASGN,ASGN Inc,3200,Commercial Services,3235,Personnel Services
+NSP,"Insperity, Inc.",3200,Commercial Services,3235,Personnel Services
+KFY,Korn Ferry,3200,Commercial Services,3235,Personnel Services
+MAN,ManpowerGroup Inc.,3200,Commercial Services,3235,Personnel Services
+MWW,"Monster Worldwide, Inc.",3200,Commercial Services,3235,Personnel Services
+RHI,Robert Half International Inc.,3200,Commercial Services,3235,Personnel Services
+TMH,"Team Health Holdings, Inc.",3200,Commercial Services,3235,Personnel Services
+WW,Towers Watson & Co. Class A,3200,Commercial Services,3235,Personnel Services
+DNB,Dun & Bradstreet Corporation,3200,Commercial Services,3220,Financial Publishing/Services
+ENV,"Envestnet, Inc.",3200,Commercial Services,3220,Financial Publishing/Services
+FDS,FactSet Research Systems Inc.,3200,Commercial Services,3220,Financial Publishing/Services
+MCO,Moody's Corporation,3200,Commercial Services,3220,Financial Publishing/Services
+MSCI,MSCI Inc. Class A,3200,Commercial Services,3220,Financial Publishing/Services
+SPGI,"S&P Global, Inc.",3200,Commercial Services,3220,Financial Publishing/Services
+CMPR,Cimpress N.V.,3200,Commercial Services,3215,Commercial Printing/Forms
+DLX,Deluxe Corporation,3200,Commercial Services,3215,Commercial Printing/Forms
+AOL,AOL Inc.,3200,Commercial Services,3210,Advertising/Marketing Services
+CNVR,Conversant Inc,3200,Commercial Services,3210,Advertising/Marketing Services
+GRPN,"Groupon, Inc.",3200,Commercial Services,3210,Advertising/Marketing Services
+IPG,"Interpublic Group of Companies, Inc.",3200,Commercial Services,3210,Advertising/Marketing Services
+NLSN,Nielsen Holdings Plc,3200,Commercial Services,3210,Advertising/Marketing Services
+OMC,Omnicom Group Inc,3200,Commercial Services,3210,Advertising/Marketing Services
+SALE,"RetailMeNot, Inc.",3200,Commercial Services,3210,Advertising/Marketing Services
+ADT.I,ADT Corporation,3200,Commercial Services,3205,Miscellaneous Commercial Services
+ABCO,Advisory Board Company,3200,Commercial Services,3205,Miscellaneous Commercial Services
+APOL,"Apollo Education Group, Inc. Class A",3200,Commercial Services,3205,Miscellaneous Commercial Services
+RATE,"Bankrate, Inc.",3200,Commercial Services,3205,Miscellaneous Commercial Services
+BAH,Booz Allen Hamilton Holding Corporation Class A,3200,Commercial Services,3205,Miscellaneous Commercial Services
+BR,"Broadridge Financial Solutions, Inc.",3200,Commercial Services,3205,Miscellaneous Commercial Services
+CATM,Cardtronics plc Class A,3200,Commercial Services,3205,Miscellaneous Commercial Services
+CEB,CEB Inc.,3200,Commercial Services,3205,Miscellaneous Commercial Services
+CRL,"Charles River Laboratories International, Inc.",3200,Commercial Services,3205,Miscellaneous Commercial Services
+CTCT,"Constant Contact, Inc.",3200,Commercial Services,3205,Miscellaneous Commercial Services
+CSTM,Constellium NV Class A,3200,Commercial Services,3205,Miscellaneous Commercial Services
+CPRT,"Copart, Inc.",3200,Commercial Services,3205,Miscellaneous Commercial Services
+CVD,Covance Inc.,3200,Commercial Services,3205,Miscellaneous Commercial Services
+EFX,Equifax Inc.,3200,Commercial Services,3205,Miscellaneous Commercial Services
+FLT,"FleetCor Technologies, Inc.",3200,Commercial Services,3205,Miscellaneous Commercial Services
+FCN,"FTI Consulting, Inc.",3200,Commercial Services,3205,Miscellaneous Commercial Services
+IT,"Gartner, Inc.",3200,Commercial Services,3205,Miscellaneous Commercial Services
+G,Genpact Limited,3200,Commercial Services,3205,Miscellaneous Commercial Services
+LOPE,"Grand Canyon Education, Inc.",3200,Commercial Services,3205,Miscellaneous Commercial Services
+HPY,"Heartland Payment Systems, Inc.",3200,Commercial Services,3205,Miscellaneous Commercial Services
+HMSY,HMS Holdings Corp.,3200,Commercial Services,3205,Miscellaneous Commercial Services
+JCI,Johnson Controls International plc,3200,Commercial Services,3205,Miscellaneous Commercial Services
+KAR,"KAR Auction Services, Inc.",3200,Commercial Services,3205,Miscellaneous Commercial Services
+LOCK,"LifeLock, Inc.",3200,Commercial Services,3205,Miscellaneous Commercial Services
+MMS,"MAXIMUS, Inc.",3200,Commercial Services,3205,Miscellaneous Commercial Services
+NSR,"NeuStar, Inc. Class A",3200,Commercial Services,3205,Miscellaneous Commercial Services
+PRXL,PAREXEL International Corporation,3200,Commercial Services,3205,Miscellaneous Commercial Services
+PRAA,PRA Group Inc,3200,Commercial Services,3205,Miscellaneous Commercial Services
+SFLY,"Shutterfly, Inc.",3200,Commercial Services,3205,Miscellaneous Commercial Services
+WP,"Worldpay, Inc. Class A",3200,Commercial Services,3205,Miscellaneous Commercial Services
+ZG,"Zillow Group, Inc. Class A",3200,Commercial Services,3205,Miscellaneous Commercial Services
+APL,"Atlas Pipeline Partners, L.P.",3100,Industrial Services,3130,Oil & Gas Pipelines
+BWP,"Boardwalk Pipeline Partners, LP",3100,Industrial Services,3130,Oil & Gas Pipelines
+BPL,"Buckeye Partners, L.P.",3100,Industrial Services,3130,Oil & Gas Pipelines
+LNG,"Cheniere Energy, Inc.",3100,Industrial Services,3130,Oil & Gas Pipelines
+DCP,DCP Midstream LP,3100,Industrial Services,3130,Oil & Gas Pipelines
+EPB,"El Paso Pipeline Partners, L.P.",3100,Industrial Services,3130,Oil & Gas Pipelines
+EEP,"Enbridge Energy Partners, L.P. Class A",3100,Industrial Services,3130,Oil & Gas Pipelines
+ETP,"Energy Transfer Operating, L.P",3100,Industrial Services,3130,Oil & Gas Pipelines
+HPG,"Energy Transfer Partners, L.P.",3100,Industrial Services,3130,Oil & Gas Pipelines
+ET,"Energy Transfer, L.P.",3100,Industrial Services,3130,Oil & Gas Pipelines
+ENLC,EnLink Midstream LLC,3100,Industrial Services,3130,Oil & Gas Pipelines
+ENLK,"EnLink Midstream Partners, L.P.",3100,Industrial Services,3130,Oil & Gas Pipelines
+EPD,Enterprise Products Partners L.P.,3100,Industrial Services,3130,Oil & Gas Pipelines
+KMP,"Kinder Morgan Energy Partners, L.P.",3100,Industrial Services,3130,Oil & Gas Pipelines
+KMI,Kinder Morgan Inc Class P,3100,Industrial Services,3130,Oil & Gas Pipelines
+KMR,"Kinder Morgan Management, LLC",3100,Industrial Services,3130,Oil & Gas Pipelines
+MMP,"Magellan Midstream Partners, L.P.",3100,Industrial Services,3130,Oil & Gas Pipelines
+MWE,"MarkWest Energy Partners, L.P.",3100,Industrial Services,3130,Oil & Gas Pipelines
+OKS,"ONEOK Partners, L.P.",3100,Industrial Services,3130,Oil & Gas Pipelines
+OKE,"ONEOK, Inc.",3100,Industrial Services,3130,Oil & Gas Pipelines
+PAA,"Plains All American Pipeline, L.P.",3100,Industrial Services,3130,Oil & Gas Pipelines
+PAGP,Plains GP Holdings LP Class A,3100,Industrial Services,3130,Oil & Gas Pipelines
+RGP,Regency Energy Partners LP,3100,Industrial Services,3130,Oil & Gas Pipelines
+SE.I,Spectra Energy Corp,3100,Industrial Services,3130,Oil & Gas Pipelines
+SEP,"Spectra Energy Partners, LP",3100,Industrial Services,3130,Oil & Gas Pipelines
+WES.3,"Western Gas Partners, LP",3100,Industrial Services,3130,Oil & Gas Pipelines
+WMB,"Williams Companies, Inc.",3100,Industrial Services,3130,Oil & Gas Pipelines
+WPZ,"Williams Partners, L.P.",3100,Industrial Services,3130,Oil & Gas Pipelines
+CLH,"Clean Harbors, Inc.",3100,Industrial Services,3120,Environmental Services
+CVA,Covanta Holding Corporation,3100,Industrial Services,3120,Environmental Services
+RSG,"Republic Services, Inc.",3100,Industrial Services,3120,Environmental Services
+TTEK,"Tetra Tech, Inc.",3100,Industrial Services,3120,Environmental Services
+WCNX,"Waste Connections, Inc.",3100,Industrial Services,3120,Environmental Services
+WM,"Waste Management, Inc.",3100,Industrial Services,3120,Environmental Services
+ACM,AECOM,3100,Industrial Services,3115,Engineering & Construction
+CBI,Chicago Bridge & Iron Co. NV,3100,Industrial Services,3115,Engineering & Construction
+DY,"Dycom Industries, Inc.",3100,Industrial Services,3115,Engineering & Construction
+EME,"EMCOR Group, Inc.",3100,Industrial Services,3115,Engineering & Construction
+FLR,Fluor Corporation,3100,Industrial Services,3115,Engineering & Construction
+FWLT,Foster Wheeler AG,3100,Industrial Services,3115,Engineering & Construction
+GVA,Granite Construction Incorporated,3100,Industrial Services,3115,Engineering & Construction
+JEC,Jacobs Engineering Group Inc.,3100,Industrial Services,3115,Engineering & Construction
+KBR,"KBR, Inc.",3100,Industrial Services,3115,Engineering & Construction
+MTZ,"MasTec, Inc.",3100,Industrial Services,3115,Engineering & Construction
+PWR,"Quanta Services, Inc.",3100,Industrial Services,3115,Engineering & Construction
+URS,URS Corporation,3100,Industrial Services,3115,Engineering & Construction
+AROC,Archrock Inc.,3100,Industrial Services,3110,Oilfield Services/Equipment
+BHGE,"Baker Hughes, a GE Company Class A",3100,Industrial Services,3110,Oilfield Services/Equipment
+BAS.1,"Basic Energy Services, Inc.",3100,Industrial Services,3110,Oilfield Services/Equipment
+BRS,Bristow Group Inc.,3100,Industrial Services,3110,Oilfield Services/Equipment
+CAM,Cameron International Corporation,3100,Industrial Services,3110,Oilfield Services/Equipment
+CLB,Core Laboratories NV,3100,Industrial Services,3110,Oilfield Services/Equipment
+DRC,Dresser-Rand Group Inc.,3100,Industrial Services,3110,Oilfield Services/Equipment
+DRQ,"Dril-Quip, Inc.",3100,Industrial Services,3110,Oilfield Services/Equipment
+FTI.1,"FMC Technologies, Inc.",3100,Industrial Services,3110,Oilfield Services/Equipment
+HAL,Halliburton Company,3100,Industrial Services,3110,Oilfield Services/Equipment
+HLX,"Helix Energy Solutions Group, Inc.",3100,Industrial Services,3110,Oilfield Services/Equipment
+MDR,"McDermott International, Inc.",3100,Industrial Services,3110,Oilfield Services/Equipment
+NOV,"National Oilwell Varco, Inc.",3100,Industrial Services,3110,Oilfield Services/Equipment
+OII,"Oceaneering International, Inc.",3100,Industrial Services,3110,Oilfield Services/Equipment
+OIS,"Oil States International, Inc.",3100,Industrial Services,3110,Oilfield Services/Equipment
+RES,"RPC, Inc.",3100,Industrial Services,3110,Oilfield Services/Equipment
+SLB,Schlumberger NV,3100,Industrial Services,3110,Oilfield Services/Equipment
+SDRLF,Seadrill Ltd.,3100,Industrial Services,3110,Oilfield Services/Equipment
+SPN,"Superior Energy Services, Inc.",3100,Industrial Services,3110,Oilfield Services/Equipment
+WFT,Weatherford International plc,3100,Industrial Services,3110,Oilfield Services/Equipment
+ATW,"Atwood Oceanics, Inc.",3100,Industrial Services,3105,Contract Drilling
+DO,"Diamond Offshore Drilling, Inc.",3100,Industrial Services,3105,Contract Drilling
+ESV,Ensco plc Class A,3100,Industrial Services,3105,Contract Drilling
+HP,"Helmerich & Payne, Inc.",3100,Industrial Services,3105,Contract Drilling
+NBR,Nabors Industries Ltd.,3100,Industrial Services,3105,Contract Drilling
+NE,Noble Corporation plc,3100,Industrial Services,3105,Contract Drilling
+PTEN,"Patterson-UTI Energy, Inc.",3100,Industrial Services,3105,Contract Drilling
+RDC,Rowan Cos. Plc Class A,3100,Industrial Services,3105,Contract Drilling
+RIG,Transocean Ltd.,3100,Industrial Services,3105,Contract Drilling
+COLM,Columbia Sportswear Company,2400,Consumer Non-Durables,2440,Apparel/Footwear
+CROX,"Crocs, Inc.",2400,Consumer Non-Durables,2440,Apparel/Footwear
+GIII,"G-III Apparel Group, Ltd.",2400,Consumer Non-Durables,2440,Apparel/Footwear
+GES,"Guess?, Inc.",2400,Consumer Non-Durables,2440,Apparel/Footwear
+HBI,Hanesbrands Inc.,2400,Consumer Non-Durables,2440,Apparel/Footwear
+NKE,"NIKE, Inc. Class B",2400,Consumer Non-Durables,2440,Apparel/Footwear
+PVH,PVH Corp.,2400,Consumer Non-Durables,2440,Apparel/Footwear
+SKX,"Skechers U.S.A., Inc. Class A",2400,Consumer Non-Durables,2440,Apparel/Footwear
+SHOO,"Steven Madden, Ltd.",2400,Consumer Non-Durables,2440,Apparel/Footwear
+UAA,"Under Armour, Inc. Class A",2400,Consumer Non-Durables,2440,Apparel/Footwear
+VFC,V.F. Corporation,2400,Consumer Non-Durables,2440,Apparel/Footwear
+WWW,"Wolverine World Wide, Inc.",2400,Consumer Non-Durables,2440,Apparel/Footwear
+AVP,"Avon Products, Inc.",2400,Consumer Non-Durables,2435,Household/Personal Care
+CHD,"Church & Dwight Co., Inc.",2400,Consumer Non-Durables,2435,Household/Personal Care
+CLX,Clorox Company,2400,Consumer Non-Durables,2435,Household/Personal Care
+CL,Colgate-Palmolive Company,2400,Consumer Non-Durables,2435,Household/Personal Care
+COTY,Coty Inc. Class A,2400,Consumer Non-Durables,2435,Household/Personal Care
+EPC,Edgewell Personal Care Co.,2400,Consumer Non-Durables,2435,Household/Personal Care
+EL,Estee Lauder Companies Inc. Class A,2400,Consumer Non-Durables,2435,Household/Personal Care
+IFF,International Flavors & Fragrances Inc.,2400,Consumer Non-Durables,2435,Household/Personal Care
+KMB,Kimberly-Clark Corporation,2400,Consumer Non-Durables,2435,Household/Personal Care
+MJN,Mead Johnson Nutrition Company,2400,Consumer Non-Durables,2435,Household/Personal Care
+NUS,"Nu Skin Enterprises, Inc. Class A",2400,Consumer Non-Durables,2435,Household/Personal Care
+PG,Procter & Gamble Company,2400,Consumer Non-Durables,2435,Household/Personal Care
+MO,Altria Group Inc,2400,Consumer Non-Durables,2430,Tobacco
+LO,"Lorillard, Inc.",2400,Consumer Non-Durables,2430,Tobacco
+PM,Philip Morris International Inc.,2400,Consumer Non-Durables,2430,Tobacco
+RAI,Reynolds American Inc.,2400,Consumer Non-Durables,2430,Tobacco
+BEAM,Beam Suntory Inc.,2400,Consumer Non-Durables,2425,Beverages: Alcoholic
+BF.B,Brown-Forman Corporation Class B,2400,Consumer Non-Durables,2425,Beverages: Alcoholic
+STZ,"Constellation Brands, Inc. Class A",2400,Consumer Non-Durables,2425,Beverages: Alcoholic
+TAP,Molson Coors Brewing Company Class B,2400,Consumer Non-Durables,2425,Beverages: Alcoholic
+KO,Coca-Cola Company,2400,Consumer Non-Durables,2420,Beverages: Non-Alcoholic
+CCEP,Coca-Cola European Partners Plc,2400,Consumer Non-Durables,2420,Beverages: Non-Alcoholic
+KDP,Keurig Dr Pepper Inc.,2400,Consumer Non-Durables,2420,Beverages: Non-Alcoholic
+MNST,Monster Beverage Corporation,2400,Consumer Non-Durables,2420,Beverages: Non-Alcoholic
+PEP,"PepsiCo, Inc.",2400,Consumer Non-Durables,2420,Beverages: Non-Alcoholic
+DF,Dean Foods Company,2400,Consumer Non-Durables,2415,Food: Meat/Fish/Dairy
+HRL,Hormel Foods Corporation,2400,Consumer Non-Durables,2415,Food: Meat/Fish/Dairy
+PPC,Pilgrim's Pride Corporation,2400,Consumer Non-Durables,2415,Food: Meat/Fish/Dairy
+SAFM,"Sanderson Farms, Inc.",2400,Consumer Non-Durables,2415,Food: Meat/Fish/Dairy
+TSN,"Tyson Foods, Inc. Class A",2400,Consumer Non-Durables,2415,Food: Meat/Fish/Dairy
+WWAV,WhiteWave Foods Company,2400,Consumer Non-Durables,2415,Food: Meat/Fish/Dairy
+BNNY,"Annie's, Inc.",2400,Consumer Non-Durables,2410,Food: Specialty/Candy
+DMND,"Diamond Foods, Inc.",2400,Consumer Non-Durables,2410,Food: Specialty/Candy
+FLO,"Flowers Foods, Inc.",2400,Consumer Non-Durables,2410,Food: Specialty/Candy
+HAIN,"Hain Celestial Group, Inc.",2400,Consumer Non-Durables,2410,Food: Specialty/Candy
+HSY,Hershey Company,2400,Consumer Non-Durables,2410,Food: Specialty/Candy
+SJM,J.M. Smucker Company,2400,Consumer Non-Durables,2410,Food: Specialty/Candy
+GMCR,"Keurig Green Mountain, Inc.",2400,Consumer Non-Durables,2410,Food: Specialty/Candy
+KKD,"Krispy Kreme Doughnuts, Inc.",2400,Consumer Non-Durables,2410,Food: Specialty/Candy
+LANC,Lancaster Colony Corporation,2400,Consumer Non-Durables,2410,Food: Specialty/Candy
+MKC,"McCormick & Company, Incorporated",2400,Consumer Non-Durables,2410,Food: Specialty/Candy
+POST,"Post Holdings, Inc.",2400,Consumer Non-Durables,2410,Food: Specialty/Candy
+BGS,"B&G Foods, Inc.",2400,Consumer Non-Durables,2405,Food: Major Diversified
+BOBE,"Bob Evans Farms, Inc.",2400,Consumer Non-Durables,2405,Food: Major Diversified
+CPB,Campbell Soup Company,2400,Consumer Non-Durables,2405,Food: Major Diversified
+CAG,"Conagra Brands, Inc.",2400,Consumer Non-Durables,2405,Food: Major Diversified
+GIS,"General Mills, Inc.",2400,Consumer Non-Durables,2405,Food: Major Diversified
+HSH,Hillshire Brands Company,2400,Consumer Non-Durables,2405,Food: Major Diversified
+K,Kellogg Company,2400,Consumer Non-Durables,2405,Food: Major Diversified
+KHC,Kraft Heinz Company,2400,Consumer Non-Durables,2405,Food: Major Diversified
+MDLZ,"Mondelez International, Inc. Class A",2400,Consumer Non-Durables,2405,Food: Major Diversified
+PF,"Pinnacle Foods, Inc.",2400,Consumer Non-Durables,2405,Food: Major Diversified
+THS,"TreeHouse Foods, Inc.",2400,Consumer Non-Durables,2405,Food: Major Diversified
+ABAX,"Abaxis, Inc.",2300,Health Technology,2325,Medical Specialties
+ABT,Abbott Laboratories,2300,Health Technology,2325,Medical Specialties
+ABMD,"ABIOMED, Inc.",2300,Health Technology,2325,Medical Specialties
+AFFX,"Affymetrix, Inc.",2300,Health Technology,2325,Medical Specialties
+ALR,Alere Inc.,2300,Health Technology,2325,Medical Specialties
+ALGN,"Align Technology, Inc.",2300,Health Technology,2325,Medical Specialties
+ARTC,ArthroCare Corporation,2300,Health Technology,2325,Medical Specialties
+BAX,Baxter International Inc.,2300,Health Technology,2325,Medical Specialties
+BDX,"Becton, Dickinson and Company",2300,Health Technology,2325,Medical Specialties
+BSX,Boston Scientific Corporation,2300,Health Technology,2325,Medical Specialties
+BRKR,Bruker Corporation,2300,Health Technology,2325,Medical Specialties
+BCR,"C. R. Bard, Inc.",2300,Health Technology,2325,Medical Specialties
+CFN,CareFusion Corporation,2300,Health Technology,2325,Medical Specialties
+CNMD,CONMED Corporation,2300,Health Technology,2325,Medical Specialties
+COO,"Cooper Companies, Inc.",2300,Health Technology,2325,Medical Specialties
+COV,Covidien Plc,2300,Health Technology,2325,Medical Specialties
+CYNO,"Cynosure, Inc. Class A",2300,Health Technology,2325,Medical Specialties
+DHR,Danaher Corporation,2300,Health Technology,2325,Medical Specialties
+XRAY,"DENTSPLY SIRONA, Inc.",2300,Health Technology,2325,Medical Specialties
+DXCM,"DexCom, Inc.",2300,Health Technology,2325,Medical Specialties
+EW,Edwards Lifesciences Corporation,2300,Health Technology,2325,Medical Specialties
+FEIC,FEI Company,2300,Health Technology,2325,Medical Specialties
+GMED,Globus Medical Inc Class A,2300,Health Technology,2325,Medical Specialties
+HAE,Haemonetics Corporation,2300,Health Technology,2325,Medical Specialties
+HTWR,"HeartWare International, Inc.",2300,Health Technology,2325,Medical Specialties
+HRC,"Hill-Rom Holdings, Inc.",2300,Health Technology,2325,Medical Specialties
+HOLX,"Hologic, Inc.",2300,Health Technology,2325,Medical Specialties
+ICUI,"ICU Medical, Inc.",2300,Health Technology,2325,Medical Specialties
+IDXX,"IDEXX Laboratories, Inc.",2300,Health Technology,2325,Medical Specialties
+PODD,Insulet Corporation,2300,Health Technology,2325,Medical Specialties
+IART,Integra LifeSciences Holdings Corporation,2300,Health Technology,2325,Medical Specialties
+ISRG,"Intuitive Surgical, Inc.",2300,Health Technology,2325,Medical Specialties
+LIVN,LivaNova Plc,2300,Health Technology,2325,Medical Specialties
+MASI,Masimo Corporation,2300,Health Technology,2325,Medical Specialties
+MDT,Medtronic plc,2300,Health Technology,2325,Medical Specialties
+MTD,Mettler-Toledo International Inc.,2300,Health Technology,2325,Medical Specialties
+BABY,Natus Medical Incorporated,2300,Health Technology,2325,Medical Specialties
+NEOG,Neogen Corporation,2300,Health Technology,2325,Medical Specialties
+NUVA,"NuVasive, Inc.",2300,Health Technology,2325,Medical Specialties
+NXTM,"NxStage Medical, Inc.",2300,Health Technology,2325,Medical Specialties
+PLL.1,Pall Corporation,2300,Health Technology,2325,Medical Specialties
+PKI,"PerkinElmer, Inc.",2300,Health Technology,2325,Medical Specialties
+QGEN,QIAGEN NV,2300,Health Technology,2325,Medical Specialties
+RMD,ResMed Inc.,2300,Health Technology,2325,Medical Specialties
+SIRO,"Sirona Dental Systems, Inc.",2300,Health Technology,2325,Medical Specialties
+STJ,"St. Jude Medical, Inc.",2300,Health Technology,2325,Medical Specialties
+STE,STERIS Plc,2300,Health Technology,2325,Medical Specialties
+SYK,Stryker Corporation,2300,Health Technology,2325,Medical Specialties
+TFX,Teleflex Incorporated,2300,Health Technology,2325,Medical Specialties
+TMO,Thermo Fisher Scientific Inc.,2300,Health Technology,2325,Medical Specialties
+THOR.1,Thoratec Corporation,2300,Health Technology,2325,Medical Specialties
+VAR,"Varian Medical Systems, Inc.",2300,Health Technology,2325,Medical Specialties
+VOLC,Volcano Corporation,2300,Health Technology,2325,Medical Specialties
+WAT,Waters Corporation,2300,Health Technology,2325,Medical Specialties
+277125,"Wright Medical Group, Inc.",2300,Health Technology,2325,Medical Specialties
+ZLTQ,"ZELTIQ Aesthetics, Inc.",2300,Health Technology,2325,Medical Specialties
+ZBH,"Zimmer Biomet Holdings, Inc.",2300,Health Technology,2325,Medical Specialties
+ACOR,"Acorda Therapeutics, Inc.",2300,Health Technology,2320,Biotechnology
+A,"Agilent Technologies, Inc.",2300,Health Technology,2320,Biotechnology
+ALXN,"Alexion Pharmaceuticals, Inc.",2300,Health Technology,2320,Biotechnology
+ALKS,Alkermes Plc,2300,Health Technology,2320,Biotechnology
+AMGN,Amgen Inc.,2300,Health Technology,2320,Biotechnology
+TECH,Bio-Techne Corporation,2300,Health Technology,2320,Biotechnology
+BIIB,Biogen Inc.,2300,Health Technology,2320,Biotechnology
+BMRN,BioMarin Pharmaceutical Inc.,2300,Health Technology,2320,Biotechnology
+CELG,Celgene Corporation,2300,Health Technology,2320,Biotechnology
+CPHD,Cepheid,2300,Health Technology,2320,Biotechnology
+GILD,"Gilead Sciences, Inc.",2300,Health Technology,2320,Biotechnology
+ILMN,"Illumina, Inc.",2300,Health Technology,2320,Biotechnology
+INCY,Incyte Corporation,2300,Health Technology,2320,Biotechnology
+IONS,"Ionis Pharmaceuticals, Inc.",2300,Health Technology,2320,Biotechnology
+MYGN,"Myriad Genetics, Inc.",2300,Health Technology,2320,Biotechnology
+NKTR,Nektar Therapeutics,2300,Health Technology,2320,Biotechnology
+NPSP,"NPS Pharmaceuticals, Inc.",2300,Health Technology,2320,Biotechnology
+PDLI,"PDL BioPharma, Inc.",2300,Health Technology,2320,Biotechnology
+PCYC,"Pharmacyclics, Inc.",2300,Health Technology,2320,Biotechnology
+QCOR,"Questcor Pharmaceuticals, Inc.",2300,Health Technology,2320,Biotechnology
+REGN,"Regeneron Pharmaceuticals, Inc.",2300,Health Technology,2320,Biotechnology
+SGEN,"Seattle Genetics, Inc.",2300,Health Technology,2320,Biotechnology
+VRTX,Vertex Pharmaceuticals Incorporated,2300,Health Technology,2320,Biotechnology
+AGN,Allergan plc,2300,Health Technology,2315,Pharmaceuticals: Generic
+MYL,Mylan N.V.,2300,Health Technology,2315,Pharmaceuticals: Generic
+ZTS,"Zoetis, Inc. Class A",2300,Health Technology,2315,Pharmaceuticals: Generic
+AGN.2,"Allergan, Inc.",2300,Health Technology,2310,Pharmaceuticals: Other
+AUXL,"Auxilium Pharmaceuticals, Inc.",2300,Health Technology,2310,Pharmaceuticals: Other
+BHC,Bausch Health Companies Inc.,2300,Health Technology,2310,Pharmaceuticals: Other
+ENDP,Endo International Plc,2300,Health Technology,2310,Pharmaceuticals: Other
+FRX,"Forest Laboratories, Inc.",2300,Health Technology,2310,Pharmaceuticals: Other
+ICLR,ICON Plc,2300,Health Technology,2310,Pharmaceuticals: Other
+JAZZ,Jazz Pharmaceuticals Plc,2300,Health Technology,2310,Pharmaceuticals: Other
+MNK,Mallinckrodt Plc,2300,Health Technology,2310,Pharmaceuticals: Other
+MDCO,Medicines Company,2300,Health Technology,2310,Pharmaceuticals: Other
+PRGO,Perrigo Co. Plc,2300,Health Technology,2310,Pharmaceuticals: Other
+PBH,Prestige Consumer Healthcare Inc,2300,Health Technology,2310,Pharmaceuticals: Other
+SLXP,"Salix Pharmaceuticals, Ltd.",2300,Health Technology,2310,Pharmaceuticals: Other
+UTHR,United Therapeutics Corporation,2300,Health Technology,2310,Pharmaceuticals: Other
+ABBV,"AbbVie, Inc.",2300,Health Technology,2305,Pharmaceuticals: Major
+AMRX,"Amneal Pharmaceuticals, Inc. Class A",2300,Health Technology,2305,Pharmaceuticals: Major
+BMY,Bristol-Myers Squibb Company,2300,Health Technology,2305,Pharmaceuticals: Major
+CADX,"Cadence Pharmaceuticals, Inc.",2300,Health Technology,2305,Pharmaceuticals: Major
+CBST,"Cubist Pharmaceuticals, Inc.",2300,Health Technology,2305,Pharmaceuticals: Major
+LLY,Eli Lilly and Company,2300,Health Technology,2305,Pharmaceuticals: Major
+HSP,"Hospira, Inc.",2300,Health Technology,2305,Pharmaceuticals: Major
+JNJ,Johnson & Johnson,2300,Health Technology,2305,Pharmaceuticals: Major
+LCI,"Lannett Company, Inc.",2300,Health Technology,2305,Pharmaceuticals: Major
+MDVN,"Medivation, Inc.",2300,Health Technology,2305,Pharmaceuticals: Major
+MRK,"Merck & Co., Inc.",2300,Health Technology,2305,Pharmaceuticals: Major
+PFE,Pfizer Inc.,2300,Health Technology,2305,Pharmaceuticals: Major
+CBT,Cabot Corporation,2200,Process Industries,2240,Industrial Specialties
+CCMP,Cabot Microelectronics Corporation,2200,Process Industries,2240,Industrial Specialties
+DCI,"Donaldson Company, Inc.",2200,Process Industries,2240,Industrial Specialties
+FOE,Ferro Corporation,2200,Process Industries,2240,Industrial Specialties
+FUL,H.B. Fuller Company,2200,Process Industries,2240,Industrial Specialties
+MTX,Minerals Technologies Inc.,2200,Process Industries,2240,Industrial Specialties
+OLN,Olin Corporation,2200,Process Industries,2240,Industrial Specialties
+PPO,"Polypore International, Inc.",2200,Process Industries,2240,Industrial Specialties
+PPG,"PPG Industries, Inc.",2200,Process Industries,2240,Industrial Specialties
+RPM,RPM International Inc.,2200,Process Industries,2240,Industrial Specialties
+SHW,Sherwin-Williams Company,2200,Process Industries,2240,Industrial Specialties
+VAL,Valspar Corporation,2200,Process Industries,2240,Industrial Specialties
+ATR,"Aptargroup, Inc.",2200,Process Industries,2235,Containers/Packaging
+AVY,Avery Dennison Corporation,2200,Process Industries,2235,Containers/Packaging
+BLL,Ball Corporation,2200,Process Industries,2235,Containers/Packaging
+BMS,"Bemis Company, Inc.",2200,Process Industries,2235,Containers/Packaging
+BERY,Berry Global Group Inc,2200,Process Industries,2235,Containers/Packaging
+CCK,"Crown Holdings, Inc.",2200,Process Industries,2235,Containers/Packaging
+GPK,Graphic Packaging Holding Company,2200,Process Industries,2235,Containers/Packaging
+IP,International Paper Company,2200,Process Industries,2235,Containers/Packaging
+MWV,MeadWestvaco Corporation,2200,Process Industries,2235,Containers/Packaging
+OI,"Owens-Illinois, Inc.",2200,Process Industries,2235,Containers/Packaging
+PKG,Packaging Corporation of America,2200,Process Industries,2235,Containers/Packaging
+SEE,Sealed Air Corporation,2200,Process Industries,2235,Containers/Packaging
+SLGN,Silgan Holdings Inc.,2200,Process Industries,2235,Containers/Packaging
+SON,Sonoco Products Company,2200,Process Industries,2235,Containers/Packaging
+WRK,WestRock Company,2200,Process Industries,2235,Containers/Packaging
+UFS,Domtar Corporation,2200,Process Industries,2230,Pulp & Paper
+KS,KapStone Paper and Packaging Corporation,2200,Process Industries,2230,Pulp & Paper
+ANDE,"Andersons, Inc.",2200,Process Industries,2225,Agricultural Commodities/Milling
+ADM,Archer-Daniels-Midland Company,2200,Process Industries,2225,Agricultural Commodities/Milling
+BG,Bunge Limited,2200,Process Industries,2225,Agricultural Commodities/Milling
+DAR,Darling Ingredients Inc.,2200,Process Industries,2225,Agricultural Commodities/Milling
+INGR,Ingredion Incorporated,2200,Process Industries,2225,Agricultural Commodities/Milling
+WOOF,VCA Inc.,2200,Process Industries,2225,Agricultural Commodities/Milling
+CF,"CF Industries Holdings, Inc.",2200,Process Industries,2215,Chemicals: Agricultural
+FMC,FMC Corporation,2200,Process Industries,2215,Chemicals: Agricultural
+MON,Monsanto Company,2200,Process Industries,2215,Chemicals: Agricultural
+SMG,Scotts Miracle-Gro Company Class A,2200,Process Industries,2215,Chemicals: Agricultural
+APD,"Air Products and Chemicals, Inc.",2200,Process Industries,2210,Chemicals: Specialty
+ALB,Albemarle Corporation,2200,Process Industries,2210,Chemicals: Specialty
+ASH,"Ashland Global Holdings, Inc.",2200,Process Industries,2210,Chemicals: Specialty
+AXLL,Axiall Corporation,2200,Process Industries,2210,Chemicals: Specialty
+CHMT,Chemtura Corporation,2200,Process Industries,2210,Chemicals: Specialty
+CMP,"Compass Minerals International, Inc.",2200,Process Industries,2210,Chemicals: Specialty
+CYT,Cytec Industries Inc.,2200,Process Industries,2210,Chemicals: Specialty
+DD,E. I. du Pont de Nemours and Company,2200,Process Industries,2210,Chemicals: Specialty
+ECL,Ecolab Inc.,2200,Process Industries,2210,Chemicals: Specialty
+GPRE,Green Plains Inc.,2200,Process Industries,2210,Chemicals: Specialty
+LIN,Linde plc,2200,Process Industries,2210,Chemicals: Specialty
+LYB,LyondellBasell Industries NV,2200,Process Industries,2210,Chemicals: Specialty
+NEU,NewMarket Corporation,2200,Process Industries,2210,Chemicals: Specialty
+POL,PolyOne Corporation,2200,Process Industries,2210,Chemicals: Specialty
+ROC,"Rockwood Holdings, Inc.",2200,Process Industries,2210,Chemicals: Specialty
+SIAL,Sigma-Aldrich Corporation,2200,Process Industries,2210,Chemicals: Specialty
+GRA,W R Grace & Co,2200,Process Industries,2210,Chemicals: Specialty
+CE,Celanese Corporation,2200,Process Industries,2205,Chemicals: Major Diversified
+DWDP,DowDuPont Inc.,2200,Process Industries,2205,Chemicals: Major Diversified
+EMN,Eastman Chemical Company,2200,Process Industries,2205,Chemicals: Major Diversified
+HUN,Huntsman Corporation,2200,Process Industries,2205,Chemicals: Major Diversified
+WLK,Westlake Chemical Corporation,2200,Process Industries,2205,Chemicals: Major Diversified
+ANRZQ,"Alpha Natural Resources, Inc.",2100,Energy Minerals,2125,Coal
+ACIIQ,"Arch Coal, Inc.",2100,Energy Minerals,2125,Coal
+BTUUQ,Peabody Energy Corporation,2100,Energy Minerals,2125,Coal
+ANDV,Andeavor,2100,Energy Minerals,2120,Oil Refining/Marketing
+ANDX,Andeavor Logistics LP,2100,Energy Minerals,2120,Oil Refining/Marketing
+DK,Delek US Holdings Inc,2100,Energy Minerals,2120,Oil Refining/Marketing
+HFC,HollyFrontier Corporation,2100,Energy Minerals,2120,Oil Refining/Marketing
+MPC,Marathon Petroleum Corporation,2100,Energy Minerals,2120,Oil Refining/Marketing
+NTI,Northern Tier Energy LP Class A,2100,Energy Minerals,2120,Oil Refining/Marketing
+NS,NuStar Energy L.P.,2100,Energy Minerals,2120,Oil Refining/Marketing
+PBF,"PBF Energy, Inc. Class A",2100,Energy Minerals,2120,Oil Refining/Marketing
+PSX,Phillips 66,2100,Energy Minerals,2120,Oil Refining/Marketing
+TRGP,Targa Resources Corp.,2100,Energy Minerals,2120,Oil Refining/Marketing
+VLO,Valero Energy Corporation,2100,Energy Minerals,2120,Oil Refining/Marketing
+WNR,"Western Refining, Inc.",2100,Energy Minerals,2120,Oil Refining/Marketing
+B0GRC9,Williams Partners L.P.,2100,Energy Minerals,2120,Oil Refining/Marketing
+APC,Anadarko Petroleum Corporation,2100,Energy Minerals,2110,Integrated Oil
+CVX,Chevron Corporation,2100,Energy Minerals,2110,Integrated Oil
+CNX,CNX Resources Corporation,2100,Energy Minerals,2110,Integrated Oil
+EPL,"EPL Oil & Gas, Inc.",2100,Energy Minerals,2110,Integrated Oil
+XOM,Exxon Mobil Corporation,2100,Energy Minerals,2110,Integrated Oil
+KOG,Kodiak Oil & Gas Corp.,2100,Energy Minerals,2110,Integrated Oil
+LINEQ,"Linn Energy, LLC",2100,Energy Minerals,2110,Integrated Oil
+MHRCQ,Magnum Hunter Resources Corporation,2100,Energy Minerals,2110,Integrated Oil
+NFG,National Fuel Gas Company,2100,Energy Minerals,2110,Integrated Oil
+AR,Antero Resources Corporation,2100,Energy Minerals,2105,Oil & Gas Production
+APA,Apache Corporation,2100,Energy Minerals,2105,Oil & Gas Production
+ATHL,"Athlon Energy, Inc.",2100,Energy Minerals,2105,Oil & Gas Production
+COG,Cabot Oil & Gas Corporation,2100,Energy Minerals,2105,Oil & Gas Production
+CRZO,"Carrizo Oil & Gas, Inc.",2100,Energy Minerals,2105,Oil & Gas Production
+CHK,Chesapeake Energy Corporation,2100,Energy Minerals,2105,Oil & Gas Production
+XEC,Cimarex Energy Co.,2100,Energy Minerals,2105,Oil & Gas Production
+CXO,Concho Resources Inc.,2100,Energy Minerals,2105,Oil & Gas Production
+COP,ConocoPhillips,2100,Energy Minerals,2105,Oil & Gas Production
+CLR,"Continental Resources, Inc.",2100,Energy Minerals,2105,Oil & Gas Production
+DNR,Denbury Resources Inc.,2100,Energy Minerals,2105,Oil & Gas Production
+DVN,Devon Energy Corporation,2100,Energy Minerals,2105,Oil & Gas Production
+FANG,"Diamondback Energy, Inc.",2100,Energy Minerals,2105,Oil & Gas Production
+EGN,Energen Corporation,2100,Energy Minerals,2105,Oil & Gas Production
+EXXIQ,Energy XXI Ltd,2100,Energy Minerals,2105,Oil & Gas Production
+EOG,"EOG Resources, Inc.",2100,Energy Minerals,2105,Oil & Gas Production
+EQT,EQT Corporation,2100,Energy Minerals,2105,Oil & Gas Production
+GDPMQ,Goodrich Petroleum Corporation,2100,Energy Minerals,2105,Oil & Gas Production
+GPOR,Gulfport Energy Corporation,2100,Energy Minerals,2105,Oil & Gas Production
+HES,Hess Corporation,2100,Energy Minerals,2105,Oil & Gas Production
+HPR,HighPoint Resources Corp.,2100,Energy Minerals,2105,Oil & Gas Production
+LPI,"Laredo Petroleum, Inc.",2100,Energy Minerals,2105,Oil & Gas Production
+MRO,Marathon Oil Corporation,2100,Energy Minerals,2105,Oil & Gas Production
+MTDR,Matador Resources Company,2100,Energy Minerals,2105,Oil & Gas Production
+MUR,Murphy Oil Corporation,2100,Energy Minerals,2105,Oil & Gas Production
+NFX,Newfield Exploration Company,2100,Energy Minerals,2105,Oil & Gas Production
+NBL,"Noble Energy, Inc.",2100,Energy Minerals,2105,Oil & Gas Production
+OAS,Oasis Petroleum Inc.,2100,Energy Minerals,2105,Oil & Gas Production
+OXY,Occidental Petroleum Corporation,2100,Energy Minerals,2105,Oil & Gas Production
+PDCE,PDC Energy Inc,2100,Energy Minerals,2105,Oil & Gas Production
+PVAHQ,Penn Virginia Corporation,2100,Energy Minerals,2105,Oil & Gas Production
+PXD,Pioneer Natural Resources Company,2100,Energy Minerals,2105,Oil & Gas Production
+QEP,"QEP Resources, Inc.",2100,Energy Minerals,2105,Oil & Gas Production
+RRC,Range Resources Corporation,2100,Energy Minerals,2105,Oil & Gas Production
+ROSE.3,Rosetta Resources Inc.,2100,Energy Minerals,2105,Oil & Gas Production
+SNEC,Sanchez Energy Corporation,2100,Energy Minerals,2105,Oil & Gas Production
+SDOCQ,"SandRidge Energy, Inc.",2100,Energy Minerals,2105,Oil & Gas Production
+SM,SM Energy Company,2100,Energy Minerals,2105,Oil & Gas Production
+SWN,Southwestern Energy Company,2100,Energy Minerals,2105,Oil & Gas Production
+NGLS,Targa Resources Partners LP,2100,Energy Minerals,2105,Oil & Gas Production
+UPLMQ,Ultra Petroleum Corp.,2100,Energy Minerals,2105,Oil & Gas Production
+WLL,Whiting Petroleum Corporation,2100,Energy Minerals,2105,Oil & Gas Production
+WPX,"WPX Energy, Inc.",2100,Energy Minerals,2105,Oil & Gas Production
+FOSL,"Fossil Group, Inc.",1400,Consumer Durables,1445,Other Consumer Specialties
+TUMI,"Tumi Holdings, Inc.",1400,Consumer Durables,1445,Other Consumer Specialties
+ATVI,"Activision Blizzard, Inc.",1400,Consumer Durables,1435,Recreational Products
+BC,Brunswick Corporation,1400,Consumer Durables,1435,Recreational Products
+ELY,Callaway Golf Company,1400,Consumer Durables,1435,Recreational Products
+EA,Electronic Arts Inc.,1400,Consumer Durables,1435,Recreational Products
+HAS,"Hasbro, Inc.",1400,Consumer Durables,1435,Recreational Products
+MAT,"Mattel, Inc.",1400,Consumer Durables,1435,Recreational Products
+PII,Polaris Industries Inc.,1400,Consumer Durables,1435,Recreational Products
+TTWO,"Take-Two Interactive Software, Inc.",1400,Consumer Durables,1435,Recreational Products
+THO,"Thor Industries, Inc.",1400,Consumer Durables,1435,Recreational Products
+SNA,Snap-on Incorporated,1400,Consumer Durables,1430,Tools & Hardware
+SWK,"Stanley Black & Decker, Inc.",1400,Consumer Durables,1430,Tools & Hardware
+HAR,"Harman International Industries, Incorporated",1400,Consumer Durables,1425,Electronics/Appliances
+IRBT,iRobot Corporation,1400,Consumer Durables,1425,Electronics/Appliances
+SODA,SodaStream International Ltd.,1400,Consumer Durables,1425,Electronics/Appliances
+WHR,Whirlpool Corporation,1400,Consumer Durables,1425,Electronics/Appliances
+JAH,Jarden Corporation,1400,Consumer Durables,1420,Home Furnishings
+LZB,LaZBoy Incorporated,1400,Consumer Durables,1420,Home Furnishings
+LEG,"Leggett & Platt, Incorporated",1400,Consumer Durables,1420,Home Furnishings
+MHK,"Mohawk Industries, Inc.",1400,Consumer Durables,1420,Home Furnishings
+SNBR,Sleep Number Corporation,1400,Consumer Durables,1420,Home Furnishings
+TPX,Tempur Sealy International Inc,1400,Consumer Durables,1420,Home Furnishings
+BZH,"Beazer Homes USA, Inc.",1400,Consumer Durables,1415,Homebuilding
+CAA,"CalAtlantic Group, Inc.",1400,Consumer Durables,1415,Homebuilding
+DHI,"D.R. Horton, Inc.",1400,Consumer Durables,1415,Homebuilding
+HOV,"Hovnanian Enterprises, Inc. Class A",1400,Consumer Durables,1415,Homebuilding
+KBH,KB Home,1400,Consumer Durables,1415,Homebuilding
+LEN,Lennar Corporation Class A,1400,Consumer Durables,1415,Homebuilding
+MDC,"M.D.C. Holdings, Inc.",1400,Consumer Durables,1415,Homebuilding
+MTH,Meritage Homes Corporation,1400,Consumer Durables,1415,Homebuilding
+NVR,"NVR, Inc.",1400,Consumer Durables,1415,Homebuilding
+PHM,"PulteGroup, Inc.",1400,Consumer Durables,1415,Homebuilding
+RYL,"Ryland Group, Inc.",1400,Consumer Durables,1415,Homebuilding
+TOL,"Toll Brothers, Inc.",1400,Consumer Durables,1415,Homebuilding
+DORM,"Dorman Products, Inc.",1400,Consumer Durables,1410,Automotive Aftermarket
+GT,Goodyear Tire & Rubber Company,1400,Consumer Durables,1410,Automotive Aftermarket
+LKQ,LKQ Corporation,1400,Consumer Durables,1410,Automotive Aftermarket
+F,Ford Motor Company,1400,Consumer Durables,1405,Motor Vehicles
+GM,General Motors Company,1400,Consumer Durables,1405,Motor Vehicles
+HOG,"Harley-Davidson, Inc.",1400,Consumer Durables,1405,Motor Vehicles
+TSLA,Tesla Inc,1400,Consumer Durables,1405,Motor Vehicles
+AEIS,"Advanced Energy Industries, Inc.",1300,Electronic Technology,1355,Electronic Production Equipment
+AMAT,"Applied Materials, Inc.",1300,Electronic Technology,1355,Electronic Production Equipment
+CDNS,"Cadence Design Systems, Inc.",1300,Electronic Technology,1355,Electronic Production Equipment
+CGNX,Cognex Corporation,1300,Electronic Technology,1355,Electronic Production Equipment
+ENTG,"Entegris, Inc.",1300,Electronic Technology,1355,Electronic Production Equipment
+KLAC,KLA-Tencor Corporation,1300,Electronic Technology,1355,Electronic Production Equipment
+LRCX,Lam Research Corporation,1300,Electronic Technology,1355,Electronic Production Equipment
+MENT,Mentor Graphics Corporation,1300,Electronic Technology,1355,Electronic Production Equipment
+MKSI,"MKS Instruments, Inc.",1300,Electronic Technology,1355,Electronic Production Equipment
+TER,"Teradyne, Inc.",1300,Electronic Technology,1355,Electronic Production Equipment
+VECO,Veeco Instruments Inc.,1300,Electronic Technology,1355,Electronic Production Equipment
+CSCO,"Cisco Systems, Inc.",1300,Electronic Technology,1352,Computer Communications
+FFIV,"F5 Networks, Inc.",1300,Electronic Technology,1352,Computer Communications
+FNSR,Finisar Corporation,1300,Electronic Technology,1352,Computer Communications
+FTNT,"Fortinet, Inc.",1300,Electronic Technology,1352,Computer Communications
+JNPR,"Juniper Networks, Inc.",1300,Electronic Technology,1352,Computer Communications
+PANW,"Palo Alto Networks, Inc.",1300,Electronic Technology,1352,Computer Communications
+ARUN,"Aruba Networks, Inc.",1300,Electronic Technology,1345,Computer Peripherals
+BRCD,"Brocade Communications Systems, Inc.",1300,Electronic Technology,1345,Computer Peripherals
+EFII,"Electronics For Imaging, Inc.",1300,Electronic Technology,1345,Computer Peripherals
+EMC,EMC Corporation,1300,Electronic Technology,1345,Computer Peripherals
+FIO,"Fusion-io, Inc.",1300,Electronic Technology,1345,Computer Peripherals
+LXK,"Lexmark International, Inc. Class A",1300,Electronic Technology,1345,Computer Peripherals
+NTAP,"NetApp, Inc.",1300,Electronic Technology,1345,Computer Peripherals
+RKUS,"Ruckus Wireless, Inc.",1300,Electronic Technology,1345,Computer Peripherals
+SNDK,SanDisk Corporation,1300,Electronic Technology,1345,Computer Peripherals
+STX,Seagate Technology PLC,1300,Electronic Technology,1345,Computer Peripherals
+SYNA,Synaptics Incorporated,1300,Electronic Technology,1345,Computer Peripherals
+WDC,Western Digital Corporation,1300,Electronic Technology,1345,Computer Peripherals
+XRX,Xerox Corporation,1300,Electronic Technology,1345,Computer Peripherals
+ZBRA,Zebra Technologies Corporation Class A,1300,Electronic Technology,1345,Computer Peripherals
+CRAY,Cray Inc.,1300,Electronic Technology,1340,Computer Processing Hardware
+HPQ,HP Inc.,1300,Electronic Technology,1340,Computer Processing Hardware
+NCR,NCR Corporation,1300,Electronic Technology,1340,Computer Processing Hardware
+TDC,Teradata Corporation,1300,Electronic Technology,1340,Computer Processing Hardware
+AIR,AAR CORP.,1300,Electronic Technology,1330,Aerospace & Defense
+AVAV,"AeroVironment, Inc.",1300,Electronic Technology,1330,Aerospace & Defense
+AOBC,American Outdoor Brands Corporation,1300,Electronic Technology,1330,Aerospace & Defense
+BEAV,"B/E Aerospace, Inc.",1300,Electronic Technology,1330,Aerospace & Defense
+BA,Boeing Company,1300,Electronic Technology,1330,Aerospace & Defense
+BWXT,"BWX Technologies, Inc.",1300,Electronic Technology,1330,Aerospace & Defense
+CW,Curtiss-Wright Corporation,1300,Electronic Technology,1330,Aerospace & Defense
+ESL,Esterline Technologies Corporation,1300,Electronic Technology,1330,Aerospace & Defense
+XLS,Exelis Inc.,1300,Electronic Technology,1330,Aerospace & Defense
+FLIR,"FLIR Systems, Inc.",1300,Electronic Technology,1330,Aerospace & Defense
+GD,General Dynamics Corporation,1300,Electronic Technology,1330,Aerospace & Defense
+HEI,HEICO Corporation,1300,Electronic Technology,1330,Aerospace & Defense
+HXL,Hexcel Corporation,1300,Electronic Technology,1330,Aerospace & Defense
+HII,"Huntington Ingalls Industries, Inc.",1300,Electronic Technology,1330,Aerospace & Defense
+LLL,L3 Technologies Inc,1300,Electronic Technology,1330,Aerospace & Defense
+LMT,Lockheed Martin Corporation,1300,Electronic Technology,1330,Aerospace & Defense
+MOG.A,Moog Inc. Class A,1300,Electronic Technology,1330,Aerospace & Defense
+MSI,"Motorola Solutions, Inc.",1300,Electronic Technology,1330,Aerospace & Defense
+NOC,Northrop Grumman Corporation,1300,Electronic Technology,1330,Aerospace & Defense
+OA,"Orbital ATK, Inc.",1300,Electronic Technology,1330,Aerospace & Defense
+ORB,Orbital Sciences Corporation,1300,Electronic Technology,1330,Aerospace & Defense
+PCP,Precision Castparts Corp.,1300,Electronic Technology,1330,Aerospace & Defense
+RTN,Raytheon Company,1300,Electronic Technology,1330,Aerospace & Defense
+COL,"Rockwell Collins, Inc.",1300,Electronic Technology,1330,Aerospace & Defense
+SPR,"Spirit AeroSystems Holdings, Inc. Class A",1300,Electronic Technology,1330,Aerospace & Defense
+TDY,Teledyne Technologies Incorporated,1300,Electronic Technology,1330,Aerospace & Defense
+TDG,TransDigm Group Incorporated,1300,Electronic Technology,1330,Aerospace & Defense
+TGI,"Triumph Group, Inc.",1300,Electronic Technology,1330,Aerospace & Defense
+ADTN,"ADTRAN, Inc.",1300,Electronic Technology,1320,Telecommunications Equipment
+AAPL,Apple Inc.,1300,Electronic Technology,1320,Telecommunications Equipment
+ARRS,ARRIS International Plc,1300,Electronic Technology,1320,Telecommunications Equipment
+CIEN,Ciena Corporation,1300,Electronic Technology,1320,Telecommunications Equipment
+SATS,EchoStar Corporation Class A,1300,Electronic Technology,1320,Telecommunications Equipment
+GRMN,Garmin Ltd.,1300,Electronic Technology,1320,Telecommunications Equipment
+HRS,Harris Corporation,1300,Electronic Technology,1320,Telecommunications Equipment
+INFN,Infinera Corporation,1300,Electronic Technology,1320,Telecommunications Equipment
+QCOM,QUALCOMM Incorporated,1300,Electronic Technology,1320,Telecommunications Equipment
+TRMB,Trimble Inc.,1300,Electronic Technology,1320,Telecommunications Equipment
+UBNT,"Ubiquiti Networks, Inc.",1300,Electronic Technology,1320,Telecommunications Equipment
+VSAT,"ViaSat, Inc.",1300,Electronic Technology,1320,Telecommunications Equipment
+DDD,3D Systems Corporation,1300,Electronic Technology,1315,Electronic Equipment/Instruments
+COHR,"Coherent, Inc.",1300,Electronic Technology,1315,Electronic Equipment/Instruments
+DBD,Diebold Nixdorf Incorporated,1300,Electronic Technology,1315,Electronic Equipment/Instruments
+DLB,"Dolby Laboratories, Inc. Class A",1300,Electronic Technology,1315,Electronic Equipment/Instruments
+GTATQ,GT Advanced Technologies Inc.,1300,Electronic Technology,1315,Electronic Equipment/Instruments
+IPGP,IPG Photonics Corporation,1300,Electronic Technology,1315,Electronic Equipment/Instruments
+ITRI,"Itron, Inc.",1300,Electronic Technology,1315,Electronic Equipment/Instruments
+OSIS,"OSI Systems, Inc.",1300,Electronic Technology,1315,Electronic Equipment/Instruments
+ST,Sensata Technologies Holding PLC,1300,Electronic Technology,1315,Electronic Equipment/Instruments
+SSYS,Stratasys Ltd.,1300,Electronic Technology,1315,Electronic Equipment/Instruments
+VIAV,Viavi Solutions Inc,1300,Electronic Technology,1315,Electronic Equipment/Instruments
+APH,Amphenol Corporation Class A,1300,Electronic Technology,1310,Electronic Components
+CAMP,CalAmp Corp.,1300,Electronic Technology,1310,Electronic Components
+GLW,Corning Inc,1300,Electronic Technology,1310,Electronic Components
+CREE,"Cree, Inc.",1300,Electronic Technology,1310,Electronic Components
+FSLR,"First Solar, Inc.",1300,Electronic Technology,1310,Electronic Components
+FLEX,Flex Ltd.,1300,Electronic Technology,1310,Electronic Components
+JBL,Jabil Inc.,1300,Electronic Technology,1310,Electronic Components
+LSI.1,LSI Corporation,1300,Electronic Technology,1310,Electronic Components
+SANM,Sanmina-SCI Corporation,1300,Electronic Technology,1310,Electronic Components
+CODE,Spansion Inc. Class A,1300,Electronic Technology,1310,Electronic Components
+TEL,TE Connectivity Ltd.,1300,Electronic Technology,1310,Electronic Components
+OLED,Universal Display Corporation,1300,Electronic Technology,1310,Electronic Components
+VSH,"Vishay Intertechnology, Inc.",1300,Electronic Technology,1310,Electronic Components
+AMD,"Advanced Micro Devices, Inc.",1300,Electronic Technology,1305,Semiconductors
+ALTR.1,Altera Corporation,1300,Electronic Technology,1305,Semiconductors
+AMBA,"Ambarella, Inc.",1300,Electronic Technology,1305,Semiconductors
+ADI,"Analog Devices, Inc.",1300,Electronic Technology,1305,Semiconductors
+ATML,Atmel Corporation,1300,Electronic Technology,1305,Semiconductors
+BRCM,Broadcom Corporation Class A,1300,Electronic Technology,1305,Semiconductors
+AVGO,Broadcom Inc.,1300,Electronic Technology,1305,Semiconductors
+CAVM,"Cavium, Inc.",1300,Electronic Technology,1305,Semiconductors
+CRUS,"Cirrus Logic, Inc.",1300,Electronic Technology,1305,Semiconductors
+CY,Cypress Semiconductor Corporation,1300,Electronic Technology,1305,Semiconductors
+FCS,"Fairchild Semiconductor International, Inc.",1300,Electronic Technology,1305,Semiconductors
+FSL,Freescale Semiconductor Inc,1300,Electronic Technology,1305,Semiconductors
+HITT,Hittite Microwave Corporation,1300,Electronic Technology,1305,Semiconductors
+IDTI,"Integrated Device Technology, Inc.",1300,Electronic Technology,1305,Semiconductors
+INTC,Intel Corporation,1300,Electronic Technology,1305,Semiconductors
+IRF,International Rectifier Corporation,1300,Electronic Technology,1305,Semiconductors
+ISIL,Intersil Corporation Class A,1300,Electronic Technology,1305,Semiconductors
+INVN,"InvenSense, Inc.",1300,Electronic Technology,1305,Semiconductors
+LLTC,Linear Technology Corporation,1300,Electronic Technology,1305,Semiconductors
+MRVL,Marvell Technology Group Ltd.,1300,Electronic Technology,1305,Semiconductors
+MXIM,"Maxim Integrated Products, Inc.",1300,Electronic Technology,1305,Semiconductors
+MLNX,"Mellanox Technologies, Ltd.",1300,Electronic Technology,1305,Semiconductors
+MCHP,Microchip Technology Incorporated,1300,Electronic Technology,1305,Semiconductors
+MU,"Micron Technology, Inc.",1300,Electronic Technology,1305,Semiconductors
+MSCC,Microsemi Corporation,1300,Electronic Technology,1305,Semiconductors
+MPWR,"Monolithic Power Systems, Inc.",1300,Electronic Technology,1305,Semiconductors
+MONT,Montage Technology Group Ltd.,1300,Electronic Technology,1305,Semiconductors
+NVDA,NVIDIA Corporation,1300,Electronic Technology,1305,Semiconductors
+NXPI,NXP Semiconductors NV,1300,Electronic Technology,1305,Semiconductors
+OVTI,"OmniVision Technologies, Inc.",1300,Electronic Technology,1305,Semiconductors
+ON,ON Semiconductor Corporation,1300,Electronic Technology,1305,Semiconductors
+PMCS,"PMC-Sierra, Inc.",1300,Electronic Technology,1305,Semiconductors
+POWI,"Power Integrations, Inc.",1300,Electronic Technology,1305,Semiconductors
+QRVO,"Qorvo, Inc.",1300,Electronic Technology,1305,Semiconductors
+RMBS,Rambus Inc.,1300,Electronic Technology,1305,Semiconductors
+SMTC,Semtech Corporation,1300,Electronic Technology,1305,Semiconductors
+SLAB,Silicon Laboratories Inc.,1300,Electronic Technology,1305,Semiconductors
+SWKS,"Skyworks Solutions, Inc.",1300,Electronic Technology,1305,Semiconductors
+SUNEQ,"SunEdison, Inc.",1300,Electronic Technology,1305,Semiconductors
+TXN,Texas Instruments Incorporated,1300,Electronic Technology,1305,Semiconductors
+TQNT,"TriQuint Semiconductor, Inc.",1300,Electronic Technology,1305,Semiconductors
+XLNX,"Xilinx, Inc.",1300,Electronic Technology,1305,Semiconductors
+MMM,3M Company,1200,Producer Manufacturing,1255,Industrial Conglomerates
+GE,General Electric Company,1200,Producer Manufacturing,1255,Industrial Conglomerates
+HON,Honeywell International Inc.,1200,Producer Manufacturing,1255,Industrial Conglomerates
+IR,Ingersoll-Rand Plc,1200,Producer Manufacturing,1255,Industrial Conglomerates
+MGAM,"Multimedia Games Holding Company, Inc.",1200,Producer Manufacturing,1255,Industrial Conglomerates
+NWL,Newell Brands Inc,1200,Producer Manufacturing,1255,Industrial Conglomerates
+ROP,"Roper Technologies, Inc.",1200,Producer Manufacturing,1255,Industrial Conglomerates
+TXT,Textron Inc.,1200,Producer Manufacturing,1255,Industrial Conglomerates
+UTX,United Technologies Corporation,1200,Producer Manufacturing,1255,Industrial Conglomerates
+AME,"AMETEK, Inc.",1200,Producer Manufacturing,1250,Miscellaneous Manufacturing
+CSL,Carlisle Companies Incorporated,1200,Producer Manufacturing,1250,Miscellaneous Manufacturing
+CR,Crane Co.,1200,Producer Manufacturing,1250,Miscellaneous Manufacturing
+DOV,Dover Corporation,1200,Producer Manufacturing,1250,Miscellaneous Manufacturing
+PNR,Pentair plc,1200,Producer Manufacturing,1250,Miscellaneous Manufacturing
+TUP,Tupperware Brands Corporation,1200,Producer Manufacturing,1250,Miscellaneous Manufacturing
+PBI,Pitney Bowes Inc.,1200,Producer Manufacturing,1245,Office Equipment/Supplies
+AYI,"Acuity Brands, Inc.",1200,Producer Manufacturing,1235,Electrical Products
+BDC,Belden Inc.,1200,Producer Manufacturing,1235,Electrical Products
+ETN,Eaton Corp. Plc,1200,Producer Manufacturing,1235,Electrical Products
+EMR,Emerson Electric Co.,1200,Producer Manufacturing,1235,Electrical Products
+ENS,EnerSys,1200,Producer Manufacturing,1235,Electrical Products
+GNRC,Generac Holdings Inc.,1200,Producer Manufacturing,1235,Electrical Products
+GTI,GrafTech International Ltd,1200,Producer Manufacturing,1235,Electrical Products
+HUBB,Hubbell Incorporated Class B,1200,Producer Manufacturing,1235,Electrical Products
+LFUS,"Littelfuse, Inc.",1200,Producer Manufacturing,1235,Electrical Products
+SPB.1,"Spectrum Brands Holdings, Inc.",1200,Producer Manufacturing,1235,Electrical Products
+SPWR,SunPower Corporation,1200,Producer Manufacturing,1235,Electrical Products
+AOS,A. O. Smith Corporation,1200,Producer Manufacturing,1230,Building Products
+AWI,"Armstrong World Industries, Inc.",1200,Producer Manufacturing,1230,Building Products
+FBHS,"Fortune Brands Home & Security, Inc.",1200,Producer Manufacturing,1230,Building Products
+LII,Lennox International Inc.,1200,Producer Manufacturing,1230,Building Products
+MAS,Masco Corporation,1200,Producer Manufacturing,1230,Building Products
+SCTY,SolarCity Corp.,1200,Producer Manufacturing,1230,Building Products
+WSO,"Watsco, Inc.",1200,Producer Manufacturing,1230,Building Products
+AXL,"American Axle & Manufacturing Holdings, Inc.",1200,Producer Manufacturing,1225,Auto Parts: OEM
+APTV,Aptiv PLC,1200,Producer Manufacturing,1225,Auto Parts: OEM
+ALV,Autoliv Inc.,1200,Producer Manufacturing,1225,Auto Parts: OEM
+BWA,BorgWarner Inc.,1200,Producer Manufacturing,1225,Auto Parts: OEM
+DAN,Dana Incorporated,1200,Producer Manufacturing,1225,Auto Parts: OEM
+GNTX,Gentex Corporation,1200,Producer Manufacturing,1225,Auto Parts: OEM
+247680,"Johnson Controls, Inc.",1200,Producer Manufacturing,1225,Auto Parts: OEM
+LEA,Lear Corporation,1200,Producer Manufacturing,1225,Auto Parts: OEM
+MTOR,"Meritor, Inc.",1200,Producer Manufacturing,1225,Auto Parts: OEM
+TEN,Tenneco Inc. Class A,1200,Producer Manufacturing,1225,Auto Parts: OEM
+TRW,TRW Automotive Holdings Corp.,1200,Producer Manufacturing,1225,Auto Parts: OEM
+WBC,WABCO Holdings Inc.,1200,Producer Manufacturing,1225,Auto Parts: OEM
+AGCO,AGCO Corporation,1200,Producer Manufacturing,1220,Trucks/Construction/Farm Machinery
+ALSN,"Allison Transmission Holdings, Inc.",1200,Producer Manufacturing,1220,Trucks/Construction/Farm Machinery
+CAT,Caterpillar Inc.,1200,Producer Manufacturing,1220,Trucks/Construction/Farm Machinery
+CMI,Cummins Inc.,1200,Producer Manufacturing,1220,Trucks/Construction/Farm Machinery
+DE,Deere & Company,1200,Producer Manufacturing,1220,Trucks/Construction/Farm Machinery
+GBX,"Greenbrier Companies, Inc.",1200,Producer Manufacturing,1220,Trucks/Construction/Farm Machinery
+JOY,Joy Global Inc.,1200,Producer Manufacturing,1220,Trucks/Construction/Farm Machinery
+LNN,Lindsay Corporation,1200,Producer Manufacturing,1220,Trucks/Construction/Farm Machinery
+MTW,"Manitowoc Company, Inc.",1200,Producer Manufacturing,1220,Trucks/Construction/Farm Machinery
+NAV,Navistar International Corporation,1200,Producer Manufacturing,1220,Trucks/Construction/Farm Machinery
+OSK,Oshkosh Corp,1200,Producer Manufacturing,1220,Trucks/Construction/Farm Machinery
+PCAR,PACCAR Inc,1200,Producer Manufacturing,1220,Trucks/Construction/Farm Machinery
+TEX,Terex Corporation,1200,Producer Manufacturing,1220,Trucks/Construction/Farm Machinery
+TTC,Toro Company,1200,Producer Manufacturing,1220,Trucks/Construction/Farm Machinery
+TRN,"Trinity Industries, Inc.",1200,Producer Manufacturing,1220,Trucks/Construction/Farm Machinery
+WNC,Wabash National Corporation,1200,Producer Manufacturing,1220,Trucks/Construction/Farm Machinery
+WAB,Westinghouse Air Brake Technologies Corporation,1200,Producer Manufacturing,1220,Trucks/Construction/Farm Machinery
+ATU,Actuant Corporation Class A,1200,Producer Manufacturing,1210,Industrial Machinery
+B,Barnes Group Inc.,1200,Producer Manufacturing,1210,Industrial Machinery
+GTLS,"Chart Industries, Inc.",1200,Producer Manufacturing,1210,Industrial Machinery
+CLC,CLARCOR Inc.,1200,Producer Manufacturing,1210,Industrial Machinery
+CFX,Colfax Corporation,1200,Producer Manufacturing,1210,Industrial Machinery
+NPO,"EnPro Industries, Inc.",1200,Producer Manufacturing,1210,Industrial Machinery
+FLS,Flowserve Corporation,1200,Producer Manufacturing,1210,Industrial Machinery
+FCEL,"FuelCell Energy, Inc.",1200,Producer Manufacturing,1210,Industrial Machinery
+GGG,Graco Inc.,1200,Producer Manufacturing,1210,Industrial Machinery
+IEX,IDEX Corporation,1200,Producer Manufacturing,1210,Industrial Machinery
+ITW,Illinois Tool Works Inc.,1200,Producer Manufacturing,1210,Industrial Machinery
+ITT,"ITT, Inc.",1200,Producer Manufacturing,1210,Industrial Machinery
+KMT,Kennametal Inc.,1200,Producer Manufacturing,1210,Industrial Machinery
+LECO,"Lincoln Electric Holdings, Inc.",1200,Producer Manufacturing,1210,Industrial Machinery
+MIDD,Middleby Corporation,1200,Producer Manufacturing,1210,Industrial Machinery
+MWA,"Mueller Water Products, Inc. Class A",1200,Producer Manufacturing,1210,Industrial Machinery
+NDSN,Nordson Corporation,1200,Producer Manufacturing,1210,Industrial Machinery
+PH,Parker-Hannifin Corporation,1200,Producer Manufacturing,1210,Industrial Machinery
+PRLB,"Proto Labs, Inc.",1200,Producer Manufacturing,1210,Industrial Machinery
+RBC,Regal Beloit Corp,1200,Producer Manufacturing,1210,Industrial Machinery
+RXN,Rexnord Corporation,1200,Producer Manufacturing,1210,Industrial Machinery
+ROK,"Rockwell Automation, Inc.",1200,Producer Manufacturing,1210,Industrial Machinery
+WTS,"Watts Water Technologies, Inc. Class A",1200,Producer Manufacturing,1210,Industrial Machinery
+WWD,"Woodward, Inc.",1200,Producer Manufacturing,1210,Industrial Machinery
+XYL,Xylem Inc.,1200,Producer Manufacturing,1210,Industrial Machinery
+CRS,Carpenter Technology Corporation,1200,Producer Manufacturing,1205,Metal Fabrication
+CMC,Commercial Metals Company,1200,Producer Manufacturing,1205,Metal Fabrication
+BGC,General Cable Corporation,1200,Producer Manufacturing,1205,Metal Fabrication
+HSC,Harsco Corporation,1200,Producer Manufacturing,1205,Metal Fabrication
+TKR,Timken Company,1200,Producer Manufacturing,1205,Metal Fabrication
+VMI,"Valmont Industries, Inc.",1200,Producer Manufacturing,1205,Metal Fabrication
+EXP,Eagle Materials Inc.,1100,Non-Energy Minerals,1135,Construction Materials
+MLM,"Martin Marietta Materials, Inc.",1100,Non-Energy Minerals,1135,Construction Materials
+OC,Owens Corning,1100,Non-Energy Minerals,1135,Construction Materials
+TXI,"Texas Industries, Inc.",1100,Non-Energy Minerals,1135,Construction Materials
+USG,USG Corporation,1100,Non-Energy Minerals,1135,Construction Materials
+VMC,Vulcan Materials Company,1100,Non-Energy Minerals,1135,Construction Materials
+BCC,Boise Cascade Co.,1100,Non-Energy Minerals,1130,Forest Products
+LPX,Louisiana-Pacific Corporation,1100,Non-Energy Minerals,1130,Forest Products
+PCL,"Plum Creek Timber Company, Inc.",1100,Non-Energy Minerals,1130,Forest Products
+TREX,"Trex Company, Inc.",1100,Non-Energy Minerals,1130,Forest Products
+SCCO,Southern Copper Corporation,1100,Non-Energy Minerals,1125,Other Metals/Minerals
+SLCA,"U.S. Silica Holdings, Inc.",1100,Non-Energy Minerals,1125,Other Metals/Minerals
+CDE,"Coeur Mining, Inc.",1100,Non-Energy Minerals,1120,Precious Metals
+FCX,"Freeport-McMoRan, Inc.",1100,Non-Energy Minerals,1120,Precious Metals
+HL,Hecla Mining Company,1100,Non-Energy Minerals,1120,Precious Metals
+NEM,Newmont Mining Corporation,1100,Non-Energy Minerals,1120,Precious Metals
+RGLD,"Royal Gold, Inc.",1100,Non-Energy Minerals,1120,Precious Metals
+AA,Alcoa Corp.,1100,Non-Energy Minerals,1115,Aluminum
+KALU,Kaiser Aluminum Corporation,1100,Non-Energy Minerals,1115,Aluminum
+AKS,AK Steel Holding Corporation,1100,Non-Energy Minerals,1105,Steel
+ATI,Allegheny Technologies Incorporated,1100,Non-Energy Minerals,1105,Steel
+CLF,Cleveland-Cliffs Inc,1100,Non-Energy Minerals,1105,Steel
+NUE,Nucor Corporation,1100,Non-Energy Minerals,1105,Steel
+RS,Reliance Steel & Aluminum Co.,1100,Non-Energy Minerals,1105,Steel
+STLD,"Steel Dynamics, Inc.",1100,Non-Energy Minerals,1105,Steel
+X,United States Steel Corporation,1100,Non-Energy Minerals,1105,Steel
+WOR,"Worthington Industries, Inc.",1100,Non-Energy Minerals,1105,Steel
