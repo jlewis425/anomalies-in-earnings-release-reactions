@@ -2,17 +2,46 @@
 # 1) pre-processing
 # 2) quandl/quantcha
 
+def tidyfy_surp_df(df):
+    """Clean up Surp dataframes prior to join"""
+    new_cols = ['ticker_symbol',
+                 'co_name',
+                 'unique_earnings_code',
+                 'factset_sector_num',
+                 'factset_ind_num',
+                 'calendar_qtr',
+                 'fiscal_qtr',
+                 'adtv_prev_month',
+                 'report_date',
+                 'eps_est',
+                 'eps_actual',
+                 'surp_amt',
+                 'rtn_t+3',
+                 'mkt_t+3_rtn',
+                 'rel_t+3_rtn',
+                 'num_ests_qtr_end',
+                 't-7_high_est',
+                 't-7_low_est',
+                 'est_spread',
+                 'spread_adj_surp']
+    
+    tidy_df = df[new_cols]
+    tidy_df.reset_index()
+    return tidy_df
+
 def create_feature_df_index(df):
-    """Creates a new Index for extracting Features coded with a trailing 'F' from a dataframe"""
+    """Creates a new Index for extracting columns coded with a trailing 'F'from a dataframe"""
+    
     old_columns = list(df.columns)
     new_columns = []
     
-    for col in columns:
+    for col in old_columns:
         if col[-1] == 'F':
             new_columns.append(col)
         
     new_columns.insert(0, 'unique_earnings_code')
     ind_obj = pd.Index(new_columns)
+    
     return ind_obj
 
 
@@ -21,10 +50,8 @@ def clean_feature_bind(surp_df, feature_df, retained_columns):
     bound_df = pd.merge(surp_df, feature_df[retained_columns], on='unique_earnings_code')
     return bound_df
 
-
 def write_merged_frames(surp_lst, features_lst):
-    """Create combined dataframes from two lists of dataframe names: surp & features; and write them to the
-    data folder as csv"""
+    """Create combined dataframes from two lists of dataframe names: surp & features"""
     combined_df_lst = []
     for s_df, f_df in zip(surp_lst, features_lst):
         #create quarter tag
@@ -32,6 +59,7 @@ def write_merged_frames(surp_lst, features_lst):
 
         # read surp df
         surp_df = pd.read_csv('data/'+s_df)
+        tidy_surp_df = tidyfy_surp_df(surp_df)
         # read feature df
         feature_df = pd.read_csv('data/'+f_df)
 
@@ -39,7 +67,7 @@ def write_merged_frames(surp_lst, features_lst):
         retained_cols = create_feature_df_index(feature_df)
 
         # create combined df
-        combined_df = clean_feature_bind(surp_df, feature_df, retained_cols)
+        combined_df = clean_feature_bind(tidy_surp_df, feature_df, retained_cols)
 
         # write combined_df to a csv file and store in data folder
         combined_df.to_csv('data/combined_'+tag)
@@ -50,6 +78,14 @@ def write_merged_frames(surp_lst, features_lst):
     return combined_df_lst
 
 
+
+def stack_frames(sequence):
+    sequence = sequence.copy()
+
+    combined_full = pd.concat([pd.read_csv(f'data/{file}', low_memory=False) for file in sequence])
+    combined_full = combined_full.drop(columns=['Unnamed: 0']).drop_duplicates()
+    
+    combined_full.to_csv('data/combined_full_set.csv')
 
 
 
