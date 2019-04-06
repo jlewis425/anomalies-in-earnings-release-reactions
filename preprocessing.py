@@ -67,4 +67,4 @@ combined_frames = write_merged_frames(surp_files, features_files)
 combined_full = stack_frames(combined_frames)
 create_labels('combined_full_set')
 clean_features('combined_full_set')
-
+X_train, X_test, y_train, y_test = partition_dataset('combined_clean')
