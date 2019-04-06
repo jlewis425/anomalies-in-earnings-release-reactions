@@ -214,9 +214,9 @@ def clean_features(filename):
         
     return
 
-def transform_report_dates(df):
-    """Helper function to convert report_date column to a sortable format"""
-    dates = list(df['report_date'])
+def transform_dates(df, col_name):
+    """Helper function to convert date columns to a sortable format"""
+    dates = list(df[str(col_name)])
     new_dates = []
 
     for d in dates:
@@ -225,7 +225,37 @@ def transform_report_dates(df):
         reformatted = reformatted[:10]
         new_dates.append(reformatted)
         
-    df['report_date'] = new_dates
+    df[str(col_name)] = new_dates    
+
+def partition_dataset(filename):
+    data = pd.read_csv('data/'+str(filename)+'.csv', low_memory=False)
+    data.drop(columns='Unnamed: 0', inplace=True)
+    
+    # reformat dates and sort by dates, ascending
+    transform_dates(data, 'report_date')
+    data.sort_values(by=['report_date'], inplace=True)
+    
+    # set index to unique_earnings_code
+    data.set_index('unique_earnings_code', inplace=True)
+    # partition 3q18 data to test set
+    test_partition = data[data.index.str.endswith('3Q18')]
+    
+    # create y_test array
+    y_test = test_partition.targets.values
+    
+    # create X_test array
+    features = test_partition.columns.str.endswith('F')
+    X_test = test_partition.values[:,features]
+    
+    # remove test_partition from data df
+    data = data[data.index.str.endswith('3Q18') == False]
+    
+    # create y_train and X_train arrays
+    y_train = data.targets.values
+    X_train = data.values[:,features]
+    
+     
+    return X_train, X_test, y_train, y_test
 
 
 
