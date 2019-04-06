@@ -214,7 +214,18 @@ def clean_features(filename):
         
     return
 
+def transform_report_dates(df):
+    """Helper function to convert report_date column to a sortable format"""
+    dates = list(df['report_date'])
+    new_dates = []
 
+    for d in dates:
+        dt = datetime.strptime(d, '%m/%d/%Y')
+        reformatted = str(dt)
+        reformatted = reformatted[:10]
+        new_dates.append(reformatted)
+        
+    df['report_date'] = new_dates
 
 
 
