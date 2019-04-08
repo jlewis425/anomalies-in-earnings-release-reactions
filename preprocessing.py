@@ -67,4 +67,24 @@ combined_frames = write_merged_frames(surp_files, features_files)
 combined_full = stack_frames(combined_frames)
 create_labels('combined_full_set')
 clean_features('combined_full_set')
-X_train, X_test, y_train, y_test = partition_dataset('combined_clean')
+
+
+# partition data
+X, X_oos, y, y_oos, features = partition_dataset('combined_clean') # create oos partition
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=1970) #create train-test split
+
+# random forest model
+clf = RandomForestClassifier(n_estimators=500, 
+                             criterion='gini',
+                             max_features=4,
+                             max_depth=6,
+                             random_state=1970)
+
+clf.fit(X_train, y_train)
+
+# set kfold cross-val
+skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=1970)
+
+# predict probabilities
+y_pred = clf.predict_proba(X_test)
+

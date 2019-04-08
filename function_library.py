@@ -146,8 +146,8 @@ def stack_frames(sequence):
     for rtn, react in (zip(event_rtn, event_react)):
         if (rtn <= -5) and (react >= 0.25):
             labels.append(1)
-        elif (rtn >= 5) and (react <= -0.25):
-            labels.append(2)
+        #elif (rtn >= 5) and (react <= -0.25):
+            #labels.append(2)
         else:
             labels.append(0)
             
@@ -157,8 +157,8 @@ def stack_frames(sequence):
     for rtn, react in (zip(event_rtn, event_react)):
         if (rtn <= -7.5) and (react >= 0.50):
             xtrm_tgts.append(1)
-        elif (rtn >= 7.5) and (react <= -0.50):
-            xtrm_tgts.append(2)
+        #elif (rtn >= 7.5) and (react <= -0.50):
+            #xtrm_tgts.append(2)
         else:
             xtrm_tgts.append(0)
        
@@ -256,6 +256,23 @@ def partition_dataset(filename):
     
      
     return X_train, X_test, y_train, y_test
+
+def create_hard_classes(prob_array, threshold):
+    """Helper function to create hard classifications based on a probability array and a given threshold"""
+    hard_classes = []
+    for row in prob_array:
+        if row[1] >= threshold:
+            hard_classes.append(1)
+        else:
+            hard_classes.append(0)
+    return hard_classes
+
+
+
+
+
+
+
 
 
 
