@@ -1,11 +1,36 @@
+# required packages
+import pandas as pd
+import numpy as np
+import quandl
+from datetime import datetime, timedelta
+import json
+import matplotlib.pyplot as plt
+
+
+from dateutil.parser import parse
+from datetime import datetime
+from sklearn.model_selection import train_test_split, StratifiedKFold, cross_val_score, KFold, GridSearchCV
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from sklearn.metrics import log_loss, precision_score, confusion_matrix, precision_recall_curve
+from sklearn.metrics import roc_auc_score, f1_score, make_scorer, recall_score, average_precision_score
+
+from sklearn.utils.multiclass import unique_labels
+from sklearn.utils.fixes import signature
+from sklearn.preprocessing import OneHotEncoder, LabelEncoder
+
+
+
+
 # function categories:
-# 1) pre-processing
-# 2) quandl/quantcha
+# 1) pre-processing & data partitioning
+# 2) model fitting & prediction
+# 2) 
 
-# pre-processing functions
+# pre-processing & data partitioning functions
+# helper functions
 
-def create_feature_df_index(df):
-    """Creates a new Index for extracting columns coded with a trailing 'F'from a dataframe"""
+def _create_feature_df_index(df):
+    """HELPER to create a new Index for extracting columns coded with a trailing 'F' from a dataframe"""
     
     old_columns = list(df.columns)
     new_columns = []
@@ -20,16 +45,16 @@ def create_feature_df_index(df):
     return ind_obj
 
 
-def clean_feature_bind(surp_df, feature_df, retained_columns):
-    """Creates a tidied up df from a surp_df and feature_df, based on an Index object of cols to retain."""
+def _clean_feature_bind(surp_df, feature_df, retained_columns):
+    """HELPER to create a tidied up df from a surp_df and feature_df, based on an Index object of cols to retain."""
     
     bound_df = pd.merge(surp_df, feature_df[retained_columns], on='unique_earnings_code')
     
     return bound_df
 
 
-def tidyfy_surp_df(df):
-    """Clean up Surp dataframes prior to join"""
+def _tidyfy_surp_df(df):
+    """HELPER to clean up Surp dataframes prior to join"""
     new_cols = ['ticker_symbol',
                  'co_name',
                  'unique_earnings_code',
@@ -56,8 +81,59 @@ def tidyfy_surp_df(df):
     
     return tidy_df
 
+def _transform_dates(df, col_name):
+    """HELPER to convert date columns to a sortable format"""
+    dates = list(df[str(col_name)])
+    new_dates = []
 
-  def write_merged_frames(surp_lst, features_lst):
+    for d in dates:
+        dt = datetime.strptime(d, '%m/%d/%Y')
+        reformatted = str(dt)
+        reformatted = reformatted[:10]
+        new_dates.append(reformatted)
+        
+    df[str(col_name)] = new_dates
+
+def _oos_partition(filename):
+    """HELPER to create out-of-sample partition of 3Q18 data."""
+    
+    # read file in as a df and drop unwanted column
+    data = pd.read_csv('data/'+str(filename)+'.csv', low_memory=False)
+    data.drop(columns='Unnamed: 0', inplace=True)
+    
+    # reformat dates and sort by dates, ascending
+    _transform_dates(data, 'report_date')
+    data.sort_values(by=['report_date'], inplace=True)
+    
+    # set index to unique_earnings_code
+    data.set_index('unique_earnings_code', inplace=True)
+    
+    # partition 3q18 data to test set
+    test_partition = data[data.index.str.endswith('3Q18')]
+    test_partition.to_csv('data/oos_data_partition.csv')
+    
+    # create y_oos array
+    y_oos = test_partition.targets.values
+    
+    # create X_oos array
+    features = test_partition.columns.str.endswith('F')
+    X_oos = test_partition.values[:,features]
+    
+    # remove test_partition from data df
+    data = data[data.index.str.endswith('3Q18') == False]
+    
+    # create y_train and X_train arrays
+    y = data.targets.values
+    X = data.values[:,features]
+    
+     
+    return X, X_oos, y, y_oos
+
+###################################################################################################
+
+# script functions
+
+def write_merged_frames(surp_lst, features_lst):
     """Create combined dataframes from two lists of dataframe names: surp & features"""
     
     combined_df_lst = []
@@ -68,15 +144,15 @@ def tidyfy_surp_df(df):
 
         # read surp df
         surp_df = pd.read_csv('data/'+s_df)
-        tidy_surp_df = tidyfy_surp_df(surp_df)
+        tidy_surp_df = _tidyfy_surp_df(surp_df)
         # read feature df
         feature_df = pd.read_csv('data/'+f_df)
 
         # create list of columns to retain
-        retained_cols = create_feature_df_index(feature_df)
+        retained_cols = _create_feature_df_index(feature_df)
 
         # create combined df
-        combined_df = clean_feature_bind(tidy_surp_df, feature_df, retained_cols)
+        combined_df = _clean_feature_bind(tidy_surp_df, feature_df, retained_cols)
         
 
         # write combined_df to a csv file and store in data folder
@@ -119,7 +195,7 @@ def stack_frames(sequence):
     return 
 
 
-   def create_labels(filename):
+def create_labels(filename):
     """Creates target labels for the data set.
     INPUT: csv filename, as text
     OUTPUT: Creates primary labels based on threshold values of +/- 5% for the rel_t+3_rtn and a
@@ -214,48 +290,60 @@ def clean_features(filename):
         
     return
 
-def transform_dates(df, col_name):
-    """Helper function to convert date columns to a sortable format"""
-    dates = list(df[str(col_name)])
-    new_dates = []
-
-    for d in dates:
-        dt = datetime.strptime(d, '%m/%d/%Y')
-        reformatted = str(dt)
-        reformatted = reformatted[:10]
-        new_dates.append(reformatted)
-        
-    df[str(col_name)] = new_dates    
-
-def partition_dataset(filename):
+    
+def encode_sectors(filename):
+    """Encodes factset_sector_num as binary categorical columns and writes them to the csv file
+    with 'trailing F' notation."""
     data = pd.read_csv('data/'+str(filename)+'.csv', low_memory=False)
     data.drop(columns='Unnamed: 0', inplace=True)
     
-    # reformat dates and sort by dates, ascending
-    transform_dates(data, 'report_date')
-    data.sort_values(by=['report_date'], inplace=True)
+    enc = OneHotEncoder(handle_unknown='ignore', sparse=False)
+    sectors = data.factset_sector_num.values
+    sectors = sectors.reshape(-1, 1)
+    encoded_cols = enc.fit_transform(sectors)
+    feature_labels = list(enc.get_feature_names())
+    feature_names = []
     
-    # set index to unique_earnings_code
-    data.set_index('unique_earnings_code', inplace=True)
-    # partition 3q18 data to test set
-    test_partition = data[data.index.str.endswith('3Q18')]
+    for item in feature_labels:
+        tagged_name = item+'_F'
+        feature_names.append(tagged_name)
     
-    # create y_test array
-    y_test = test_partition.targets.values
+    temp = pd.DataFrame(encoded_cols, columns=feature_names)
+    data = pd.concat([data, temp], axis=1)
+    # write combined_df to a csv file and store in data folder
+    data.to_csv('data/'+str(filename)+'.csv')
     
-    # create X_test array
-    features = test_partition.columns.str.endswith('F')
-    X_test = test_partition.values[:,features]
+    return
+
+def prepare_partitions(filename, test_slice=0.25, rand_seed=1970):
+    """Partitions 3Q18 data for out of sample validation and creates train-test split on remainder. 
+            * Writes 3Q18 df to a file in the data folder: oos_data_partition.csv
+            * Creates a train-test split on remaining data
+            * Returns X_train, X_test, X_oos, y_train, y_test, y_oos
+            
+        test_slice defaults to 0.25, but can be assigned by keyword
+        rand_seed defaults to 1970, but can be assigned by keyword
+    """
     
-    # remove test_partition from data df
-    data = data[data.index.str.endswith('3Q18') == False]
+    X, X_oos, y, y_oos = _oos_partition(filename)
     
-    # create y_train and X_train arrays
-    y_train = data.targets.values
-    X_train = data.values[:,features]
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_slice, random_state=rand_seed)
     
-     
-    return X_train, X_test, y_train, y_test
+    return X_train, X_test, X_oos, y_train, y_test, y_oos
+
+# end pre-processing & data partitioning section
+###################################################################################################
+
+
+
+
+
+
+
+
+
+
+
 
 def create_hard_classes(prob_array, threshold):
     """Helper function to create hard classifications based on a probability array and a given threshold"""
@@ -266,14 +354,6 @@ def create_hard_classes(prob_array, threshold):
         else:
             hard_classes.append(0)
     return hard_classes
-
-
-
-
-
-
-
-
 
 
 
