@@ -56,7 +56,16 @@ def _sector_rel_earn_yld(df):
     
     return df
 
-
+def _rel_earn_yld(df):
+    """HELPER function to generate new rel_earn_yld Feature col and add it to the surprise df."""
+    ylds = df['qtr_end_eps_yld']
+    avg_yld = df['qtr_end_eps_yld'].mean()
+    new_ylds = ylds - avg_yld
+    new_col = pd.DataFrame(new_ylds)
+    new_col.rename(columns={'qtr_end_eps_yld':'rel_eps_yld_F'}, inplace=True)
+    df = pd.concat([df, new_col], axis = 1)
+        
+    return df
 
 
 
@@ -172,6 +181,7 @@ def write_merged_frames(surp_lst, features_lst):
 
         # add calculated features
         feature_df = _sector_rel_earn_yld(feature_df)
+        feature_df = _rel_earn_yld(feature_df)
 
         # create list of columns to retain
         retained_cols = _create_feature_df_index(feature_df)
