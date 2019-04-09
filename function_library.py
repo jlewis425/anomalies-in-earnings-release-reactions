@@ -44,6 +44,23 @@ def _create_feature_df_index(df):
     
     return ind_obj
 
+def _sector_rel_earn_yld(df):
+    """HELPER to create sector_rel_earn_yield Feature and add it to the surprise df."""
+    df = df.dropna(subset=['factset_sector_num'])
+    sectors = df['factset_sector_num']
+    ylds = df['qtr_end_eps_yld']
+    temp = pd.concat([sectors, ylds], axis=1)
+    new_col = temp.groupby('factset_sector_num').transform(lambda x: x - x.mean())
+    new_col.rename(columns={'qtr_end_eps_yld':'sec_rel_eps_yld_F'}, inplace=True)
+    df = pd.concat([df, new_col], axis = 1)
+    
+    return df
+
+
+
+
+
+
 
 def _clean_feature_bind(surp_df, feature_df, retained_columns):
     """HELPER to create a tidied up df from a surp_df and feature_df, based on an Index object of cols to retain."""
@@ -145,9 +162,16 @@ def write_merged_frames(surp_lst, features_lst):
 
         # read surp df
         surp_df = pd.read_csv('data/'+s_df)
+        surp_df = surp_df.dropna(subset=['factset_sector_num'])
+        
         tidy_surp_df = _tidyfy_surp_df(surp_df)
+        
         # read feature df
         feature_df = pd.read_csv('data/'+f_df)
+        feature_df = feature_df.dropna(subset=['factset_sector_num'])
+
+        # add calculated features
+        feature_df = _sector_rel_earn_yld(feature_df)
 
         # create list of columns to retain
         retained_cols = _create_feature_df_index(feature_df)
