@@ -67,13 +67,14 @@ def _rel_earn_yld(df):
         
     return df
 
-def _sector_rel_return(df, col_name):
+def _sector_rel_return(df, time_horiz):
     """HELPER to create sector_rel return Feature and add it to the surprise df."""
     sectors = df['factset_sector_num']
+    col_name = time_horiz+'_rtn_qtr_end'
     rtns = df[col_name]
     temp = pd.concat([sectors, rtns], axis=1)
     new_col = temp.groupby('factset_sector_num').transform(lambda x: x - x.mean())
-    new_col.rename(columns={col_name:'sec_rel'+col_name+'_F'}, inplace=True)
+    new_col.rename(columns={col_name: time_horiz+'_sec_rel_rtn_F'}, inplace=True)
     df = pd.concat([df, new_col], axis = 1)
     
     return df
@@ -158,7 +159,7 @@ def _oos_partition(filename):
     data = data[data.index.str.endswith('3Q18') == False]
     
     # create y_train and X_train arrays
-    y = data.targets.values
+    y = data.targets.values              
     r = data['rel_t+3_rtn']
     X = data.values[:,features]
     
@@ -191,9 +192,9 @@ def write_merged_frames(surp_lst, features_lst):
         # add calculated features
         feature_df = _sector_rel_earn_yld(feature_df)
         feature_df = _rel_earn_yld(feature_df)
-        feature_df = _sector_rel_rtn(feature_df, '1y_rtn_qtr_end')
-        feature_df = _sector_rel_rtn(feature_df, '6m_rtn_qtr_end')
-        feature_df = _sector_rel_rtn(feature_df, '3m_rtn_qtr_end')
+        feature_df = _sector_rel_return(feature_df, '1y')
+        feature_df = _sector_rel_return(feature_df, '6m')
+        feature_df = _sector_rel_return(feature_df, '3m')
 
         # create list of columns to retain
         retained_cols = _create_feature_df_index(feature_df)
@@ -329,8 +330,8 @@ def clean_features(filename):
     data['adtv_prev_month'] = data['adtv_prev_month'].apply(pd.to_numeric, args=('coerce',))
 
     # remove observations with fewer than 4 analyst estimates for the quarter
-    data = data[(data['num_ests_qtr_end'] > 3) & (data['adtv_prev_month'] >= 20)]
-    # data = data[data['adtv_prev_month'] >= 20]
+    data = data[(data['num_ests_qtr_end'] > 3) & (data['adtv_prev_month'] >= 15)]
+    
     
     # drop Unnamed column
     data.drop(columns='Unnamed: 0', inplace=True)    
@@ -365,7 +366,7 @@ def encode_sectors(filename):
     
     return
 
-def prepare_partitions(filename, test_slice=0.25, rand_seed=1970):
+def prepare_partitions(filename, test_slice=0.25): # removed rand_seed
     """Partitions 3Q18 data for out of sample validation and creates train-test split on remainder. 
             * Writes 3Q18 df to a file in the data folder: oos_data_partition.csv
             * Creates a train-test split on remaining data
@@ -377,9 +378,7 @@ def prepare_partitions(filename, test_slice=0.25, rand_seed=1970):
     
     X, X_oos, y, y_oos, r = _oos_partition(filename)
     
-    X_train, X_test, y_train, y_test, r_train, r_test = train_test_split(X,y, r,
-                                                                                test_size=test_slice,
-                                                                                random_state=rand_seed)
+    X_train, X_test, y_train, y_test, r_train, r_test = train_test_split(X,y, r, test_size=test_slice) #removed rand_state 
     
     return X_train, X_test, y_train, y_test, r_train, r_test
 
