@@ -67,7 +67,16 @@ def _rel_earn_yld(df):
         
     return df
 
-
+def _sector_rel_return(df, col_name):
+    """HELPER to create sector_rel return Feature and add it to the surprise df."""
+    sectors = df['factset_sector_num']
+    rtns = df[col_name]
+    temp = pd.concat([sectors, rtns], axis=1)
+    new_col = temp.groupby('factset_sector_num').transform(lambda x: x - x.mean())
+    new_col.rename(columns={col_name:'sec_rel'+col_name+'_F'}, inplace=True)
+    df = pd.concat([df, new_col], axis = 1)
+    
+    return df
 
 
 
@@ -182,6 +191,9 @@ def write_merged_frames(surp_lst, features_lst):
         # add calculated features
         feature_df = _sector_rel_earn_yld(feature_df)
         feature_df = _rel_earn_yld(feature_df)
+        feature_df = _sector_rel_rtn(feature_df, '1y_rtn_qtr_end')
+        feature_df = _sector_rel_rtn(feature_df, '6m_rtn_qtr_end')
+        feature_df = _sector_rel_rtn(feature_df, '3m_rtn_qtr_end')
 
         # create list of columns to retain
         retained_cols = _create_feature_df_index(feature_df)
@@ -313,9 +325,12 @@ def clean_features(filename):
     bad_rows = data.iloc[:,22:].isnull().sum(axis=1) > 0
     data = data[bad_rows == False]
     
+    # convert adtv column to numeric
+    data['adtv_prev_month'] = data['adtv_prev_month'].apply(pd.to_numeric, args=('coerce',))
+
     # remove observations with fewer than 4 analyst estimates for the quarter
-    data = data[data['num_ests_qtr_end'] > 3]
-    
+    data = data[(data['num_ests_qtr_end'] > 3) & (data['adtv_prev_month'] >= 20)]
+    # data = data[data['adtv_prev_month'] >= 20]
     
     # drop Unnamed column
     data.drop(columns='Unnamed: 0', inplace=True)    
