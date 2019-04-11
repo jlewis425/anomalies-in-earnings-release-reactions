@@ -40,6 +40,7 @@ def _create_feature_df_index(df):
             new_columns.append(col)
         
     new_columns.insert(0, 'unique_earnings_code')
+    #new_columns.insert(3, 't-7')
     ind_obj = pd.Index(new_columns)
     
     return ind_obj
@@ -91,6 +92,9 @@ def _clean_feature_bind(surp_df, feature_df, retained_columns):
 
 def _tidyfy_surp_df(df):
     """HELPER to clean up Surp dataframes prior to join"""
+    
+    _transform_dates(df, 't-7')
+        
     new_cols = ['ticker_symbol',
                  'co_name',
                  'unique_earnings_code',
@@ -100,6 +104,7 @@ def _tidyfy_surp_df(df):
                  'fiscal_qtr',
                  'adtv_prev_month',
                  'report_date',
+                 't-7',
                  'eps_est',
                  'eps_actual',
                  'surp_amt',
@@ -139,8 +144,9 @@ def _oos_partition(filename):
     
     # reformat dates and sort by dates, ascending
     _transform_dates(data, 'report_date')
-    data.sort_values(by=['report_date'], inplace=True)
     
+    data.sort_values(by=['report_date'], inplace=True)
+        
     # set index to unique_earnings_code
     data.set_index('unique_earnings_code', inplace=True)
     
