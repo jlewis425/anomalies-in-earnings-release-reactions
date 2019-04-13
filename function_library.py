@@ -372,6 +372,17 @@ def encode_sectors(filename):
     
     return
 
+def add_vol_data():
+    data = pd.read_csv('data/combined_clean.csv', low_memory=False)
+    data.drop(columns='Unnamed: 0', inplace=True)
+    vol_data = pd.read_csv('data/vol_data_cleaned', low_memory=False)
+    merged_data = pd.merge(data, vol_data, on='unique_earnings_code')
+    merged_data.groupby(['calendar_qtr','factset_ind_num']).transform(lambda data: data.fillna(data.mean()))
+    merged_data.to_csv('data/combined_clean.csv')
+
+
+
+
 def prepare_partitions(filename, test_slice=0.25): # removed rand_seed
     """Partitions 3Q18 data for out of sample validation and creates train-test split on remainder. 
             * Writes 3Q18 df to a file in the data folder: oos_data_partition.csv
