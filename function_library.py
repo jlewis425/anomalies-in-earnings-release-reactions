@@ -25,7 +25,8 @@ from sklearn.preprocessing import OneHotEncoder, LabelEncoder
 # function categories:
 # 1) pre-processing & data partitioning
 # 2) model fitting & prediction
-# 3) plotting 
+# 3) plotting
+# 4) sequential simulation
 
 # pre-processing & data partitioning functions
 # helper functions
@@ -415,11 +416,15 @@ def prepare_partitions(filename, test_slice=0.25): # removed rand_seed
         rand_seed defaults to 1970, but can be assigned by keyword
     """
     
+    # remove final out-of-sample data (3q18)
     X, X_oos, y, y_oos, r = _oos_partition(filename)
-    
-    X_train, X_test, y_train, y_test, r_train, r_test = train_test_split(X,y, r, test_size=test_slice) #removed rand_state 
-    
+
+    # create test_train split on full data set, less 3Q18 out-of-sample data
+    X_train, X_test, y_train, y_test, r_train, r_test = train_test_split(X,y, r, test_size=test_slice)
+     
     return X_train, X_test, y_train, y_test, r_train, r_test
+
+
 
 # end pre-processing & data partitioning section
 ###################################################################################################
@@ -467,11 +472,14 @@ def rf_analysis(filename, trees, features_per_split, crossval_folds=5):
         
     # create rf_output dict
     rf_output = {'avg_log_loss' : avg_log_loss,
-                       'cv_log_loss' : cv_log_loss,
-                       'y_predictions' : y_predict,
-                     'rtns_for_test_data' : r_test}
+                       'cv_log_loss' : list(cv_log_loss),
+                       'y_test' : list(y_test),
+                       'y_predict' : list(y_predict),
+                     'rtns_test' : list(r_test.values)}
                              
     
+
+
     
     return rf_output
     
@@ -479,16 +487,67 @@ def rf_analysis(filename, trees, features_per_split, crossval_folds=5):
 def calc_profit_curve(y_test, y_predict, max_threshold):
     thresholds = []
     results = []
-    for i in range(0, max_threshold+1):
+    for i in range(5, max_threshold+1):
         thresh = float(i/100)
-        hard_classes = create_hard_classes(y_predict, thresh)
+        hard_classes = _create_hard_classes(y_predict, thresh)
         tn, fp, fn, tp = confusion_matrix(y_test, hard_classes).ravel()
         profit = (5*tp*0.10)+(5*fp*-0.01)
         thresholds.append(i)
-        result_entry = [tp, fp, profit]
+        ppv = tp / (tp+fp)
+        result_entry = [tp, fp, ppv, profit]
         results.append(result_entry)
         
     return dict(zip(thresholds, results))    
+
+def simulate_perf(y_test, y_predict, r_test, max_threshold, trade_size=5, min_threshold=5):
+    rtns = r_test
+    
+    output = {}
+    total_output = {}
+    
+    for i in range(min_threshold, max_threshold+1):
+        thresh = float(i/100)
+        hard_classes = _create_hard_classes(y_predict, thresh)
+        
+        for label, rtn in zip(hard_classes, rtns):
+            if label == 1:
+                
+                profit = trade_size * -rtn/100
+                
+                
+                if thresh in output.keys():
+                    output[thresh].append(profit)
+                else:
+                    output[thresh] = [profit]
+    
+    for key, val in output.items():
+        total_output[key] = np.sum(val)
+    
+        
+    return total_output
+
+def simulate_strat(y_predict, r_test, trade_thresh, upsize_thresh, trade_size=5, upsize_factor=2):
+    target_probs = []
+    trades = []
+    
+    for item in y_predict:
+        target_probs.append(item[1])
+    
+    
+        
+    for prob, rtn in zip(target_probs, r_test):
+        if (prob >= trade_thresh) & (prob < upsize_thresh):
+                
+                profit = trade_size * -rtn/100
+                trades.append(profit)
+                                
+        elif prob >= upsize_thresh:        
+                
+                profit = (trade_size*upsize_factor) * -rtn/100
+                trades.append(profit)
+    
+    return sum(trades), trades
+
 
 
 
@@ -578,5 +637,167 @@ def targets_pct_plot(filename):
     _ = ax.set_title("Targets: Percent of Observations by Quarter")
     _ = ax.set_xlabel("Calendar Quarters")
     _ = ax.set_ylabel("Pct of Observations")
-    _ = plt.subplots_adjust(bottom=0.2)
+    _ = plt.subplots_adjust(bottom=0.22)
     plt.savefig('viz/targets_pct_plot.png')
+
+
+
+
+
+
+
+
+
+
+# end plotting section
+###################################################################################################
+
+# sequential simulation
+
+def create_sim_data_sets():
+    """Creates training and test data sets for running sequential simulations based on eight
+    quarters of training data."""
+    
+    # list of quarters of data available
+    data_qtrs = ['1Q14',
+             '2Q14', 
+             '3Q14',
+             '4Q14', 
+             '1Q15',
+             '2Q15',
+             '3Q15',
+             '4Q15',
+             '1Q16',
+             '2Q16',
+             '3Q16',
+             '4Q16',
+             '1Q17',
+             '2Q17',
+             '3Q17',
+             '4Q17',
+             '1Q18',
+             '2Q18',
+             '3Q18']
+    
+    # open combined_clean data
+    D = pd.read_csv('data/combined_clean.csv', low_memory=False)
+    D.drop(columns='Unnamed: 0', inplace=True)
+    
+    
+    # sliding window counter
+    start_window = 0
+    end_window = 8
+    
+    # loop through data
+    for i in range(1, 12):
+        
+        # create train sets
+        train_qtrs = data_qtrs[start_window:end_window]
+        train_temp = D[D['calendar_qtr'].isin(train_qtrs)]
+        train_temp.to_csv('data/sim_training_sets/training_'+data_qtrs[end_window]+'.csv')
+        
+        
+        # create test sets
+        test_qtr = data_qtrs[end_window]
+        test_temp = D[D['calendar_qtr'] == test_qtr]
+        test_temp.to_csv('data/sim_test_sets/test_'+data_qtrs[end_window]+'.csv')
+        
+        # step counters       
+        start_window += 1
+        end_window += 1
+
+
+def sequential_sim_analysis(qtrs_list, trees=1000, features_per_split=4):
+    """Pass a list of qtrs (ranging from 1Q16 through 3Q16) to the function to generate model outputs."""
+    
+    counter = 0
+    
+    for i in range(0, len(qtrs_list)):
+        # load training data
+        train_data = pd.read_csv('data/sim_training_sets/training_'+qtrs_list[counter]+'.csv',
+                                low_memory=False)
+        
+        # load target data
+        target_data = pd.read_csv('data/sim_test_sets/test_'+qtrs_list[counter]+'.csv',
+                                low_memory=False)
+    
+    
+        # create features list
+        features = train_data.columns.str.endswith('F')
+    
+        # create y_train and X_train arrays
+        y_train = train_data.targets.values              
+        X_train = train_data.values[:,features]
+        
+        # create y_test and X_test arrays
+        y_target = [int(v) for v in target_data.targets.values]         
+        X_target = target_data.values[:,features]
+        
+        # make sure numeric types are correct
+        X_train = X_train.astype(float)
+        X_target = X_target.astype(float)
+                
+        # create return array
+        rtns_target = target_data['rel_t+3_rtn']
+        
+        # create ticker list
+        tickers = target_data['ticker_symbol']
+        
+        
+        # instantiate model
+        clf = RandomForestClassifier(n_estimators = trees,
+                                criterion = 'gini',
+                                max_features = features_per_split)
+        
+        
+        # fit model
+        clf.fit(X_train, y_train)
+        
+        
+        # set up cross validation
+        skf = StratifiedKFold(n_splits=5, shuffle=True)
+    
+        # generate log loss from cross validation
+        cv_log_loss = cross_val_score(clf, # model
+                             X_train, # Feature matrix
+                             y_train, # Target vector
+                             cv=skf, # Cross-validation technique
+                             scoring='neg_log_loss', # Loss function
+                             n_jobs=-1) # Use all CPU scores
+    
+      
+        # calculate average cross-validated log loss
+        avg_log_loss = np.mean(cv_log_loss) * -1
+    
+   
+        # generate probability predictions
+        y_predict = clf.predict_proba(X_target)
+        y_predict = y_predict.tolist()
+        
+        
+             
+
+        # create output dictionary
+        output = {'target_qtr': qtrs_list[counter],
+                    'avg_log_loss' : avg_log_loss,
+                       'cv_log_loss' : list(cv_log_loss),
+                  'ticker_symbols' : list(tickers.values),
+                       'y_test' : list(y_target),
+                       'y_predict' : list(y_predict),
+                     'rtns_test' : list(rtns_target.values)}
+        
+        
+        
+        # dump output dictionaries to json files
+        with open('data/sim_output/results_'+qtrs_list[counter]+'.json', 'w') as fp:
+            json.dump(output, fp)
+        
+        # check length of lists
+        print(len(output['ticker_symbols']))
+        print(len(output['y_test']))
+        print(len(output['y_predict']))
+        print(len(output['rtns_test']))
+        
+        
+        
+        counter += 1
