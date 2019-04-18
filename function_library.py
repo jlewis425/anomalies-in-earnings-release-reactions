@@ -5,6 +5,7 @@ import quandl
 from datetime import datetime, timedelta
 import json
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 from dateutil.parser import parse
@@ -24,7 +25,7 @@ from sklearn.preprocessing import OneHotEncoder, LabelEncoder
 # function categories:
 # 1) pre-processing & data partitioning
 # 2) model fitting & prediction
-# 2) 
+# 3) plotting 
 
 # pre-processing & data partitioning functions
 # helper functions
@@ -171,6 +172,26 @@ def _oos_partition(filename):
     
      
     return X, X_oos, y, y_oos, r
+
+
+def _reformat_qtrs(x):
+    """HELPER to reformat string dates into a string format that is sortable chronologically"""
+    qtr = x[:2]
+    yr = x[2:]
+    new_qtr = yr+'-'+qtr
+    
+    return new_qtr
+
+def _create_hard_classes(prob_array, threshold):
+    """HELPER to create hard classifications based on a probability array and a given threshold"""
+    hard_classes = []
+    for row in prob_array:
+        if row[1] >= threshold:
+            hard_classes.append(1)
+        else:
+            hard_classes.append(0)
+    return hard_classes
+
 
 ###################################################################################################
 
@@ -375,8 +396,9 @@ def encode_sectors(filename):
 def add_vol_data():
     data = pd.read_csv('data/combined_clean.csv', low_memory=False)
     data.drop(columns='Unnamed: 0', inplace=True)
-    vol_data = pd.read_csv('data/vol_data_cleaned', low_memory=False)
+    vol_data = pd.read_csv('data/vol_data_cleaned.csv', low_memory=False)
     merged_data = pd.merge(data, vol_data, on='unique_earnings_code')
+    merged_data['h30_v_imp30_F'] = merged_data['h30_v_imp30_F'].apply(lambda x: np.nan_to_num(x))
     merged_data.groupby(['calendar_qtr','factset_ind_num']).transform(lambda data: data.fillna(data.mean()))
     merged_data.to_csv('data/combined_clean.csv')
 
@@ -402,88 +424,159 @@ def prepare_partitions(filename, test_slice=0.25): # removed rand_seed
 # end pre-processing & data partitioning section
 ###################################################################################################
 
+# model fitting & prediction
 
-
-
-
-
-
-
-
-
-
-
-def create_hard_classes(prob_array, threshold):
-    """Helper function to create hard classifications based on a probability array and a given threshold"""
-    hard_classes = []
-    for row in prob_array:
-        if row[1] >= threshold:
-            hard_classes.append(1)
-        else:
-            hard_classes.append(0)
-    return hard_classes
-
-
-
-
-
-
-# quantcha API functions
-
-
-# create a helper function for getting a measure from the quantcha / quandl API
-
-def get_vol_measure(ticker, date, measure='Hv90'):
-    """Retrieves a value from the Quantcha Historical and Implied Volatility API for a given stock and date.
+def rf_analysis(filename, trees, features_per_split, crossval_folds=5):
+    """docstring"""
     
-    INPUTS: 'Ticker', 'YYYY-MM-DD', and measure name.
-    For reference, measure names are contained in the dictionary: vol_col_names
+    
+    
+    # partition dataset and extract train/test split
+    X_train, X_test, y_train, y_test, r_train, r_test = prepare_partitions(filename)
         
-    OUPUT: A float
-    """
+    # make sure float type is correct
+    X_train = X_train.astype(float)
+    X_test = X_test.astype(float)
+     
+    # instantiate model
+    clf = RandomForestClassifier(n_estimators = trees,
+                                criterion = 'gini',
+                                max_features = features_per_split)
     
-    measure_value = (quandl.get('VOL/'+ticker,
-                           start_date=date,
-                           end_date=date, 
-                           column_index=vol_col_names.get(measure)))
-                
-    return float(measure_value.values)
-
-
-# create a generalized measure delta function
-
-def measure_delta(ticker, date, look_back_days, measure='Hv90'):
-    """Provides a relative comparison for a given stock ticker and date, based on an arbitrary look_back_window,
-    for any of 64 data itmes from the Quantcha Historical and Implied Volatility API.
+    # fit model
+    clf.fit(X_train, y_train)
     
-    INPUTS: 'Ticker', 'YYYY-MM-DD', lookback days (as integer), and measure name.
-    For reference, measure names are contained in the dictionary: vol_col_names
-    ***NOTE: For best results, utilize a lookback window that is a multiple of 7 days from the given date.
+    # set up cross validation
+    skf = StratifiedKFold(n_splits=crossval_folds, shuffle=True)
     
-    OUPUT: A float, based on the forumla: <measure at date> / <measure at date - lookback days>
-    """
-    
-    date = datetime.strptime(date, '%Y-%m-%d')
-    
-    lookback_date = date - timedelta(days=int(look_back_days))
-        
-    date = str(date)
-    date = date[0:10]
-    
-    lookback_date = str(lookback_date)
-    lookback_date = lookback_date[0:10]
+    # generate log loss from cross validation
+    cv_log_loss = cross_val_score(clf, # model
+                             X_train, # Feature matrix
+                             y_train, # Target vector
+                             cv=skf, # Cross-validation technique
+                             scoring='neg_log_loss', # Loss function
+                             n_jobs=-1) # Use all CPU scores
     
       
-    curr_vol = (quandl.get('VOL/'+ticker,
-                           start_date=date,
-                           end_date=date, 
-                           column_index=vol_col_names.get(measure)))
-                
+    # calculate average cross-validated log loss
+    avg_log_loss = np.mean(cv_log_loss) * -1
     
-    prior_vol = (quandl.get('VOL/'+ticker,
-                            start_date=lookback_date,
-                            end_date=lookback_date,
-                            column_index=vol_col_names.get(measure)))
-      
-    output = curr_vol.values / prior_vol.values
-    return float(output)
+   
+    # generate probability predictions
+    y_predict = clf.predict_proba(X_test)
+        
+    # create rf_output dict
+    rf_output = {'avg_log_loss' : avg_log_loss,
+                       'cv_log_loss' : cv_log_loss,
+                       'y_predictions' : y_predict,
+                     'rtns_for_test_data' : r_test}
+                             
+    
+    
+    return rf_output
+    
+
+def calc_profit_curve(y_test, y_predict, max_threshold):
+    thresholds = []
+    results = []
+    for i in range(0, max_threshold+1):
+        thresh = float(i/100)
+        hard_classes = create_hard_classes(y_predict, thresh)
+        tn, fp, fn, tp = confusion_matrix(y_test, hard_classes).ravel()
+        profit = (5*tp*0.10)+(5*fp*-0.01)
+        thresholds.append(i)
+        result_entry = [tp, fp, profit]
+        results.append(result_entry)
+        
+    return dict(zip(thresholds, results))    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# end model fitting & prediction section
+###################################################################################################
+
+# plotting
+
+def plot_returns_hist(filename):    
+    sns.set()
+    df = pd.read_csv('data/'+filename+'.csv', low_memory=False)
+    df.drop(columns='Unnamed: 0', inplace=True)
+    returns = df['rel_t+3_rtn']
+    fig, ax = plt.subplots(figsize= (8, 5))
+    plt.tight_layout()
+    ax = sns.distplot(returns, kde=False, bins=256)
+    _ = ax.set_title("Earnings Event Return Distribution")
+    _ = ax.set_xlabel("Relative Returns: t-1 to t+3")
+    _ = ax.set_ylabel("Proportion of Data")
+    _ = ax.set_xlim(left=-50, right=50)
+    _ = plt.subplots_adjust(bottom=0.12)
+    plt.savefig('viz/rtns_all.png')
+
+
+
+def obs_by_qtr_bars(filename):
+    sns.set()
+    df = pd.read_csv('data/'+filename+'.csv', low_memory=False)
+    df.drop(columns='Unnamed: 0', inplace=True)   
+    df['calendar_qtr'] = df['calendar_qtr'].apply(_reformat_qtrs)
+    obs_by_qtr = df.groupby(['calendar_qtr'])['targets'].count()
+    fig, ax = plt.subplots()
+    x = np.arange(len(obs_by_qtr.values))
+    bars = ax.bar(x, obs_by_qtr.values)
+    _ = ax.set_xticks(x)
+    _ = ax.set_xticklabels(obs_by_qtr.index, rotation=90)
+    _ = ax.set_ylim(bottom=1100, top=1400)
+    _ = ax.set_title("Observations by Calendar Quarter")
+    _ = ax.set_xlabel("Calendar Quarters")
+    _ = ax.set_ylabel("Number of Observations")
+    _ = plt.subplots_adjust(bottom=0.2)
+    plt.savefig('viz/obs_by_qtr.png')
+
+
+def targets_df(filename):
+    df = pd.read_csv('data/'+filename+'.csv', low_memory=False)
+    df.drop(columns='Unnamed: 0', inplace=True)
+    df['calendar_qtr'] = df['calendar_qtr'].apply(_reformat_qtrs)
+    obs_by_qtr = df.groupby(['calendar_qtr'])['targets'].count()
+    labels_by_qtr = df.groupby(['calendar_qtr', 'targets'])['ticker_symbol'].count()
+    targets_count = pd.DataFrame(labels_by_qtr).reset_index('targets')
+    targets_count = targets_count[targets_count['targets'] == 1]
+    targets_count = targets_count.drop(['targets'], axis=1)
+    targets_count['observations'] = obs_by_qtr.values
+    targets_count.rename(columns={'ticker_symbol':'targets'}, inplace=True)
+    targets_count['target_pct'] = (targets_count['targets'] / targets_count['observations'])*100
+    
+    targets_count.to_csv('data/targets_df.csv')
+    return targets_count
+
+
+def targets_pct_plot(filename):
+    df = pd.read_csv('data/'+filename+'.csv', low_memory=False)    
+    df.reset_index(inplace=True)
+    
+    sns.set()
+    fig, ax = plt.subplots()
+    x = np.arange(len(df['target_pct'].values))
+    bars = ax.bar(x, df['target_pct'].values)
+    _ = ax.set_xticks(x)
+    _ = ax.set_xticklabels(df['calendar_qtr'], rotation=90)
+    _ = ax.set_ylim(bottom=3, top=11)
+    _ = ax.set_title("Targets: Percent of Observations by Quarter")
+    _ = ax.set_xlabel("Calendar Quarters")
+    _ = ax.set_ylabel("Pct of Observations")
+    _ = plt.subplots_adjust(bottom=0.2)
+    plt.savefig('viz/targets_pct_plot.png')
