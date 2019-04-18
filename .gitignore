@@ -5,3 +5,7 @@ data_cleaning_sandbox.ipynb
 fsm_sandbox.ipynb
 pre_processing_sandbox.ipynb
 __pycache__
+sim_output
+sim_test_sets
+sim_training_sets
+sim_training_sets_4q_lookback
