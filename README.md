@@ -1,5 +1,14 @@
 # systematic-identification-of-anomalies-in-earnings-report-reactions-in-us-stocks
 
+
+### Problem Description:
+The typical and expected model of stock behavior following quarterly earnings releases (henceforth referred to as "earnings events") is that companies that produce results that significantly beat expectations tend to experience positive returns and those that meaningfully miss expectations tend to experience negative returns.
+
+However, in a significant minority of cases companies that produce earnings that meaningfully beat Wall Street consensus EPS estimates see their stocks fall substantially in value following the earnings event. These counter-intutitive reactions can be a major frustration to investors, many of whom devote substantial time and effort to research and model these quarterly results. 
+
+### Project Description:
+Apply machine learning algorithms to company financial data in order to systematically identify situations where this sort of anomalous reaction (beat estimates; experience negative returns anyway) is likely.
+
 ### Background:
 Fundamental investors in equity securities devote signficant effort in evaluating and forecasting the future
 prospects of the companies in which they invest. Companies which trade in the public US equity markets provide
