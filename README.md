@@ -9,6 +9,8 @@ However, in a significant minority of cases companies that produce earnings that
 ### Project Description:
 Apply machine learning algorithms to company financial data in order to systematically identify situations where this sort of anomalous reaction (beat estimates; experience negative returns anyway) is likely.
 
+[alt text](https://github.com/jlewis425/anomalies-in-earnings-release-reactions/blob/master/Project_overview.png)
+
 ### Background:
 Fundamental investors in equity securities devote signficant effort in evaluating and forecasting the future
 prospects of the companies in which they invest. Companies which trade in the public US equity markets provide
