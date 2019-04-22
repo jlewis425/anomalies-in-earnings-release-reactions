@@ -1,6 +1,6 @@
-### systematic-identification-of-anomalies-in-earnings-report-reactions-in-us-stocks
+# systematic-identification-of-anomalies-in-earnings-report-reactions-in-us-stocks
 
-# Background:
+### Background:
 Fundamental investors in equity securities devote signficant effort in evaluating and forecasting the future
 prospects of the companies in which they invest. Companies which trade in the public US equity markets provide
 public releases of their financials on a quarterly basis. These quarterly earnings releases are therefore 
@@ -15,10 +15,14 @@ Wall Street analysts that follow the comapnies. Because digesting and analyzing 
 which are typically presented in a quarterly release can be time-consuming, the marketplace has developed a 
 sort of shorthand heuristic. 
 
-Quarterly Earnings per Share which exceed the Wall Street "consensus"estimate are considered "beats" and those
-that fall short are considered "misses". Those that match the consensus estimate are said to be "in line". 
-In reality, the consensus estimate isn't a consensus at all, but is rather the arithmetic average of all of
+Quarterly earnings per share (EPS) which exceed the Wall Street "consensus" estimate are considered "beats" and those
+that fall short are considered "misses". EPS that match the consensus estimate are said to be "in line". 
+In reality, the consensus EPS estimate isn't a consensus at all, but is rather the arithmetic average of all of
 the analyst estimates for that company that have been published (fairly recently) for the quarter in question.
+
+
+
+
 
 
 
