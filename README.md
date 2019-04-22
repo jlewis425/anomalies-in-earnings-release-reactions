@@ -8,10 +8,7 @@ important signposts for investors; they are the main mechanism for evaluating th
 performance of their investments. 
 
 Companies' earnings releases typically include a quarterly income statement, other financial statements,
-and additional operating metrics (in either narrative or tablular form). Most public companies in the US  
-also host a conference call on the same day as the earnings release. During these calls corporate managers 
-discuss the company's results and outlook and field questions from investors and Wall Street analysts that 
-follow the company.
+and additional operating metrics (in either narrative or tablular form). Most public companies in the US also host a conference call on the same day as the earnings release. During these calls corporate managers discuss the company's results and outlook and field questions from investors and Wall Street analysts that follow the company.
 
 Quarterly earnings releases are therefore understandably much anticipated by equity investors and by the 
 Wall Street analysts that follow the comapnies. Because digesting and analyzing all of the relevant details
