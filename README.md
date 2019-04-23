@@ -56,7 +56,25 @@ Data for earnings events from 1Q14 through 3Q18 were collected.
 Observations were categorized based on the following criteria:
 ![alt text](https://github.com/jlewis425/anomalies-in-earnings-release-reactions/blob/master/Label_generation.png)
 
+## Model Selection & Methodology:
 
+### Model Selection
+The key considerations relating to model selection are as follows:
+* Significantly imbalanced classes
+* Soft classification desired
+* Mix of numerical and categorical data
+* Standardization problematic due to mix of temporal spaces in data
+* Significant complex interactions between features likely to exist
+
+Based on the above, tree-based models (Random Forest & Gradient Boosting) most appropriate.
+
+### Methodology Challenge
+THe proportion of observations in the target class shows a rising trend over time.
+
+![alt text](https://github.com/jlewis425/anomalies-in-earnings-release-reactions/blob/master/targets_pct_plot.png)
+
+Given that trend, typical random train/rest splitting and cross-validation methods showed significant instability.
+It was also unclear whether training on a data set that contained a much smaller number of observations in the target class than the out-of-sample test set contained would introduce some kind of bias to the out-of-sample test results.
 
 
 
