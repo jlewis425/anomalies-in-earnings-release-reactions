@@ -31,10 +31,20 @@ that fall short are considered "misses". EPS that match the consensus estimate a
 In reality, the consensus EPS estimate isn't a consensus at all, but is rather the arithmetic average of all of
 the analyst estimates for that company that have been published (fairly recently) for the quarter in question.
 
+## Data Set Assembly:
+
 ### Data Sources:
 The data set was assembled primarily using FactSet Research Systems' software package. FactSet's screening tool facilitates rule-based filtering of stocks and aggregation of related data. Supplementary data related to options and stock volatility was sourced from Quantcha via the Quandl internet platform. 
 
 ![alt text](https://github.com/jlewis425/anomalies-in-earnings-release-reactions/blob/master/Data_sources.png)
+
+### Stock Sample Selection Criteria:
+Stocks for the data set were selected from the universe of US equities based on the following two criteria:
+
+* Minimum reported sales of over $100 million total over the previous four quarters; AND
+* Minimum reported Average Daily Traded Value (stock price x trading volume) of $15 million over the previous 3 months.
+
+
 
 
 
