@@ -19,9 +19,6 @@ from sklearn.utils.multiclass import unique_labels
 from sklearn.utils.fixes import signature
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder
 
-
-
-
 # function categories:
 # 1) pre-processing & data partitioning
 # 2) model fitting & prediction
@@ -641,7 +638,24 @@ def targets_pct_plot(filename):
     plt.savefig('viz/targets_pct_plot.png')
 
 
-
+def sim_profits_barplot(data_dict):
+    sns.set()
+    fig, ax = plt.subplots(figsize = (8, 5))
+    plt.tight_layout()
+    axis_length = len(data_dict.values())
+    x = np.arange(axis_length)
+    #(range(len(data_dict)), list(data_dict.keys()))
+    bars = ax.bar(x, data_dict.values())
+    _ = ax.set_xticks(x)
+    _ = ax.set_xticklabels(data_dict.keys(), rotation=90, size=12)
+    _ = ax.set_ylim(bottom=-60, top=30)
+    _ = ax.set_title("Simulated Profits by Quarter", size=18)
+    _ = ax.set_xlabel("Quarter", size=16)
+    _ = ax.set_ylabel("Strategy Profit", size=16)
+    _ = plt.subplots_adjust(bottom=0.18)
+    _ = plt.subplots_adjust(left=0.1)
+    plt.savefig('viz/sim_profit_qtrs.png')
+    
 
 
 
@@ -801,3 +815,121 @@ def sequential_sim_analysis(qtrs_list, trees=1000, features_per_split=4):
         
         
         counter += 1
+
+
+
+def sequential_sim_analysis_4q(qtrs_list, trees=2000, features_per_split=7):
+    """Pass a list of qtrs to the function to generate model outputs."""
+    
+    counter = 0
+    
+    for i in range(0, len(qtrs_list)):
+        # load training data
+        train_data = pd.read_csv('data/sim_training_sets_4q_lookback/training_'+qtrs_list[counter]+'.csv',
+                                low_memory=False)
+        
+        # load target data
+        target_data = pd.read_csv('data/sim_test_sets/test_'+qtrs_list[counter]+'.csv',
+                                low_memory=False)
+    
+    
+        # create features list
+        features = train_data.columns.str.endswith('F')
+    
+        # create y_train and X_train arrays
+        y_train = train_data.targets.values              
+        X_train = train_data.values[:,features]
+        
+        # create y_test and X_test arrays
+        y_target = [int(v) for v in target_data.targets.values]         
+        X_target = target_data.values[:,features]
+        
+        # make sure numeric types are correct
+        X_train = X_train.astype(float)
+        X_target = X_target.astype(float)
+                
+        # create return array
+        rtns_target = target_data['rel_t+3_rtn']
+        
+        # create ticker list
+        tickers = target_data['ticker_symbol']
+        
+        
+        # instantiate model
+        clf = RandomForestClassifier(n_estimators = trees,
+                                criterion = 'gini',
+                                max_features = features_per_split)
+        
+        
+        # fit model
+        clf.fit(X_train, y_train)
+        
+        
+        # set up cross validation
+        skf = StratifiedKFold(n_splits=5, shuffle=True)
+    
+        # generate log loss from cross validation
+        cv_log_loss = cross_val_score(clf, # model
+                             X_train, # Feature matrix
+                             y_train, # Target vector
+                             cv=skf, # Cross-validation technique
+                             scoring='neg_log_loss', # Loss function
+                             n_jobs=-1) # Use all CPU scores
+    
+      
+        # calculate average cross-validated log loss
+        avg_log_loss = np.mean(cv_log_loss) * -1
+    
+   
+        # generate probability predictions
+        y_predict = clf.predict_proba(X_target)
+        y_predict = y_predict.tolist()
+        
+        
+             
+
+        # create output dictionary
+        output = {'target_qtr': qtrs_list[counter],
+                    'avg_log_loss' : avg_log_loss,
+                       'cv_log_loss' : list(cv_log_loss),
+                  'ticker_symbols' : list(tickers.values),
+                       'y_test' : list(y_target),
+                       'y_predict' : list(y_predict),
+                     'rtns_test' : list(rtns_target.values)}
+        
+        
+        
+        # dump output dictionaries to json files
+        with open('data/sim_output/results_4q_lookback'+qtrs_list[counter]+'.json', 'w') as fp:
+            json.dump(output, fp)
+        
+        print(len(output['ticker_symbols']))
+        print(len(output['y_test']))
+        print(len(output['y_predict']))
+        print(len(output['rtns_test']))
+        
+        
+        
+        counter += 1
+
+
+def profit_curve_from_json(filename):
+    """docstring"""
+    js = open('data/sim_output/'+filename+'.json').read()
+    data = json.loads(js)
+
+    curve = calc_profit_curve(data['y_test'], data['y_predict'], 25)
+    
+    
+    return curve
+
+def profit_curve_from_json_4q(qtr):
+    """docstring"""
+    js = open('data/sim_output/results_4q_lookback'+qtr+'.json').read()
+    data = json.loads(js)
+
+    curve = calc_profit_curve(data['y_test'], data['y_predict'], 25)
+    
+    
+    return curve
+
