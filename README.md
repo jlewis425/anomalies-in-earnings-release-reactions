@@ -46,7 +46,9 @@ Stocks for the data set were selected from the universe of US equities based on 
 * Minimum reported Average Daily Traded Value (stock price x trading volume) of $15 million over previous 3 months.
 
 ### Sample Time Frame
-Data for earnings events from 1Q14 through 3Q18 were collected. The observations from 3Q18 were separated and held for out-of-sample testing.
+Data for earnings events from 1Q14 through 3Q18 were collected. The observations from 3Q18 were separated and held for out-of-sample testing. Following data cleaning there were an average of approximately 1,250 observations per quarter.
+
+![alt text](https://github.com/jlewis425/anomalies-in-earnings-release-reactions/blob/master/obs_by_qtr.png)
 
 ### Stock Return Measurement
 * Time Horizon: Measured price change from day before earnings events until three (trading) days following.
