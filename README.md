@@ -41,7 +41,7 @@ The data set was assembled primarily using FactSet Research Systems' software pa
 ### Stock Sample Selection Criteria:
 Stocks for the data set were selected from the universe of US equities based on the following two criteria:
 
-* Minimum reported sales of over $100 million total over the previous four quarters; AND
+* Minimum reported sales of over $100 million total over the previous four quarters; **AND**
 * Minimum reported Average Daily Traded Value (stock price x trading volume) of $15 million over the previous 3 months.
 
 
