@@ -46,11 +46,11 @@ Stocks for the data set were selected from the universe of US equities based on 
 * Minimum reported Average Daily Traded Value (stock price x trading volume) of $15 million over the previous 3 months.
 
 ### Sample Time Frame:
-Data for earnings events from the first calendar quarter of 2014 (1Q14) through 3Q18 was collected.
+Data for earnings events from 1Q14 through 3Q18 were collected.
 
 ### Stock Return Measurement:
-* Time Horizon: Measured price change from the day before the earnings event until three (trading) days after the event.
-* Return Type: Converted to relative return by adjusting for the return of the S&P 1500 over the same period.  
+* Time Horizon: Measured price change from day before earnings events until three (trading) days following.
+* Return Type: Converted to relative return by adjusting for return of S&P 1500 over same period.  
 
 
 
