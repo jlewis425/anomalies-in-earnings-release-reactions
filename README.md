@@ -50,7 +50,11 @@ Data for earnings events from 1Q14 through 3Q18 were collected. The observations
 
 ### Stock Return Measurement
 * Time Horizon: Measured price change from day before earnings events until three (trading) days following.
-* Return Type: Converted to relative return by adjusting for return of S&P 1500 over same period.  
+* Return Type: Converted to relative return by adjusting for return of S&P 1500 over same period. 
+
+Relative returns for the nearly 24,000 earnings events remaining in the data set after data cleaning were centered around close to zero, with an approximately normal distribution and a standard deviation of almost 8%.
+
+![alt text](https://github.com/jlewis425/anomalies-in-earnings-release-reactions/blob/master/rtns_all.png)
 
 ### Categorization
 Observations were categorized based on the following criteria:
