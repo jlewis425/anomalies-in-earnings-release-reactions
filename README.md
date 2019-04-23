@@ -2,12 +2,12 @@
 
 ## Project Overview & Background:
 
-### Problem Description:
+### Problem Description
 The typical and expected model of stock behavior following quarterly earnings releases (henceforth referred to as "earnings events") is that companies that produce results that significantly beat expectations tend to experience positive returns and those that meaningfully miss expectations tend to experience negative returns.
 
 However, in a significant minority of cases companies that produce earnings that meaningfully beat Wall Street consensus EPS estimates see their stocks fall substantially in value following the earnings event. These counter-intutitive reactions can be a major frustration to investors, many of whom devote substantial time and effort to research and model these quarterly results. 
 
-### Project Description:
+### Project Description
 Apply machine learning algorithms to company financial data in order to systematically identify situations where this sort of anomalous reaction (beat estimates; experience negative returns anyway) is likely.
 
 ![alt text](https://github.com/jlewis425/anomalies-in-earnings-release-reactions/blob/master/Project_overview.png)
@@ -34,23 +34,28 @@ the analyst estimates for that company that have been published (fairly recently
 
 ## Data Set Assembly:
 
-### Data Sources:
+### Data Sources
 The data set was assembled primarily using FactSet Research Systems' software package. FactSet's screening tool facilitates rule-based filtering of stocks and aggregation of related data. Supplementary data related to options and stock volatility was sourced from Quantcha via the Quandl internet platform. 
 
 ![alt text](https://github.com/jlewis425/anomalies-in-earnings-release-reactions/blob/master/Data_sources.png)
 
-### Stock Sample Selection Criteria:
+### Stock Sample Selection Criteria
 Stocks for the data set were selected from the universe of US equities based on the following two criteria:
 
-* Minimum reported sales of over $100 million total over the previous four quarters; **AND**
-* Minimum reported Average Daily Traded Value (stock price x trading volume) of $15 million over the previous 3 months.
+* Minimum reported sales of over $100 million total over previous four quarters; **AND**
+* Minimum reported Average Daily Traded Value (stock price x trading volume) of $15 million over previous 3 months.
 
-### Sample Time Frame:
+### Sample Time Frame
 Data for earnings events from 1Q14 through 3Q18 were collected.
 
-### Stock Return Measurement:
+### Stock Return Measurement
 * Time Horizon: Measured price change from day before earnings events until three (trading) days following.
 * Return Type: Converted to relative return by adjusting for return of S&P 1500 over same period.  
+
+### Categorization
+Observations were categorized based on the following criteria:
+![alt text](https://github.com/jlewis425/anomalies-in-earnings-release-reactions/blob/master/Label_generation.png)
+
 
 
 
