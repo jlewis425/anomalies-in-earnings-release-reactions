@@ -54,7 +54,6 @@ Data for earnings events from 1Q14 through 3Q18 were collected.
 
 ### Categorization
 Observations were categorized based on the following criteria:
-***************************************************************************************************
 ![alt text](https://github.com/jlewis425/anomalies-in-earnings-release-reactions/blob/master/Label_generation.png)
 
 
@@ -67,8 +66,3 @@ Observations were categorized based on the following criteria:
 
 
 
-
-
-
-
-Categorization of stock market reactions to corporate earnings releases for liquid US publicly traded stocks
