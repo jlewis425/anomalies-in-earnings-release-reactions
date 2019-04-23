@@ -1,5 +1,6 @@
 # systematic-identification-of-anomalies-in-earnings-report-reactions-in-us-stocks
 
+## Project Overview & Background:
 
 ### Problem Description:
 The typical and expected model of stock behavior following quarterly earnings releases (henceforth referred to as "earnings events") is that companies that produce results that significantly beat expectations tend to experience positive returns and those that meaningfully miss expectations tend to experience negative returns.
@@ -44,7 +45,12 @@ Stocks for the data set were selected from the universe of US equities based on 
 * Minimum reported sales of over $100 million total over the previous four quarters; **AND**
 * Minimum reported Average Daily Traded Value (stock price x trading volume) of $15 million over the previous 3 months.
 
+### Sample Time Frame:
+Data for earnings events from the first calendar quarter of 2014 (1Q14) through 3Q18 was collected.
 
+### Stock Return Measurement:
+* Time Horizon: Measured price change from the day before the earnings event until three (trading) days after the event.
+* Return Type: Converted to relative return by adjusting for the return of the S&P 1500 over the same period.  
 
 
 
